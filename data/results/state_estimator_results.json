@@ -1,0 +1,4229 @@
+{
+  "stats": {
+    "total_days": 365,
+    "total_updates": 1509,
+    "total_anomalous": 631,
+    "post_warmup_updates": 1262,
+    "post_warmup_anomalous": 524,
+    "anomaly_rate_post_warmup": 0.4152139461172742,
+    "total_triggers": 21
+  },
+  "trigger_log": [
+    {
+      "date": "2025-03-01",
+      "type": "anomalous_data",
+      "detail": "US_CPI_YOY z-score=-2.96 (observed=-0.9722, predicted=0.0000)",
+      "branch_id": null
+    },
+    {
+      "date": "2025-03-01",
+      "type": "tier_crossing",
+      "detail": "Stagflation crossed 25% (below): 30.0% \u2192 2.7%",
+      "branch_id": "stagflation"
+    },
+    {
+      "date": "2025-03-01",
+      "type": "tier_crossing",
+      "detail": "Recession crossed 25% (above): 20.0% \u2192 31.6%",
+      "branch_id": "recession"
+    },
+    {
+      "date": "2025-03-01",
+      "type": "anomalous_data",
+      "detail": "CORE_CPI z-score=+2.75 (observed=-0.0582, predicted=-0.7075)",
+      "branch_id": null
+    },
+    {
+      "date": "2025-03-01",
+      "type": "tier_crossing",
+      "detail": "Soft Landing crossed 75% (above): 64.9% \u2192 91.3%",
+      "branch_id": "soft_landing"
+    },
+    {
+      "date": "2025-03-01",
+      "type": "anomalous_data",
+      "detail": "HOME_PRICES z-score=+7.29 (observed=2.0581, predicted=-0.0401)",
+      "branch_id": null
+    },
+    {
+      "date": "2025-03-01",
+      "type": "anomalous_data",
+      "detail": "FED_FUNDS_RATE z-score=+3.57 (observed=0.7921, predicted=-0.2669)",
+      "branch_id": null
+    },
+    {
+      "date": "2025-03-02",
+      "type": "anomalous_data",
+      "detail": "BTC_USD z-score=+8.70 (observed=2.7808, predicted=0.1374)",
+      "branch_id": null
+    },
+    {
+      "date": "2025-03-03",
+      "type": "anomalous_data",
+      "detail": "10Y_YIELD z-score=-8.58 (observed=-1.1976, predicted=0.5694)",
+      "branch_id": null
+    },
+    {
+      "date": "2025-03-05",
+      "type": "anomalous_data",
+      "detail": "SP500 z-score=+3.19 (observed=0.5282, predicted=-0.2332)",
+      "branch_id": null
+    },
+    {
+      "date": "2025-03-05",
+      "type": "anomalous_data",
+      "detail": "OIL_PRICE z-score=-2.95 (observed=-1.0162, predicted=-0.2688)",
+      "branch_id": null
+    },
+    {
+      "date": "2025-03-11",
+      "type": "sustained_drift",
+      "detail": "Soft Landing has drifted downward for 5 consecutive updates",
+      "branch_id": "soft_landing"
+    },
+    {
+      "date": "2025-03-11",
+      "type": "sustained_drift",
+      "detail": "Stagflation has drifted upward for 5 consecutive updates",
+      "branch_id": "stagflation"
+    },
+    {
+      "date": "2025-03-13",
+      "type": "anomalous_data",
+      "detail": "GOLD_PRICE z-score=+4.17 (observed=0.8425, predicted=-0.1133)",
+      "branch_id": null
+    },
+    {
+      "date": "2025-03-21",
+      "type": "convergence",
+      "detail": "Soft Landing (49.8%) and Stagflation (45.5%) within 5pp for 10 consecutive updates \u2014 consider merging",
+      "branch_id": "soft_landing"
+    },
+    {
+      "date": "2025-04-01",
+      "type": "anomalous_data",
+      "detail": "PPI z-score=-6.96 (observed=-1.6750, predicted=-0.0502)",
+      "branch_id": null
+    },
+    {
+      "date": "2025-04-01",
+      "type": "anomalous_data",
+      "detail": "UNEMPLOYMENT_RATE z-score=-2.99 (observed=-0.9531, predicted=-0.0507)",
+      "branch_id": null
+    },
+    {
+      "date": "2025-04-12",
+      "type": "anomalous_data",
+      "detail": "INITIAL_CLAIMS z-score=-3.59 (observed=-1.2427, predicted=-0.0666)",
+      "branch_id": null
+    },
+    {
+      "date": "2025-05-01",
+      "type": "anomalous_data",
+      "detail": "RETAIL_SALES z-score=+4.50 (observed=1.3035, predicted=-0.0166)",
+      "branch_id": null
+    },
+    {
+      "date": "2025-05-01",
+      "type": "anomalous_data",
+      "detail": "HOUSING_STARTS z-score=-3.75 (observed=-1.1838, predicted=0.1667)",
+      "branch_id": null
+    },
+    {
+      "date": "2025-06-01",
+      "type": "anomalous_data",
+      "detail": "CONSUMER_CONFIDENCE z-score=+3.40 (observed=1.4561, predicted=-0.0906)",
+      "branch_id": null
+    }
+  ],
+  "event_log": [
+    {
+      "date": "2025-04-30",
+      "updates": [
+        {
+          "stream": "10Y_YIELD",
+          "raw": 4.17,
+          "normalized": -1.1289,
+          "innovation": -1.2351,
+          "innovation_z": -6.7296,
+          "is_anomalous": "True"
+        },
+        {
+          "stream": "SP500",
+          "raw": 0.14788972519335208,
+          "normalized": 0.1114,
+          "innovation": 0.1731,
+          "innovation_z": 0.7496,
+          "is_anomalous": "False"
+        },
+        {
+          "stream": "OIL_PRICE",
+          "raw": -3.726300009744934,
+          "normalized": -1.3578,
+          "innovation": -1.1602,
+          "innovation_z": -4.8454,
+          "is_anomalous": "True"
+        },
+        {
+          "stream": "GOLD_PRICE",
+          "raw": -0.4166813216927875,
+          "normalized": -0.5089,
+          "innovation": -0.3902,
+          "innovation_z": -1.7064,
+          "is_anomalous": "False"
+        },
+        {
+          "stream": "BTC_USD",
+          "raw": -0.08220669855229902,
+          "normalized": -0.0787,
+          "innovation": -0.0512,
+          "innovation_z": -0.1792,
+          "is_anomalous": "False"
+        }
+      ],
+      "triggers": [],
+      "probabilities": {
+        "soft_landing": 0.4336,
+        "stagflation": 0.5389,
+        "recession": 0.0275
+      },
+      "factors": {
+        "inflation_trend": -0.2233,
+        "growth_trend": -0.0854,
+        "labor_pressure": -0.0421,
+        "housing_momentum": 0.2569,
+        "financial_conditions": -0.0168,
+        "commodity_pressure": -0.3226,
+        "consumer_sentiment": 0.0581,
+        "policy_stance": 0.1564
+      }
+    },
+    {
+      "date": "2025-05-01",
+      "updates": [
+        {
+          "stream": "US_CPI_YOY",
+          "raw": 2.3772651073680873,
+          "normalized": -0.9735,
+          "innovation": -0.7598,
+          "innovation_z": -3.9726,
+          "is_anomalous": "True"
+        },
+        {
+          "stream": "CORE_CPI",
+          "raw": 2.7658403935930886,
+          "normalized": -0.2707,
+          "innovation": 0.0226,
+          "innovation_z": 0.1197,
+          "is_anomalous": "False"
+        },
+        {
+          "stream": "PPI",
+          "raw": 1.317990074927633,
+          "normalized": -0.8667,
+          "innovation": -0.4688,
+          "innovation_z": -2.0133,
+          "is_anomalous": "False"
+        },
+        {
+          "stream": "UNEMPLOYMENT_RATE",
+          "raw": 4.3,
+          "normalized": -0.0654,
+          "innovation": -0.1178,
+          "innovation_z": -0.3938,
+          "is_anomalous": "False"
+        },
+        {
+          "stream": "RETAIL_SALES",
+          "raw": 7712.0,
+          "normalized": 1.3035,
+          "innovation": 1.3201,
+          "innovation_z": 4.4978,
+          "is_anomalous": "True"
+        },
+        {
+          "stream": "HOUSING_STARTS",
+          "raw": 1282.0,
+          "normalized": -1.1838,
+          "innovation": -1.3505,
+          "innovation_z": -3.7526,
+          "is_anomalous": "True"
+        },
+        {
+          "stream": "HOME_PRICES",
+          "raw": 2.370671015728276,
+          "normalized": 0.5912,
+          "innovation": 0.6018,
+          "innovation_z": 2.5345,
+          "is_anomalous": "True"
+        },
+        {
+          "stream": "CONSUMER_CONFIDENCE",
+          "raw": 52.2,
+          "normalized": -0.9331,
+          "innovation": -1.0463,
+          "innovation_z": -2.2975,
+          "is_anomalous": "False"
+        },
+        {
+          "stream": "FED_FUNDS_RATE",
+          "raw": 4.33,
+          "normalized": 0.7823,
+          "innovation": 0.6948,
+          "innovation_z": 5.6423,
+          "is_anomalous": "True"
+        },
+        {
+          "stream": "10Y_YIELD",
+          "raw": 4.25,
+          "normalized": -0.3061,
+          "innovation": -0.3788,
+          "innovation_z": -2.0925,
+          "is_anomalous": "False"
+        },
+        {
+          "stream": "SP500",
+          "raw": 0.6279345716451974,
+          "normalized": 0.3153,
+          "innovation": 0.3592,
+          "innovation_z": 1.5602,
+          "is_anomalous": "False"
+        },
+        {
+          "stream": "OIL_PRICE",
+          "raw": 1.7539872177297182,
+          "normalized": 0.8699,
+          "innovation": 1.2848,
+          "innovation_z": 5.4116,
+          "is_anomalous": "True"
+        },
+        {
+          "stream": "GOLD_PRICE",
+          "raw": -2.916553616172506,
+          "normalized": -2.2093,
+          "innovation": -2.0068,
+          "innovation_z": -8.8069,
+          "is_anomalous": "True"
+        },
+        {
+          "stream": "BTC_USD",
+          "raw": 2.396577889618816,
+          "normalized": 0.7038,
+          "innovation": 0.6671,
+          "innovation_z": 2.3361,
+          "is_anomalous": "False"
+        }
+      ],
+      "triggers": [
+        {
+          "id": "trigger_19",
+          "trigger_type": "anomalous_data",
+          "action": "alert_user",
+          "branch_id": null,
+          "detail": "RETAIL_SALES z-score=+4.50 (observed=1.3035, predicted=-0.0166)",
+          "metadata": {
+            "stream_key": "RETAIL_SALES",
+            "innovation_zscore": 4.497833898214524,
+            "observed": 1.3035282876579446,
+            "predicted": -0.01657201654975775,
+            "innovation": 1.3201003042077024
+          },
+          "timestamp": "2026-03-11T08:57:27.112097+00:00",
+          "resolved": false
+        },
+        {
+          "id": "trigger_20",
+          "trigger_type": "anomalous_data",
+          "action": "alert_user",
+          "branch_id": null,
+          "detail": "HOUSING_STARTS z-score=-3.75 (observed=-1.1838, predicted=0.1667)",
+          "metadata": {
+            "stream_key": "HOUSING_STARTS",
+            "innovation_zscore": -3.752634225797011,
+            "observed": -1.1837927490546583,
+            "predicted": 0.16673254973790153,
+            "innovation": -1.3505252987925598
+          },
+          "timestamp": "2026-03-11T08:57:27.112360+00:00",
+          "resolved": false
+        }
+      ],
+      "probabilities": {
+        "soft_landing": 0.4406,
+        "stagflation": 0.5331,
+        "recession": 0.0263
+      },
+      "factors": {
+        "inflation_trend": -0.4251,
+        "growth_trend": -0.0312,
+        "labor_pressure": -0.0056,
+        "housing_momentum": 0.2203,
+        "financial_conditions": 0.2069,
+        "commodity_pressure": -0.2681,
+        "consumer_sentiment": 0.1296,
+        "policy_stance": 0.4079
+      }
+    },
+    {
+      "date": "2025-05-02",
+      "updates": [
+        {
+          "stream": "10Y_YIELD",
+          "raw": 4.33,
+          "normalized": 0.5111,
+          "innovation": 0.3858,
+          "innovation_z": 2.1278,
+          "is_anomalous": "False"
+        },
+        {
+          "stream": "SP500",
+          "raw": 1.461919110911272,
+          "normalized": 0.6703,
+          "innovation": 0.6039,
+          "innovation_z": 2.6222,
+          "is_anomalous": "True"
+        },
+        {
+          "stream": "OIL_PRICE",
+          "raw": -1.6166449969052803,
+          "normalized": -0.4984,
+          "innovation": -0.2179,
+          "innovation_z": -0.9163,
+          "is_anomalous": "False"
+        },
+        {
+          "stream": "GOLD_PRICE",
+          "raw": 0.6799232227835648,
+          "normalized": 0.2539,
+          "innovation": 0.564,
+          "innovation_z": 2.4739,
+          "is_anomalous": "False"
+        },
+        {
+          "stream": "BTC_USD",
+          "raw": 0.43198534363241065,
+          "normalized": 0.0786,
+          "innovation": 0.0049,
+          "innovation_z": 0.0171,
+          "is_anomalous": "False"
+        }
+      ],
+      "triggers": [],
+      "probabilities": {
+        "soft_landing": 0.4408,
+        "stagflation": 0.5329,
+        "recession": 0.0263
+      },
+      "factors": {
+        "inflation_trend": -0.4141,
+        "growth_trend": 0.0038,
+        "labor_pressure": 0.0017,
+        "housing_momentum": 0.2157,
+        "financial_conditions": 0.2441,
+        "commodity_pressure": -0.2319,
+        "consumer_sentiment": 0.1419,
+        "policy_stance": 0.3989
+      }
+    },
+    {
+      "date": "2025-05-05",
+      "updates": [
+        {
+          "stream": "10Y_YIELD",
+          "raw": 4.36,
+          "normalized": 0.8155,
+          "innovation": 0.6954,
+          "innovation_z": 3.7912,
+          "is_anomalous": "True"
+        },
+        {
+          "stream": "SP500",
+          "raw": -0.6402047029318447,
+          "normalized": -0.2335,
+          "innovation": -0.3095,
+          "innovation_z": -1.3385,
+          "is_anomalous": "False"
+        },
+        {
+          "stream": "OIL_PRICE",
+          "raw": -2.0101176331286186,
+          "normalized": -0.6555,
+          "innovation": -0.4649,
+          "innovation_z": -1.9301,
+          "is_anomalous": "False"
+        },
+        {
+          "stream": "GOLD_PRICE",
+          "raw": 2.4270706904035646,
+          "normalized": 1.4303,
+          "innovation": 1.7147,
+          "innovation_z": 7.4952,
+          "is_anomalous": "True"
+        },
+        {
+          "stream": "BTC_USD",
+          "raw": 0.4570714740087168,
+          "normalized": 0.0943,
+          "innovation": 0.0826,
+          "innovation_z": 0.289,
+          "is_anomalous": "False"
+        }
+      ],
+      "triggers": [],
+      "probabilities": {
+        "soft_landing": 0.4342,
+        "stagflation": 0.5391,
+        "recession": 0.0266
+      },
+      "factors": {
+        "inflation_trend": -0.3543,
+        "growth_trend": -0.0271,
+        "labor_pressure": -0.054,
+        "housing_momentum": 0.2022,
+        "financial_conditions": 0.1536,
+        "commodity_pressure": -0.1223,
+        "consumer_sentiment": 0.0584,
+        "policy_stance": 0.3901
+      }
+    },
+    {
+      "date": "2025-05-06",
+      "updates": [
+        {
+          "stream": "10Y_YIELD",
+          "raw": 4.3,
+          "normalized": 0.1958,
+          "innovation": 0.0772,
+          "innovation_z": 0.4218,
+          "is_anomalous": "False"
+        },
+        {
+          "stream": "SP500",
+          "raw": -0.7722985278391797,
+          "normalized": -0.2893,
+          "innovation": -0.3012,
+          "innovation_z": -1.3042,
+          "is_anomalous": "False"
+        },
+        {
+          "stream": "OIL_PRICE",
+          "raw": 3.3732316507285263,
+          "normalized": 1.5353,
+          "innovation": 1.7051,
+          "innovation_z": 7.1097,
+          "is_anomalous": "True"
+        },
+        {
+          "stream": "GOLD_PRICE",
+          "raw": 2.978185932439555,
+          "normalized": 1.7838,
+          "innovation": 1.9156,
+          "innovation_z": 8.3817,
+          "is_anomalous": "True"
+        },
+        {
+          "stream": "BTC_USD",
+          "raw": 2.145126552947202,
+          "normalized": 0.6349,
+          "innovation": 0.6604,
+          "innovation_z": 2.3109,
+          "is_anomalous": "False"
+        }
+      ],
+      "triggers": [],
+      "probabilities": {
+        "soft_landing": 0.434,
+        "stagflation": 0.5394,
+        "recession": 0.0266
+      },
+      "factors": {
+        "inflation_trend": -0.2337,
+        "growth_trend": -0.0227,
+        "labor_pressure": -0.0536,
+        "housing_momentum": 0.1816,
+        "financial_conditions": 0.0711,
+        "commodity_pressure": 0.2018,
+        "consumer_sentiment": 0.0586,
+        "policy_stance": 0.3443
+      }
+    },
+    {
+      "date": "2025-05-07",
+      "updates": [
+        {
+          "stream": "10Y_YIELD",
+          "raw": 4.26,
+          "normalized": -0.2162,
+          "innovation": -0.3214,
+          "innovation_z": -1.7592,
+          "is_anomalous": "False"
+        },
+        {
+          "stream": "SP500",
+          "raw": 0.4336938106710132,
+          "normalized": 0.232,
+          "innovation": 0.2698,
+          "innovation_z": 1.169,
+          "is_anomalous": "False"
+        },
+        {
+          "stream": "OIL_PRICE",
+          "raw": -1.7412533811229818,
+          "normalized": -0.5517,
+          "innovation": -0.6485,
+          "innovation_z": -2.7106,
+          "is_anomalous": "True"
+        },
+        {
+          "stream": "GOLD_PRICE",
+          "raw": -0.8832939557882191,
+          "normalized": -0.8155,
+          "innovation": -0.7338,
+          "innovation_z": -3.2126,
+          "is_anomalous": "True"
+        },
+        {
+          "stream": "BTC_USD",
+          "raw": 0.23715438242239512,
+          "normalized": 0.0187,
+          "innovation": 0.0182,
+          "innovation_z": 0.0638,
+          "is_anomalous": "False"
+        }
+      ],
+      "triggers": [],
+      "probabilities": {
+        "soft_landing": 0.4353,
+        "stagflation": 0.5382,
+        "recession": 0.0266
+      },
+      "factors": {
+        "inflation_trend": -0.2729,
+        "growth_trend": -0.025,
+        "labor_pressure": -0.0494,
+        "housing_momentum": 0.1802,
+        "financial_conditions": 0.0959,
+        "commodity_pressure": 0.0562,
+        "consumer_sentiment": 0.0635,
+        "policy_stance": 0.331
+      }
+    },
+    {
+      "date": "2025-05-08",
+      "updates": [
+        {
+          "stream": "10Y_YIELD",
+          "raw": 4.37,
+          "normalized": 0.9196,
+          "innovation": 0.8237,
+          "innovation_z": 4.5122,
+          "is_anomalous": "True"
+        },
+        {
+          "stream": "SP500",
+          "raw": 0.5783021147465641,
+          "normalized": 0.2937,
+          "innovation": 0.2546,
+          "innovation_z": 1.1037,
+          "is_anomalous": "False"
+        },
+        {
+          "stream": "OIL_PRICE",
+          "raw": 3.1194259420231814,
+          "normalized": 1.4213,
+          "innovation": 1.4065,
+          "innovation_z": 5.8863,
+          "is_anomalous": "True"
+        },
+        {
+          "stream": "GOLD_PRICE",
+          "raw": -2.5398132101867024,
+          "normalized": -1.9148,
+          "innovation": -1.8031,
+          "innovation_z": -7.8963,
+          "is_anomalous": "True"
+        },
+        {
+          "stream": "BTC_USD",
+          "raw": 6.2026403533745516,
+          "normalized": 1.9419,
+          "innovation": 1.8567,
+          "innovation_z": 6.4985,
+          "is_anomalous": "True"
+        }
+      ],
+      "triggers": [],
+      "probabilities": {
+        "soft_landing": 0.435,
+        "stagflation": 0.5385,
+        "recession": 0.0265
+      },
+      "factors": {
+        "inflation_trend": -0.2236,
+        "growth_trend": 0.0664,
+        "labor_pressure": -0.0293,
+        "housing_momentum": 0.2028,
+        "financial_conditions": 0.3665,
+        "commodity_pressure": 0.1563,
+        "consumer_sentiment": 0.0975,
+        "policy_stance": 0.3908
+      }
+    },
+    {
+      "date": "2025-05-09",
+      "updates": [
+        {
+          "stream": "10Y_YIELD",
+          "raw": 4.37,
+          "normalized": 0.9132,
+          "innovation": 0.6358,
+          "innovation_z": 3.4842,
+          "is_anomalous": "True"
+        },
+        {
+          "stream": "SP500",
+          "raw": -0.07117341348763633,
+          "normalized": 0.0103,
+          "innovation": -0.1657,
+          "innovation_z": -0.7186,
+          "is_anomalous": "False"
+        },
+        {
+          "stream": "OIL_PRICE",
+          "raw": 1.8358253241504912,
+          "normalized": 0.8867,
+          "innovation": 0.7556,
+          "innovation_z": 3.1647,
+          "is_anomalous": "True"
+        },
+        {
+          "stream": "GOLD_PRICE",
+          "raw": 1.1700918988177025,
+          "normalized": 0.5678,
+          "innovation": 0.7693,
+          "innovation_z": 3.3693,
+          "is_anomalous": "True"
+        },
+        {
+          "stream": "BTC_USD",
+          "raw": -0.2624571996284568,
+          "normalized": -0.1558,
+          "innovation": -0.2728,
+          "innovation_z": -0.955,
+          "is_anomalous": "False"
+        }
+      ],
+      "triggers": [],
+      "probabilities": {
+        "soft_landing": 0.4333,
+        "stagflation": 0.5401,
+        "recession": 0.0265
+      },
+      "factors": {
+        "inflation_trend": -0.1312,
+        "growth_trend": 0.0812,
+        "labor_pressure": -0.0268,
+        "housing_momentum": 0.205,
+        "financial_conditions": 0.3567,
+        "commodity_pressure": 0.2614,
+        "consumer_sentiment": 0.0715,
+        "policy_stance": 0.4073
+      }
+    },
+    {
+      "date": "2025-05-12",
+      "updates": [
+        {
+          "stream": "10Y_YIELD",
+          "raw": 4.45,
+          "normalized": 1.7333,
+          "innovation": 1.4424,
+          "innovation_z": 7.827,
+          "is_anomalous": "True"
+        },
+        {
+          "stream": "SP500",
+          "raw": 3.2039976677020814,
+          "normalized": 1.4384,
+          "innovation": 1.2452,
+          "innovation_z": 5.3814,
+          "is_anomalous": "True"
+        },
+        {
+          "stream": "OIL_PRICE",
+          "raw": 1.5125933600171835,
+          "normalized": 0.75,
+          "innovation": 0.5132,
+          "innovation_z": 2.1274,
+          "is_anomalous": "False"
+        },
+        {
+          "stream": "GOLD_PRICE",
+          "raw": -3.521122337030222,
+          "normalized": -2.5402,
+          "innovation": -2.28,
+          "innovation_z": -9.9562,
+          "is_anomalous": "True"
+        },
+        {
+          "stream": "BTC_USD",
+          "raw": -1.2501714607270615,
+          "normalized": -0.4763,
+          "innovation": -0.7297,
+          "innovation_z": -2.552,
+          "is_anomalous": "True"
+        }
+      ],
+      "triggers": [],
+      "probabilities": {
+        "soft_landing": 0.432,
+        "stagflation": 0.5412,
+        "recession": 0.0267
+      },
+      "factors": {
+        "inflation_trend": -0.0514,
+        "growth_trend": 0.1987,
+        "labor_pressure": -0.0249,
+        "housing_momentum": 0.2593,
+        "financial_conditions": 0.676,
+        "commodity_pressure": 0.1442,
+        "consumer_sentiment": 0.0647,
+        "policy_stance": 0.5243
+      }
+    },
+    {
+      "date": "2025-05-13",
+      "updates": [
+        {
+          "stream": "10Y_YIELD",
+          "raw": 4.49,
+          "normalized": 2.1174,
+          "innovation": 1.5675,
+          "innovation_z": 8.5377,
+          "is_anomalous": "True"
+        },
+        {
+          "stream": "SP500",
+          "raw": 0.7222059020245977,
+          "normalized": 0.3438,
+          "innovation": -0.0374,
+          "innovation_z": -0.1617,
+          "is_anomalous": "False"
+        },
+        {
+          "stream": "OIL_PRICE",
+          "raw": 2.7385844879859715,
+          "normalized": 1.2419,
+          "innovation": 0.9916,
+          "innovation_z": 4.1305,
+          "is_anomalous": "True"
+        },
+        {
+          "stream": "GOLD_PRICE",
+          "raw": 0.6284573623097742,
+          "normalized": 0.2214,
+          "innovation": 0.6063,
+          "innovation_z": 2.651,
+          "is_anomalous": "True"
+        },
+        {
+          "stream": "BTC_USD",
+          "raw": 1.3111031807523907,
+          "normalized": 0.3543,
+          "innovation": 0.0839,
+          "innovation_z": 0.2936,
+          "is_anomalous": "False"
+        }
+      ],
+      "triggers": [],
+      "probabilities": {
+        "soft_landing": 0.4317,
+        "stagflation": 0.5415,
+        "recession": 0.0268
+      },
+      "factors": {
+        "inflation_trend": 0.0958,
+        "growth_trend": 0.2588,
+        "labor_pressure": -0.008,
+        "housing_momentum": 0.2861,
+        "financial_conditions": 0.7766,
+        "commodity_pressure": 0.294,
+        "consumer_sentiment": 0.0519,
+        "policy_stance": 0.6018
+      }
+    },
+    {
+      "date": "2025-05-14",
+      "updates": [
+        {
+          "stream": "10Y_YIELD",
+          "raw": 4.53,
+          "normalized": 2.4791,
+          "innovation": 1.7931,
+          "innovation_z": 9.7875,
+          "is_anomalous": "True"
+        },
+        {
+          "stream": "SP500",
+          "raw": 0.10238912422760539,
+          "normalized": 0.0723,
+          "innovation": -0.3638,
+          "innovation_z": -1.5757,
+          "is_anomalous": "False"
+        },
+        {
+          "stream": "OIL_PRICE",
+          "raw": -0.8200592311148426,
+          "normalized": -0.2079,
+          "innovation": -0.6304,
+          "innovation_z": -2.6331,
+          "is_anomalous": "True"
+        },
+        {
+          "stream": "GOLD_PRICE",
+          "raw": -1.8344612393290654,
+          "normalized": -1.3831,
+          "innovation": -0.9291,
+          "innovation_z": -4.0652,
+          "is_anomalous": "True"
+        },
+        {
+          "stream": "BTC_USD",
+          "raw": -0.6070027639406428,
+          "normalized": -0.2696,
+          "innovation": -0.5839,
+          "innovation_z": -2.0434,
+          "is_anomalous": "False"
+        }
+      ],
+      "triggers": [],
+      "probabilities": {
+        "soft_landing": 0.4313,
+        "stagflation": 0.5419,
+        "recession": 0.0267
+      },
+      "factors": {
+        "inflation_trend": 0.1487,
+        "growth_trend": 0.2888,
+        "labor_pressure": -0.0007,
+        "housing_momentum": 0.3265,
+        "financial_conditions": 0.9234,
+        "commodity_pressure": 0.1477,
+        "consumer_sentiment": 0.0026,
+        "policy_stance": 0.7396
+      }
+    },
+    {
+      "date": "2025-05-15",
+      "updates": [
+        {
+          "stream": "10Y_YIELD",
+          "raw": 4.45,
+          "normalized": 1.6192,
+          "innovation": 0.7914,
+          "innovation_z": 4.3254,
+          "is_anomalous": "True"
+        },
+        {
+          "stream": "SP500",
+          "raw": 0.4123817438757677,
+          "normalized": 0.2076,
+          "innovation": -0.2093,
+          "innovation_z": -0.9069,
+          "is_anomalous": "False"
+        },
+        {
+          "stream": "OIL_PRICE",
+          "raw": -2.4526397124652957,
+          "normalized": -0.8692,
+          "innovation": -1.1718,
+          "innovation_z": -4.9021,
+          "is_anomalous": "True"
+        },
+        {
+          "stream": "GOLD_PRICE",
+          "raw": 1.2277391287757005,
+          "normalized": 0.6193,
+          "innovation": 1.1591,
+          "innovation_z": 5.0733,
+          "is_anomalous": "True"
+        },
+        {
+          "stream": "BTC_USD",
+          "raw": 0.19801487371228355,
+          "normalized": -0.0064,
+          "innovation": -0.2729,
+          "innovation_z": -0.955,
+          "is_anomalous": "False"
+        }
+      ],
+      "triggers": [],
+      "probabilities": {
+        "soft_landing": 0.4303,
+        "stagflation": 0.543,
+        "recession": 0.0267
+      },
+      "factors": {
+        "inflation_trend": 0.1756,
+        "growth_trend": 0.2641,
+        "labor_pressure": 0.0064,
+        "housing_momentum": 0.3443,
+        "financial_conditions": 0.8441,
+        "commodity_pressure": 0.0325,
+        "consumer_sentiment": -0.0112,
+        "policy_stance": 0.7562
+      }
+    },
+    {
+      "date": "2025-05-16",
+      "updates": [
+        {
+          "stream": "10Y_YIELD",
+          "raw": 4.43,
+          "normalized": 1.3996,
+          "innovation": 0.5998,
+          "innovation_z": 3.2811,
+          "is_anomalous": "True"
+        },
+        {
+          "stream": "SP500",
+          "raw": 0.6980849368100189,
+          "normalized": 0.3322,
+          "innovation": -0.0243,
+          "innovation_z": -0.1055,
+          "is_anomalous": "False"
+        },
+        {
+          "stream": "OIL_PRICE",
+          "raw": 1.4020094966139727,
+          "normalized": 0.7014,
+          "innovation": 0.498,
+          "innovation_z": 2.0853,
+          "is_anomalous": "False"
+        },
+        {
+          "stream": "GOLD_PRICE",
+          "raw": -1.2088782158285714,
+          "normalized": -0.9689,
+          "innovation": -0.4971,
+          "innovation_z": -2.1764,
+          "is_anomalous": "False"
+        },
+        {
+          "stream": "BTC_USD",
+          "raw": -0.2464381118651062,
+          "normalized": -0.1516,
+          "innovation": -0.42,
+          "innovation_z": -1.47,
+          "is_anomalous": "False"
+        }
+      ],
+      "triggers": [],
+      "probabilities": {
+        "soft_landing": 0.4294,
+        "stagflation": 0.5439,
+        "recession": 0.0267
+      },
+      "factors": {
+        "inflation_trend": 0.2081,
+        "growth_trend": 0.2733,
+        "labor_pressure": 0.0168,
+        "housing_momentum": 0.3692,
+        "financial_conditions": 0.862,
+        "commodity_pressure": 0.0739,
+        "consumer_sentiment": -0.0274,
+        "policy_stance": 0.7933
+      }
+    },
+    {
+      "date": "2025-05-18",
+      "updates": [
+        {
+          "stream": "BTC_USD",
+          "raw": 3.1055414958406478,
+          "normalized": 0.9537,
+          "innovation": 0.7512,
+          "innovation_z": 2.6248,
+          "is_anomalous": "True"
+        }
+      ],
+      "triggers": [],
+      "probabilities": {
+        "soft_landing": 0.4287,
+        "stagflation": 0.5445,
+        "recession": 0.0268
+      },
+      "factors": {
+        "inflation_trend": 0.2043,
+        "growth_trend": 0.2326,
+        "labor_pressure": 0.0166,
+        "housing_momentum": 0.4005,
+        "financial_conditions": 0.7585,
+        "commodity_pressure": 0.0536,
+        "consumer_sentiment": -0.0172,
+        "policy_stance": 0.7601
+      }
+    },
+    {
+      "date": "2025-05-19",
+      "updates": [
+        {
+          "stream": "10Y_YIELD",
+          "raw": 4.46,
+          "normalized": 1.6791,
+          "innovation": 0.9139,
+          "innovation_z": 4.9515,
+          "is_anomalous": "True"
+        },
+        {
+          "stream": "SP500",
+          "raw": 0.08757295660482738,
+          "normalized": 0.0618,
+          "innovation": -0.2709,
+          "innovation_z": -1.1706,
+          "is_anomalous": "False"
+        },
+        {
+          "stream": "OIL_PRICE",
+          "raw": 0.3195352579058796,
+          "normalized": 0.2571,
+          "innovation": 0.0265,
+          "innovation_z": 0.11,
+          "is_anomalous": "False"
+        },
+        {
+          "stream": "GOLD_PRICE",
+          "raw": 1.4631561796196542,
+          "normalized": 0.7768,
+          "innovation": 1.2426,
+          "innovation_z": 5.4245,
+          "is_anomalous": "True"
+        },
+        {
+          "stream": "BTC_USD",
+          "raw": -0.7920998372646527,
+          "normalized": -0.3375,
+          "innovation": -0.5396,
+          "innovation_z": -1.887,
+          "is_anomalous": "False"
+        }
+      ],
+      "triggers": [],
+      "probabilities": {
+        "soft_landing": 0.4274,
+        "stagflation": 0.5459,
+        "recession": 0.0268
+      },
+      "factors": {
+        "inflation_trend": 0.2902,
+        "growth_trend": 0.2287,
+        "labor_pressure": 0.0207,
+        "housing_momentum": 0.408,
+        "financial_conditions": 0.7103,
+        "commodity_pressure": 0.1164,
+        "consumer_sentiment": -0.0402,
+        "policy_stance": 0.7864
+      }
+    },
+    {
+      "date": "2025-05-20",
+      "updates": [
+        {
+          "stream": "10Y_YIELD",
+          "raw": 4.48,
+          "normalized": 1.8504,
+          "innovation": 1.0702,
+          "innovation_z": 5.8219,
+          "is_anomalous": "True"
+        },
+        {
+          "stream": "SP500",
+          "raw": -0.38877770695725783,
+          "normalized": -0.1491,
+          "innovation": -0.4526,
+          "innovation_z": -1.9586,
+          "is_anomalous": "False"
+        },
+        {
+          "stream": "OIL_PRICE",
+          "raw": -0.20758051911769232,
+          "normalized": 0.0409,
+          "innovation": -0.2561,
+          "innovation_z": -1.0669,
+          "is_anomalous": "False"
+        },
+        {
+          "stream": "GOLD_PRICE",
+          "raw": 1.5793404801633752,
+          "normalized": 0.8477,
+          "innovation": 1.2898,
+          "innovation_z": 5.6378,
+          "is_anomalous": "True"
+        },
+        {
+          "stream": "BTC_USD",
+          "raw": 1.1157568710076757,
+          "normalized": 0.2947,
+          "innovation": 0.1242,
+          "innovation_z": 0.4344,
+          "is_anomalous": "False"
+        }
+      ],
+      "triggers": [],
+      "probabilities": {
+        "soft_landing": 0.4261,
+        "stagflation": 0.5471,
+        "recession": 0.0267
+      },
+      "factors": {
+        "inflation_trend": 0.3711,
+        "growth_trend": 0.223,
+        "labor_pressure": 0.0248,
+        "housing_momentum": 0.4159,
+        "financial_conditions": 0.6898,
+        "commodity_pressure": 0.1308,
+        "consumer_sentiment": -0.0529,
+        "policy_stance": 0.82
+      }
+    },
+    {
+      "date": "2025-05-21",
+      "updates": [
+        {
+          "stream": "10Y_YIELD",
+          "raw": 4.58,
+          "normalized": 2.7881,
+          "innovation": 1.9804,
+          "innovation_z": 10.7994,
+          "is_anomalous": "True"
+        },
+        {
+          "stream": "SP500",
+          "raw": -1.6266719267758898,
+          "normalized": -0.6981,
+          "innovation": -1.0281,
+          "innovation_z": -4.4523,
+          "is_anomalous": "True"
+        },
+        {
+          "stream": "OIL_PRICE",
+          "raw": -1.5951384222085634,
+          "normalized": -0.5279,
+          "innovation": -0.8795,
+          "innovation_z": -3.6735,
+          "is_anomalous": "True"
+        },
+        {
+          "stream": "GOLD_PRICE",
+          "raw": 0.8801804902702907,
+          "normalized": 0.386,
+          "innovation": 0.8734,
+          "innovation_z": 3.8206,
+          "is_anomalous": "True"
+        },
+        {
+          "stream": "BTC_USD",
+          "raw": 2.6675054496876065,
+          "normalized": 0.8084,
+          "innovation": 0.6384,
+          "innovation_z": 2.234,
+          "is_anomalous": "False"
+        }
+      ],
+      "triggers": [],
+      "probabilities": {
+        "soft_landing": 0.4257,
+        "stagflation": 0.5475,
+        "recession": 0.0268
+      },
+      "factors": {
+        "inflation_trend": 0.4586,
+        "growth_trend": 0.2242,
+        "labor_pressure": 0.0228,
+        "housing_momentum": 0.4348,
+        "financial_conditions": 0.7751,
+        "commodity_pressure": 0.0532,
+        "consumer_sentiment": -0.0836,
+        "policy_stance": 0.9316
+      }
+    },
+    {
+      "date": "2025-05-22",
+      "updates": [
+        {
+          "stream": "10Y_YIELD",
+          "raw": 4.54,
+          "normalized": 2.3208,
+          "innovation": 1.4048,
+          "innovation_z": 7.6717,
+          "is_anomalous": "True"
+        },
+        {
+          "stream": "SP500",
+          "raw": -0.04449700224211693,
+          "normalized": 0.0097,
+          "innovation": -0.2969,
+          "innovation_z": -1.2866,
+          "is_anomalous": "False"
+        },
+        {
+          "stream": "OIL_PRICE",
+          "raw": -0.6027531981941245,
+          "normalized": -0.1175,
+          "innovation": -0.4217,
+          "innovation_z": -1.7642,
+          "is_anomalous": "False"
+        },
+        {
+          "stream": "GOLD_PRICE",
+          "raw": -0.5150277910234424,
+          "normalized": -0.5289,
+          "innovation": -0.0084,
+          "innovation_z": -0.0367,
+          "is_anomalous": "False"
+        },
+        {
+          "stream": "BTC_USD",
+          "raw": 1.802796394236439,
+          "normalized": 0.516,
+          "innovation": 0.3101,
+          "innovation_z": 1.0851,
+          "is_anomalous": "False"
+        }
+      ],
+      "triggers": [],
+      "probabilities": {
+        "soft_landing": 0.4257,
+        "stagflation": 0.5476,
+        "recession": 0.0268
+      },
+      "factors": {
+        "inflation_trend": 0.4999,
+        "growth_trend": 0.2448,
+        "labor_pressure": 0.0311,
+        "housing_momentum": 0.4587,
+        "financial_conditions": 0.872,
+        "commodity_pressure": 0.0037,
+        "consumer_sentiment": -0.0869,
+        "policy_stance": 1.0108
+      }
+    },
+    {
+      "date": "2025-05-23",
+      "updates": [
+        {
+          "stream": "10Y_YIELD",
+          "raw": 4.51,
+          "normalized": 1.9871,
+          "innovation": 0.9795,
+          "innovation_z": 5.3541,
+          "is_anomalous": "True"
+        },
+        {
+          "stream": "SP500",
+          "raw": -0.6730899591473138,
+          "normalized": -0.271,
+          "innovation": -0.5892,
+          "innovation_z": -2.5537,
+          "is_anomalous": "True"
+        },
+        {
+          "stream": "OIL_PRICE",
+          "raw": 0.5377638928633733,
+          "normalized": 0.3534,
+          "innovation": 0.0846,
+          "innovation_z": 0.3544,
+          "is_anomalous": "False"
+        },
+        {
+          "stream": "GOLD_PRICE",
+          "raw": 2.1425434503964738,
+          "normalized": 1.2181,
+          "innovation": 1.751,
+          "innovation_z": 7.6648,
+          "is_anomalous": "True"
+        },
+        {
+          "stream": "BTC_USD",
+          "raw": -4.006256233899459,
+          "normalized": -1.4221,
+          "innovation": -1.5954,
+          "innovation_z": -5.584,
+          "is_anomalous": "True"
+        }
+      ],
+      "triggers": [],
+      "probabilities": {
+        "soft_landing": 0.4243,
+        "stagflation": 0.549,
+        "recession": 0.0267
+      },
+      "factors": {
+        "inflation_trend": 0.5929,
+        "growth_trend": 0.214,
+        "labor_pressure": 0.0227,
+        "housing_momentum": 0.4594,
+        "financial_conditions": 0.7496,
+        "commodity_pressure": 0.0906,
+        "consumer_sentiment": -0.1412,
+        "policy_stance": 1.0351
+      }
+    },
+    {
+      "date": "2025-05-24",
+      "updates": [
+        {
+          "stream": "INITIAL_CLAIMS",
+          "raw": 239000.0,
+          "normalized": 2.1254,
+          "innovation": 2.1675,
+          "innovation_z": 6.6246,
+          "is_anomalous": "True"
+        },
+        {
+          "stream": "BTC_USD",
+          "raw": 0.4680702474076876,
+          "normalized": 0.0793,
+          "innovation": -0.0343,
+          "innovation_z": -0.12,
+          "is_anomalous": "False"
+        }
+      ],
+      "triggers": [],
+      "probabilities": {
+        "soft_landing": 0.4198,
+        "stagflation": 0.5532,
+        "recession": 0.027
+      },
+      "factors": {
+        "inflation_trend": 0.589,
+        "growth_trend": 0.1287,
+        "labor_pressure": -0.1425,
+        "housing_momentum": 0.4786,
+        "financial_conditions": 0.7279,
+        "commodity_pressure": 0.0795,
+        "consumer_sentiment": -0.1809,
+        "policy_stance": 1.0155
+      }
+    },
+    {
+      "date": "2025-05-27",
+      "updates": [
+        {
+          "stream": "10Y_YIELD",
+          "raw": 4.43,
+          "normalized": 1.215,
+          "innovation": 0.3264,
+          "innovation_z": 1.7602,
+          "is_anomalous": "False"
+        },
+        {
+          "stream": "SP500",
+          "raw": 2.0252580802184372,
+          "normalized": 0.9393,
+          "innovation": 0.798,
+          "innovation_z": 3.4438,
+          "is_anomalous": "True"
+        },
+        {
+          "stream": "OIL_PRICE",
+          "raw": -1.0455893316601546,
+          "normalized": -0.3034,
+          "innovation": -0.5878,
+          "innovation_z": -2.4274,
+          "is_anomalous": "False"
+        },
+        {
+          "stream": "GOLD_PRICE",
+          "raw": -1.9362124406121533,
+          "normalized": -1.4659,
+          "innovation": -1.0108,
+          "innovation_z": -4.4069,
+          "is_anomalous": "True"
+        },
+        {
+          "stream": "BTC_USD",
+          "raw": -0.408109657520394,
+          "normalized": -0.2172,
+          "innovation": -0.3806,
+          "innovation_z": -1.3305,
+          "is_anomalous": "False"
+        }
+      ],
+      "triggers": [],
+      "probabilities": {
+        "soft_landing": 0.4202,
+        "stagflation": 0.5529,
+        "recession": 0.027
+      },
+      "factors": {
+        "inflation_trend": 0.5,
+        "growth_trend": 0.1569,
+        "labor_pressure": -0.0964,
+        "housing_momentum": 0.5081,
+        "financial_conditions": 0.7748,
+        "commodity_pressure": -0.0806,
+        "consumer_sentiment": -0.1132,
+        "policy_stance": 1.0018
+      }
+    },
+    {
+      "date": "2025-05-28",
+      "updates": [
+        {
+          "stream": "10Y_YIELD",
+          "raw": 4.47,
+          "normalized": 1.5707,
+          "innovation": 0.6315,
+          "innovation_z": 3.4249,
+          "is_anomalous": "True"
+        },
+        {
+          "stream": "SP500",
+          "raw": -0.5586802576444734,
+          "normalized": -0.226,
+          "innovation": -0.4527,
+          "innovation_z": -1.9576,
+          "is_anomalous": "False"
+        },
+        {
+          "stream": "OIL_PRICE",
+          "raw": 1.548145914998551,
+          "normalized": 0.7751,
+          "innovation": 0.6,
+          "innovation_z": 2.494,
+          "is_anomalous": "False"
+        },
+        {
+          "stream": "GOLD_PRICE",
+          "raw": -0.16685124798728682,
+          "normalized": -0.2941,
+          "innovation": 0.1826,
+          "innovation_z": 0.7976,
+          "is_anomalous": "False"
+        },
+        {
+          "stream": "BTC_USD",
+          "raw": -1.0999457493792042,
+          "normalized": -0.4494,
+          "innovation": -0.5961,
+          "innovation_z": -2.0849,
+          "is_anomalous": "False"
+        }
+      ],
+      "triggers": [],
+      "probabilities": {
+        "soft_landing": 0.4195,
+        "stagflation": 0.5536,
+        "recession": 0.027
+      },
+      "factors": {
+        "inflation_trend": 0.5547,
+        "growth_trend": 0.1524,
+        "labor_pressure": -0.0951,
+        "housing_momentum": 0.5156,
+        "financial_conditions": 0.7562,
+        "commodity_pressure": 0.0274,
+        "consumer_sentiment": -0.1447,
+        "policy_stance": 1.0345
+      }
+    },
+    {
+      "date": "2025-05-29",
+      "updates": [
+        {
+          "stream": "10Y_YIELD",
+          "raw": 4.43,
+          "normalized": 1.1851,
+          "innovation": 0.2236,
+          "innovation_z": 1.2169,
+          "is_anomalous": "False"
+        },
+        {
+          "stream": "SP500",
+          "raw": 0.40031708706317415,
+          "normalized": 0.2065,
+          "innovation": 0.0286,
+          "innovation_z": 0.1239,
+          "is_anomalous": "False"
+        },
+        {
+          "stream": "OIL_PRICE",
+          "raw": -1.4660655724199616,
+          "normalized": -0.4835,
+          "innovation": -0.7412,
+          "innovation_z": -3.0924,
+          "is_anomalous": "True"
+        },
+        {
+          "stream": "GOLD_PRICE",
+          "raw": 0.7109715550713264,
+          "normalized": 0.2819,
+          "innovation": 0.7673,
+          "innovation_z": 3.3545,
+          "is_anomalous": "True"
+        },
+        {
+          "stream": "BTC_USD",
+          "raw": -2.0245528009254556,
+          "normalized": -0.7598,
+          "innovation": -0.8747,
+          "innovation_z": -3.0603,
+          "is_anomalous": "True"
+        }
+      ],
+      "triggers": [],
+      "probabilities": {
+        "soft_landing": 0.4192,
+        "stagflation": 0.5538,
+        "recession": 0.027
+      },
+      "factors": {
+        "inflation_trend": 0.542,
+        "growth_trend": 0.1287,
+        "labor_pressure": -0.0905,
+        "housing_momentum": 0.5134,
+        "financial_conditions": 0.6692,
+        "commodity_pressure": -0.038,
+        "consumer_sentiment": -0.1505,
+        "policy_stance": 1.0171
+      }
+    },
+    {
+      "date": "2025-05-31",
+      "updates": [
+        {
+          "stream": "INITIAL_CLAIMS",
+          "raw": 246000.0,
+          "normalized": 3.096,
+          "innovation": 3.0386,
+          "innovation_z": 9.283,
+          "is_anomalous": "True"
+        },
+        {
+          "stream": "BTC_USD",
+          "raw": 0.6130518270315466,
+          "normalized": 0.1426,
+          "innovation": 0.0927,
+          "innovation_z": 0.3241,
+          "is_anomalous": "False"
+        }
+      ],
+      "triggers": [],
+      "probabilities": {
+        "soft_landing": 0.4191,
+        "stagflation": 0.554,
+        "recession": 0.027
+      },
+      "factors": {
+        "inflation_trend": 0.5068,
+        "growth_trend": 0.0061,
+        "labor_pressure": -0.324,
+        "housing_momentum": 0.5328,
+        "financial_conditions": 0.6415,
+        "commodity_pressure": -0.0506,
+        "consumer_sentiment": -0.2228,
+        "policy_stance": 0.9992
+      }
+    },
+    {
+      "date": "2025-06-01",
+      "updates": [
+        {
+          "stream": "US_CPI_YOY",
+          "raw": 2.680453865910226,
+          "normalized": 0.2657,
+          "innovation": -0.3036,
+          "innovation_z": -1.5823,
+          "is_anomalous": "False"
+        },
+        {
+          "stream": "CORE_CPI",
+          "raw": 2.910895442696071,
+          "normalized": 0.4566,
+          "innovation": -0.1008,
+          "innovation_z": -0.5324,
+          "is_anomalous": "False"
+        },
+        {
+          "stream": "PPI",
+          "raw": 1.7884914463452528,
+          "normalized": -0.3798,
+          "innovation": -0.5955,
+          "innovation_z": -2.5512,
+          "is_anomalous": "True"
+        },
+        {
+          "stream": "UNEMPLOYMENT_RATE",
+          "raw": 4.1,
+          "normalized": -1.8335,
+          "innovation": -2.067,
+          "innovation_z": -6.9243,
+          "is_anomalous": "True"
+        },
+        {
+          "stream": "RETAIL_SALES",
+          "raw": 7357.0,
+          "normalized": 0.2505,
+          "innovation": 0.243,
+          "innovation_z": 0.8277,
+          "is_anomalous": "False"
+        },
+        {
+          "stream": "HOUSING_STARTS",
+          "raw": 1382.0,
+          "normalized": 0.6776,
+          "innovation": 0.31,
+          "innovation_z": 0.8611,
+          "is_anomalous": "False"
+        },
+        {
+          "stream": "HOME_PRICES",
+          "raw": 1.9400553335382709,
+          "normalized": 0.0098,
+          "innovation": -0.4346,
+          "innovation_z": -1.8302,
+          "is_anomalous": "False"
+        },
+        {
+          "stream": "CONSUMER_CONFIDENCE",
+          "raw": 60.7,
+          "normalized": 1.4561,
+          "innovation": 1.5466,
+          "innovation_z": 3.3962,
+          "is_anomalous": "True"
+        },
+        {
+          "stream": "FED_FUNDS_RATE",
+          "raw": 4.33,
+          "normalized": 0.7774,
+          "innovation": -0.2877,
+          "innovation_z": -2.3218,
+          "is_anomalous": "False"
+        },
+        {
+          "stream": "BTC_USD",
+          "raw": 0.9643965283822334,
+          "normalized": 0.2617,
+          "innovation": 0.1697,
+          "innovation_z": 0.5933,
+          "is_anomalous": "False"
+        }
+      ],
+      "triggers": [
+        {
+          "id": "trigger_21",
+          "trigger_type": "anomalous_data",
+          "action": "alert_user",
+          "branch_id": null,
+          "detail": "CONSUMER_CONFIDENCE z-score=+3.40 (observed=1.4561, predicted=-0.0906)",
+          "metadata": {
+            "stream_key": "CONSUMER_CONFIDENCE",
+            "innovation_zscore": 3.396240240279513,
+            "observed": 1.4560869663469684,
+            "predicted": -0.0905554045233383,
+            "innovation": 1.5466423708703068
+          },
+          "timestamp": "2026-03-11T08:57:27.165191+00:00",
+          "resolved": false
+        }
+      ],
+      "probabilities": {
+        "soft_landing": 0.4203,
+        "stagflation": 0.5527,
+        "recession": 0.027
+      },
+      "factors": {
+        "inflation_trend": 0.3456,
+        "growth_trend": 0.1225,
+        "labor_pressure": -0.0648,
+        "housing_momentum": 0.464,
+        "financial_conditions": 0.568,
+        "commodity_pressure": -0.1191,
+        "consumer_sentiment": -0.0663,
+        "policy_stance": 0.8884
+      }
+    },
+    {
+      "date": "2025-06-02",
+      "updates": [
+        {
+          "stream": "10Y_YIELD",
+          "raw": 4.46,
+          "normalized": 1.4402,
+          "innovation": 0.693,
+          "innovation_z": 3.7969,
+          "is_anomalous": "True"
+        },
+        {
+          "stream": "SP500",
+          "raw": 0.4093651490626028,
+          "normalized": 0.2104,
+          "innovation": 0.0479,
+          "innovation_z": 0.2072,
+          "is_anomalous": "False"
+        },
+        {
+          "stream": "OIL_PRICE",
+          "raw": 2.806119605402807,
+          "normalized": 1.306,
+          "innovation": 1.221,
+          "innovation_z": 5.0911,
+          "is_anomalous": "True"
+        },
+        {
+          "stream": "GOLD_PRICE",
+          "raw": 2.453766635895122,
+          "normalized": 1.434,
+          "innovation": 1.8277,
+          "innovation_z": 7.9983,
+          "is_anomalous": "True"
+        },
+        {
+          "stream": "BTC_USD",
+          "raw": 0.21692037754339633,
+          "normalized": 0.0051,
+          "innovation": -0.0859,
+          "innovation_z": -0.3006,
+          "is_anomalous": "False"
+        }
+      ],
+      "triggers": [],
+      "probabilities": {
+        "soft_landing": 0.4201,
+        "stagflation": 0.5529,
+        "recession": 0.027
+      },
+      "factors": {
+        "inflation_trend": 0.4282,
+        "growth_trend": 0.1463,
+        "labor_pressure": -0.0561,
+        "housing_momentum": 0.4485,
+        "financial_conditions": 0.5318,
+        "commodity_pressure": 0.1441,
+        "consumer_sentiment": -0.0605,
+        "policy_stance": 0.8686
+      }
+    },
+    {
+      "date": "2025-06-03",
+      "updates": [
+        {
+          "stream": "10Y_YIELD",
+          "raw": 4.46,
+          "normalized": 1.4235,
+          "innovation": 0.6661,
+          "innovation_z": 3.6541,
+          "is_anomalous": "True"
+        },
+        {
+          "stream": "SP500",
+          "raw": 0.5783533535368979,
+          "normalized": 0.2865,
+          "innovation": 0.1313,
+          "innovation_z": 0.569,
+          "is_anomalous": "False"
+        },
+        {
+          "stream": "OIL_PRICE",
+          "raw": 1.413506243041926,
+          "normalized": 0.7109,
+          "innovation": 0.4006,
+          "innovation_z": 1.6742,
+          "is_anomalous": "False"
+        },
+        {
+          "stream": "GOLD_PRICE",
+          "raw": -0.6070768059979941,
+          "normalized": -0.5893,
+          "innovation": -0.256,
+          "innovation_z": -1.1212,
+          "is_anomalous": "False"
+        },
+        {
+          "stream": "BTC_USD",
+          "raw": -0.42501980559301383,
+          "normalized": -0.2152,
+          "innovation": -0.3389,
+          "innovation_z": -1.186,
+          "is_anomalous": "False"
+        }
+      ],
+      "triggers": [],
+      "probabilities": {
+        "soft_landing": 0.4199,
+        "stagflation": 0.5531,
+        "recession": 0.027
+      },
+      "factors": {
+        "inflation_trend": 0.4553,
+        "growth_trend": 0.1757,
+        "labor_pressure": -0.0455,
+        "housing_momentum": 0.4517,
+        "financial_conditions": 0.6003,
+        "commodity_pressure": 0.1671,
+        "consumer_sentiment": -0.0655,
+        "policy_stance": 0.8886
+      }
+    },
+    {
+      "date": "2025-06-04",
+      "updates": [
+        {
+          "stream": "10Y_YIELD",
+          "raw": 4.37,
+          "normalized": 0.5933,
+          "innovation": -0.2177,
+          "innovation_z": -1.1949,
+          "is_anomalous": "False"
+        },
+        {
+          "stream": "SP500",
+          "raw": 0.007368474471916267,
+          "normalized": 0.0245,
+          "innovation": -0.1145,
+          "innovation_z": -0.4966,
+          "is_anomalous": "False"
+        },
+        {
+          "stream": "OIL_PRICE",
+          "raw": -0.8870664547419721,
+          "normalized": -0.2561,
+          "innovation": -0.5706,
+          "innovation_z": -2.388,
+          "is_anomalous": "False"
+        },
+        {
+          "stream": "GOLD_PRICE",
+          "raw": 0.6930750112583484,
+          "normalized": 0.2683,
+          "innovation": 0.6069,
+          "innovation_z": 2.6587,
+          "is_anomalous": "True"
+        },
+        {
+          "stream": "BTC_USD",
+          "raw": -0.6666084188030525,
+          "normalized": -0.2976,
+          "innovation": -0.3776,
+          "innovation_z": -1.3216,
+          "is_anomalous": "False"
+        }
+      ],
+      "triggers": [],
+      "probabilities": {
+        "soft_landing": 0.4199,
+        "stagflation": 0.5531,
+        "recession": 0.027
+      },
+      "factors": {
+        "inflation_trend": 0.4397,
+        "growth_trend": 0.1342,
+        "labor_pressure": -0.0414,
+        "housing_momentum": 0.4467,
+        "financial_conditions": 0.494,
+        "commodity_pressure": 0.0937,
+        "consumer_sentiment": -0.0687,
+        "policy_stance": 0.8535
+      }
+    },
+    {
+      "date": "2025-06-05",
+      "updates": [
+        {
+          "stream": "10Y_YIELD",
+          "raw": 4.4,
+          "normalized": 0.8622,
+          "innovation": 0.1281,
+          "innovation_z": 0.7033,
+          "is_anomalous": "False"
+        },
+        {
+          "stream": "SP500",
+          "raw": -0.5291357978698112,
+          "normalized": -0.2216,
+          "innovation": -0.3247,
+          "innovation_z": -1.4082,
+          "is_anomalous": "False"
+        },
+        {
+          "stream": "OIL_PRICE",
+          "raw": 0.823963572205525,
+          "normalized": 0.4637,
+          "innovation": 0.2164,
+          "innovation_z": 0.9063,
+          "is_anomalous": "False"
+        },
+        {
+          "stream": "GOLD_PRICE",
+          "raw": -0.6781516425104247,
+          "normalized": -0.6373,
+          "innovation": -0.3431,
+          "innovation_z": -1.5031,
+          "is_anomalous": "False"
+        },
+        {
+          "stream": "BTC_USD",
+          "raw": -3.0597731847037197,
+          "normalized": -1.1235,
+          "innovation": -1.1906,
+          "innovation_z": -4.1674,
+          "is_anomalous": "True"
+        }
+      ],
+      "triggers": [],
+      "probabilities": {
+        "soft_landing": 0.4196,
+        "stagflation": 0.5533,
+        "recession": 0.027
+      },
+      "factors": {
+        "inflation_trend": 0.4414,
+        "growth_trend": 0.1126,
+        "labor_pressure": -0.0441,
+        "housing_momentum": 0.4435,
+        "financial_conditions": 0.458,
+        "commodity_pressure": 0.0942,
+        "consumer_sentiment": -0.109,
+        "policy_stance": 0.8623
+      }
+    },
+    {
+      "date": "2025-06-06",
+      "updates": [
+        {
+          "stream": "10Y_YIELD",
+          "raw": 4.51,
+          "normalized": 1.8548,
+          "innovation": 1.1373,
+          "innovation_z": 6.2434,
+          "is_anomalous": "True"
+        },
+        {
+          "stream": "SP500",
+          "raw": 1.0228196215376713,
+          "normalized": 0.4935,
+          "innovation": 0.3713,
+          "innovation_z": 1.6105,
+          "is_anomalous": "False"
+        },
+        {
+          "stream": "OIL_PRICE",
+          "raw": 1.891424720320025,
+          "normalized": 0.9113,
+          "innovation": 0.6303,
+          "innovation_z": 2.641,
+          "is_anomalous": "True"
+        },
+        {
+          "stream": "GOLD_PRICE",
+          "raw": -0.8391573926159246,
+          "normalized": -0.7403,
+          "innovation": -0.4056,
+          "innovation_z": -1.7772,
+          "is_anomalous": "False"
+        },
+        {
+          "stream": "BTC_USD",
+          "raw": 2.733035306445883,
+          "normalized": 0.8866,
+          "innovation": 0.7742,
+          "innovation_z": 2.7101,
+          "is_anomalous": "True"
+        }
+      ],
+      "triggers": [],
+      "probabilities": {
+        "soft_landing": 0.4196,
+        "stagflation": 0.5533,
+        "recession": 0.027
+      },
+      "factors": {
+        "inflation_trend": 0.4867,
+        "growth_trend": 0.1822,
+        "labor_pressure": -0.0239,
+        "housing_momentum": 0.4541,
+        "financial_conditions": 0.6355,
+        "commodity_pressure": 0.1487,
+        "consumer_sentiment": -0.0742,
+        "policy_stance": 0.9024
+      }
+    },
+    {
+      "date": "2025-06-07",
+      "updates": [
+        {
+          "stream": "INITIAL_CLAIMS",
+          "raw": 248000.0,
+          "normalized": 3.2582,
+          "innovation": 3.271,
+          "innovation_z": 10.0196,
+          "is_anomalous": "True"
+        },
+        {
+          "stream": "BTC_USD",
+          "raw": 1.1669145986995246,
+          "normalized": 0.3392,
+          "innovation": 0.2451,
+          "innovation_z": 0.8571,
+          "is_anomalous": "False"
+        }
+      ],
+      "triggers": [],
+      "probabilities": {
+        "soft_landing": 0.4197,
+        "stagflation": 0.5533,
+        "recession": 0.027
+      },
+      "factors": {
+        "inflation_trend": 0.4938,
+        "growth_trend": 0.0725,
+        "labor_pressure": -0.2589,
+        "housing_momentum": 0.4746,
+        "financial_conditions": 0.6361,
+        "commodity_pressure": 0.1298,
+        "consumer_sentiment": -0.1342,
+        "policy_stance": 0.8822
+      }
+    },
+    {
+      "date": "2025-06-09",
+      "updates": [
+        {
+          "stream": "10Y_YIELD",
+          "raw": 4.49,
+          "normalized": 1.644,
+          "innovation": 0.86,
+          "innovation_z": 4.6725,
+          "is_anomalous": "True"
+        },
+        {
+          "stream": "SP500",
+          "raw": 0.09195251863913659,
+          "normalized": 0.0615,
+          "innovation": -0.0941,
+          "innovation_z": -0.4065,
+          "is_anomalous": "False"
+        },
+        {
+          "stream": "OIL_PRICE",
+          "raw": 1.0934105537609646,
+          "normalized": 0.5685,
+          "innovation": 0.2633,
+          "innovation_z": 1.0918,
+          "is_anomalous": "False"
+        },
+        {
+          "stream": "GOLD_PRICE",
+          "raw": 0.2825074432685841,
+          "normalized": 0.007,
+          "innovation": 0.3727,
+          "innovation_z": 1.6281,
+          "is_anomalous": "False"
+        },
+        {
+          "stream": "BTC_USD",
+          "raw": 4.165996456486783,
+          "normalized": 1.3833,
+          "innovation": 1.2751,
+          "innovation_z": 4.4593,
+          "is_anomalous": "True"
+        }
+      ],
+      "triggers": [],
+      "probabilities": {
+        "soft_landing": 0.4197,
+        "stagflation": 0.5534,
+        "recession": 0.027
+      },
+      "factors": {
+        "inflation_trend": 0.5397,
+        "growth_trend": 0.1097,
+        "labor_pressure": -0.2244,
+        "housing_momentum": 0.4864,
+        "financial_conditions": 0.6935,
+        "commodity_pressure": 0.157,
+        "consumer_sentiment": -0.0999,
+        "policy_stance": 0.8881
+      }
+    },
+    {
+      "date": "2025-06-10",
+      "updates": [
+        {
+          "stream": "10Y_YIELD",
+          "raw": 4.47,
+          "normalized": 1.4424,
+          "innovation": 0.5815,
+          "innovation_z": 3.1706,
+          "is_anomalous": "True"
+        },
+        {
+          "stream": "SP500",
+          "raw": 0.5468012541646841,
+          "normalized": 0.272,
+          "innovation": 0.0778,
+          "innovation_z": 0.3367,
+          "is_anomalous": "False"
+        },
+        {
+          "stream": "OIL_PRICE",
+          "raw": -0.4759317319035391,
+          "normalized": -0.0978,
+          "innovation": -0.455,
+          "innovation_z": -1.8955,
+          "is_anomalous": "False"
+        },
+        {
+          "stream": "GOLD_PRICE",
+          "raw": -0.3366964044300687,
+          "normalized": -0.4047,
+          "innovation": 0.0007,
+          "innovation_z": 0.0033,
+          "is_anomalous": "False"
+        },
+        {
+          "stream": "BTC_USD",
+          "raw": -0.03343184269246601,
+          "normalized": -0.0891,
+          "innovation": -0.2372,
+          "innovation_z": -0.8299,
+          "is_anomalous": "False"
+        }
+      ],
+      "triggers": [],
+      "probabilities": {
+        "soft_landing": 0.4196,
+        "stagflation": 0.5534,
+        "recession": 0.027
+      },
+      "factors": {
+        "inflation_trend": 0.5404,
+        "growth_trend": 0.122,
+        "labor_pressure": -0.2091,
+        "housing_momentum": 0.496,
+        "financial_conditions": 0.7162,
+        "commodity_pressure": 0.0791,
+        "consumer_sentiment": -0.101,
+        "policy_stance": 0.9085
+      }
+    },
+    {
+      "date": "2025-06-11",
+      "updates": [
+        {
+          "stream": "10Y_YIELD",
+          "raw": 4.41,
+          "normalized": 0.8916,
+          "innovation": 0.0106,
+          "innovation_z": 0.0578,
+          "is_anomalous": "False"
+        },
+        {
+          "stream": "SP500",
+          "raw": -0.2747660318287345,
+          "normalized": -0.1111,
+          "innovation": -0.282,
+          "innovation_z": -1.2215,
+          "is_anomalous": "False"
+        },
+        {
+          "stream": "OIL_PRICE",
+          "raw": 4.763159863056644,
+          "normalized": 2.1258,
+          "innovation": 1.8507,
+          "innovation_z": 7.7311,
+          "is_anomalous": "True"
+        },
+        {
+          "stream": "GOLD_PRICE",
+          "raw": 0.0120486130438958,
+          "normalized": -0.1703,
+          "innovation": 0.1387,
+          "innovation_z": 0.607,
+          "is_anomalous": "False"
+        },
+        {
+          "stream": "BTC_USD",
+          "raw": -1.434738860972619,
+          "normalized": -0.5768,
+          "innovation": -0.7005,
+          "innovation_z": -2.4514,
+          "is_anomalous": "False"
+        }
+      ],
+      "triggers": [],
+      "probabilities": {
+        "soft_landing": 0.4195,
+        "stagflation": 0.5535,
+        "recession": 0.027
+      },
+      "factors": {
+        "inflation_trend": 0.6137,
+        "growth_trend": 0.1191,
+        "labor_pressure": -0.2018,
+        "housing_momentum": 0.4945,
+        "financial_conditions": 0.6456,
+        "commodity_pressure": 0.3088,
+        "consumer_sentiment": -0.13,
+        "policy_stance": 0.8942
+      }
+    },
+    {
+      "date": "2025-06-12",
+      "updates": [
+        {
+          "stream": "10Y_YIELD",
+          "raw": 4.36,
+          "normalized": 0.4401,
+          "innovation": -0.4287,
+          "innovation_z": -2.3447,
+          "is_anomalous": "False"
+        },
+        {
+          "stream": "SP500",
+          "raw": 0.38151330716763876,
+          "normalized": 0.1956,
+          "innovation": 0.0857,
+          "innovation_z": 0.3715,
+          "is_anomalous": "False"
+        },
+        {
+          "stream": "OIL_PRICE",
+          "raw": -0.16153995491640902,
+          "normalized": 0.0194,
+          "innovation": -0.4339,
+          "innovation_z": -1.8152,
+          "is_anomalous": "False"
+        },
+        {
+          "stream": "GOLD_PRICE",
+          "raw": 1.778563010253441,
+          "normalized": 1.0131,
+          "innovation": 1.3003,
+          "innovation_z": 5.6922,
+          "is_anomalous": "True"
+        },
+        {
+          "stream": "BTC_USD",
+          "raw": -2.569916684533185,
+          "normalized": -0.9703,
+          "innovation": -1.0309,
+          "innovation_z": -3.608,
+          "is_anomalous": "True"
+        }
+      ],
+      "triggers": [],
+      "probabilities": {
+        "soft_landing": 0.4194,
+        "stagflation": 0.5536,
+        "recession": 0.027
+      },
+      "factors": {
+        "inflation_trend": 0.6126,
+        "growth_trend": 0.0751,
+        "labor_pressure": -0.1955,
+        "housing_momentum": 0.478,
+        "financial_conditions": 0.4667,
+        "commodity_pressure": 0.2572,
+        "consumer_sentiment": -0.1358,
+        "policy_stance": 0.827
+      }
+    },
+    {
+      "date": "2025-06-13",
+      "updates": [
+        {
+          "stream": "10Y_YIELD",
+          "raw": 4.41,
+          "normalized": 0.8848,
+          "innovation": 0.1343,
+          "innovation_z": 0.735,
+          "is_anomalous": "False"
+        },
+        {
+          "stream": "SP500",
+          "raw": -1.136066859010289,
+          "normalized": -0.516,
+          "innovation": -0.5731,
+          "innovation_z": -2.4842,
+          "is_anomalous": "False"
+        },
+        {
+          "stream": "OIL_PRICE",
+          "raw": 7.00896960229113,
+          "normalized": 3.0343,
+          "innovation": 2.6299,
+          "innovation_z": 11.0121,
+          "is_anomalous": "True"
+        },
+        {
+          "stream": "GOLD_PRICE",
+          "raw": 1.4768122634469274,
+          "normalized": 0.8033,
+          "innovation": 0.922,
+          "innovation_z": 4.0371,
+          "is_anomalous": "True"
+        },
+        {
+          "stream": "BTC_USD",
+          "raw": 0.15273471943905204,
+          "normalized": -0.0121,
+          "innovation": -0.0256,
+          "innovation_z": -0.0895,
+          "is_anomalous": "False"
+        }
+      ],
+      "triggers": [],
+      "probabilities": {
+        "soft_landing": 0.4193,
+        "stagflation": 0.5537,
+        "recession": 0.027
+      },
+      "factors": {
+        "inflation_trend": 0.7474,
+        "growth_trend": 0.0764,
+        "labor_pressure": -0.1911,
+        "housing_momentum": 0.4636,
+        "financial_conditions": 0.4025,
+        "commodity_pressure": 0.5811,
+        "consumer_sentiment": -0.1557,
+        "policy_stance": 0.8036
+      }
+    },
+    {
+      "date": "2025-06-14",
+      "updates": [
+        {
+          "stream": "INITIAL_CLAIMS",
+          "raw": 246000.0,
+          "normalized": 2.8508,
+          "innovation": 2.7169,
+          "innovation_z": 8.311,
+          "is_anomalous": "True"
+        },
+        {
+          "stream": "BTC_USD",
+          "raw": -0.5847555254663668,
+          "normalized": -0.2706,
+          "innovation": -0.2637,
+          "innovation_z": -0.9221,
+          "is_anomalous": "False"
+        }
+      ],
+      "triggers": [],
+      "probabilities": {
+        "soft_landing": 0.4192,
+        "stagflation": 0.5537,
+        "recession": 0.027
+      },
+      "factors": {
+        "inflation_trend": 0.7711,
+        "growth_trend": -0.0175,
+        "labor_pressure": -0.3925,
+        "housing_momentum": 0.4702,
+        "financial_conditions": 0.4069,
+        "commodity_pressure": 0.497,
+        "consumer_sentiment": -0.2174,
+        "policy_stance": 0.7896
+      }
+    },
+    {
+      "date": "2025-06-16",
+      "updates": [
+        {
+          "stream": "10Y_YIELD",
+          "raw": 4.46,
+          "normalized": 1.326,
+          "innovation": 0.5986,
+          "innovation_z": 3.2449,
+          "is_anomalous": "True"
+        },
+        {
+          "stream": "SP500",
+          "raw": 0.93488231481891,
+          "normalized": 0.4593,
+          "innovation": 0.4441,
+          "innovation_z": 1.9192,
+          "is_anomalous": "False"
+        },
+        {
+          "stream": "OIL_PRICE",
+          "raw": -1.6718962337808014,
+          "normalized": -0.6201,
+          "innovation": -1.205,
+          "innovation_z": -4.9945,
+          "is_anomalous": "True"
+        },
+        {
+          "stream": "GOLD_PRICE",
+          "raw": -1.0194021599707037,
+          "normalized": -0.8753,
+          "innovation": -0.6558,
+          "innovation_z": -2.8633,
+          "is_anomalous": "True"
+        },
+        {
+          "stream": "BTC_USD",
+          "raw": 1.1723623976989297,
+          "normalized": 0.3505,
+          "innovation": 0.3057,
+          "innovation_z": 1.0691,
+          "is_anomalous": "False"
+        }
+      ],
+      "triggers": [],
+      "probabilities": {
+        "soft_landing": 0.4194,
+        "stagflation": 0.5536,
+        "recession": 0.027
+      },
+      "factors": {
+        "inflation_trend": 0.73,
+        "growth_trend": 0.0238,
+        "labor_pressure": -0.3521,
+        "housing_momentum": 0.4729,
+        "financial_conditions": 0.5315,
+        "commodity_pressure": 0.167,
+        "consumer_sentiment": -0.1721,
+        "policy_stance": 0.8118
+      }
+    },
+    {
+      "date": "2025-06-17",
+      "updates": [
+        {
+          "stream": "10Y_YIELD",
+          "raw": 4.39,
+          "normalized": 0.6878,
+          "innovation": -0.1055,
+          "innovation_z": -0.5739,
+          "is_anomalous": "False"
+        },
+        {
+          "stream": "SP500",
+          "raw": -0.8387259723643135,
+          "normalized": -0.3785,
+          "innovation": -0.4256,
+          "innovation_z": -1.8416,
+          "is_anomalous": "False"
+        },
+        {
+          "stream": "OIL_PRICE",
+          "raw": 4.1885937804886915,
+          "normalized": 1.7801,
+          "innovation": 1.427,
+          "innovation_z": 5.9437,
+          "is_anomalous": "True"
+        },
+        {
+          "stream": "GOLD_PRICE",
+          "raw": -0.2889521305023027,
+          "normalized": -0.3793,
+          "innovation": -0.2033,
+          "innovation_z": -0.8889,
+          "is_anomalous": "False"
+        },
+        {
+          "stream": "BTC_USD",
+          "raw": -2.077333636181369,
+          "normalized": -0.8029,
+          "innovation": -0.8363,
+          "innovation_z": -2.9258,
+          "is_anomalous": "True"
+        }
+      ],
+      "triggers": [],
+      "probabilities": {
+        "soft_landing": 0.4193,
+        "stagflation": 0.5537,
+        "recession": 0.027
+      },
+      "factors": {
+        "inflation_trend": 0.7774,
+        "growth_trend": 0.0119,
+        "labor_pressure": -0.3477,
+        "housing_momentum": 0.4656,
+        "financial_conditions": 0.4676,
+        "commodity_pressure": 0.3207,
+        "consumer_sentiment": -0.2094,
+        "policy_stance": 0.8035
+      }
+    },
+    {
+      "date": "2025-06-21",
+      "updates": [
+        {
+          "stream": "INITIAL_CLAIMS",
+          "raw": 237000.0,
+          "normalized": 1.5671,
+          "innovation": 1.3236,
+          "innovation_z": 4.0454,
+          "is_anomalous": "True"
+        },
+        {
+          "stream": "BTC_USD",
+          "raw": -1.0237095073649534,
+          "normalized": -0.4235,
+          "innovation": -0.4031,
+          "innovation_z": -1.4088,
+          "is_anomalous": "False"
+        }
+      ],
+      "triggers": [],
+      "probabilities": {
+        "soft_landing": 0.4187,
+        "stagflation": 0.5543,
+        "recession": 0.027
+      },
+      "factors": {
+        "inflation_trend": 0.6904,
+        "growth_trend": -0.0637,
+        "labor_pressure": -0.4103,
+        "housing_momentum": 0.4448,
+        "financial_conditions": 0.3725,
+        "commodity_pressure": 0.0827,
+        "consumer_sentiment": -0.2321,
+        "policy_stance": 0.74
+      }
+    },
+    {
+      "date": "2025-06-23",
+      "updates": [
+        {
+          "stream": "10Y_YIELD",
+          "raw": 4.34,
+          "normalized": 0.2292,
+          "innovation": -0.4101,
+          "innovation_z": -2.2142,
+          "is_anomalous": "False"
+        },
+        {
+          "stream": "SP500",
+          "raw": 0.9560655071259438,
+          "normalized": 0.4759,
+          "innovation": 0.562,
+          "innovation_z": 2.4267,
+          "is_anomalous": "False"
+        },
+        {
+          "stream": "OIL_PRICE",
+          "raw": -8.957459725292965,
+          "normalized": -3.6095,
+          "innovation": -3.8409,
+          "innovation_z": -15.8826,
+          "is_anomalous": "True"
+        },
+        {
+          "stream": "GOLD_PRICE",
+          "raw": 0.28461738938607517,
+          "normalized": 0.0143,
+          "innovation": 0.3628,
+          "innovation_z": 1.5824,
+          "is_anomalous": "False"
+        },
+        {
+          "stream": "BTC_USD",
+          "raw": 4.44546821160779,
+          "normalized": 1.5546,
+          "innovation": 1.6104,
+          "innovation_z": 5.6303,
+          "is_anomalous": "True"
+        }
+      ],
+      "triggers": [],
+      "probabilities": {
+        "soft_landing": 0.4188,
+        "stagflation": 0.5542,
+        "recession": 0.027
+      },
+      "factors": {
+        "inflation_trend": 0.4347,
+        "growth_trend": -0.0985,
+        "labor_pressure": -0.3754,
+        "housing_momentum": 0.4285,
+        "financial_conditions": 0.3244,
+        "commodity_pressure": -0.4784,
+        "consumer_sentiment": -0.1452,
+        "policy_stance": 0.6593
+      }
+    },
+    {
+      "date": "2025-06-24",
+      "updates": [
+        {
+          "stream": "10Y_YIELD",
+          "raw": 4.3,
+          "normalized": -0.1323,
+          "innovation": -0.645,
+          "innovation_z": -3.501,
+          "is_anomalous": "True"
+        },
+        {
+          "stream": "SP500",
+          "raw": 1.1060328616958608,
+          "normalized": 0.5453,
+          "innovation": 0.6277,
+          "innovation_z": 2.715,
+          "is_anomalous": "True"
+        },
+        {
+          "stream": "OIL_PRICE",
+          "raw": -6.2332022462911825,
+          "normalized": -2.3633,
+          "innovation": -2.0934,
+          "innovation_z": -8.7084,
+          "is_anomalous": "True"
+        },
+        {
+          "stream": "GOLD_PRICE",
+          "raw": -1.8013675886811464,
+          "normalized": -1.4044,
+          "innovation": -1.0096,
+          "innovation_z": -4.4105,
+          "is_anomalous": "True"
+        },
+        {
+          "stream": "BTC_USD",
+          "raw": 0.4421629398587352,
+          "normalized": 0.0976,
+          "innovation": 0.1051,
+          "innovation_z": 0.3677,
+          "is_anomalous": "False"
+        }
+      ],
+      "triggers": [],
+      "probabilities": {
+        "soft_landing": 0.4188,
+        "stagflation": 0.5541,
+        "recession": 0.027
+      },
+      "factors": {
+        "inflation_trend": 0.2208,
+        "growth_trend": -0.1095,
+        "labor_pressure": -0.3579,
+        "housing_momentum": 0.4246,
+        "financial_conditions": 0.327,
+        "commodity_pressure": -0.7361,
+        "consumer_sentiment": -0.1075,
+        "policy_stance": 0.6187
+      }
+    },
+    {
+      "date": "2025-06-25",
+      "updates": [
+        {
+          "stream": "10Y_YIELD",
+          "raw": 4.29,
+          "normalized": -0.2223,
+          "innovation": -0.6497,
+          "innovation_z": -3.5376,
+          "is_anomalous": "True"
+        },
+        {
+          "stream": "SP500",
+          "raw": -0.0003286108349665331,
+          "normalized": 0.0125,
+          "innovation": 0.078,
+          "innovation_z": 0.3377,
+          "is_anomalous": "False"
+        },
+        {
+          "stream": "OIL_PRICE",
+          "raw": 0.8507985708414681,
+          "normalized": 0.4204,
+          "innovation": 0.9485,
+          "innovation_z": 3.9585,
+          "is_anomalous": "True"
+        },
+        {
+          "stream": "GOLD_PRICE",
+          "raw": 0.29197688926843124,
+          "normalized": 0.0299,
+          "innovation": 0.3677,
+          "innovation_z": 1.6078,
+          "is_anomalous": "False"
+        },
+        {
+          "stream": "BTC_USD",
+          "raw": 1.2329889288552447,
+          "normalized": 0.3822,
+          "innovation": 0.4125,
+          "innovation_z": 1.4433,
+          "is_anomalous": "False"
+        }
+      ],
+      "triggers": [],
+      "probabilities": {
+        "soft_landing": 0.4188,
+        "stagflation": 0.5541,
+        "recession": 0.0271
+      },
+      "factors": {
+        "inflation_trend": 0.1885,
+        "growth_trend": -0.1099,
+        "labor_pressure": -0.3448,
+        "housing_momentum": 0.4072,
+        "financial_conditions": 0.2468,
+        "commodity_pressure": -0.4954,
+        "consumer_sentiment": -0.0899,
+        "policy_stance": 0.5443
+      }
+    },
+    {
+      "date": "2025-06-26",
+      "updates": [
+        {
+          "stream": "10Y_YIELD",
+          "raw": 4.26,
+          "normalized": -0.4939,
+          "innovation": -0.8498,
+          "innovation_z": -4.636,
+          "is_anomalous": "True"
+        },
+        {
+          "stream": "SP500",
+          "raw": 0.7988131032516798,
+          "normalized": 0.3968,
+          "innovation": 0.4894,
+          "innovation_z": 2.12,
+          "is_anomalous": "False"
+        },
+        {
+          "stream": "OIL_PRICE",
+          "raw": 0.4917030567025608,
+          "normalized": 0.2798,
+          "innovation": 0.6379,
+          "innovation_z": 2.6673,
+          "is_anomalous": "True"
+        },
+        {
+          "stream": "GOLD_PRICE",
+          "raw": 0.19217200310753607,
+          "normalized": -0.0381,
+          "innovation": 0.2087,
+          "innovation_z": 0.9131,
+          "is_anomalous": "False"
+        },
+        {
+          "stream": "BTC_USD",
+          "raw": -0.374445620028651,
+          "normalized": -0.2006,
+          "innovation": -0.1683,
+          "innovation_z": -0.5891,
+          "is_anomalous": "False"
+        }
+      ],
+      "triggers": [],
+      "probabilities": {
+        "soft_landing": 0.4188,
+        "stagflation": 0.5541,
+        "recession": 0.0271
+      },
+      "factors": {
+        "inflation_trend": 0.1405,
+        "growth_trend": -0.1061,
+        "labor_pressure": -0.3288,
+        "housing_momentum": 0.3871,
+        "financial_conditions": 0.1657,
+        "commodity_pressure": -0.3405,
+        "consumer_sentiment": -0.068,
+        "policy_stance": 0.4606
+      }
+    },
+    {
+      "date": "2025-06-27",
+      "updates": [
+        {
+          "stream": "10Y_YIELD",
+          "raw": 4.29,
+          "normalized": -0.2183,
+          "innovation": -0.4933,
+          "innovation_z": -2.6946,
+          "is_anomalous": "True"
+        },
+        {
+          "stream": "SP500",
+          "raw": 0.5205399256150098,
+          "normalized": 0.2608,
+          "innovation": 0.348,
+          "innovation_z": 1.5081,
+          "is_anomalous": "False"
+        },
+        {
+          "stream": "OIL_PRICE",
+          "raw": 0.4282643300932393,
+          "normalized": 0.2541,
+          "innovation": 0.4979,
+          "innovation_z": 2.0839,
+          "is_anomalous": "False"
+        },
+        {
+          "stream": "GOLD_PRICE",
+          "raw": -1.8101974273062114,
+          "normalized": -1.4053,
+          "innovation": -1.2187,
+          "innovation_z": -5.3336,
+          "is_anomalous": "True"
+        },
+        {
+          "stream": "BTC_USD",
+          "raw": 0.12000060276006601,
+          "normalized": -0.0204,
+          "innovation": -0.0087,
+          "innovation_z": -0.0306,
+          "is_anomalous": "False"
+        }
+      ],
+      "triggers": [],
+      "probabilities": {
+        "soft_landing": 0.4188,
+        "stagflation": 0.5541,
+        "recession": 0.0271
+      },
+      "factors": {
+        "inflation_trend": 0.0748,
+        "growth_trend": -0.0867,
+        "labor_pressure": -0.3141,
+        "housing_momentum": 0.3803,
+        "financial_conditions": 0.205,
+        "commodity_pressure": -0.2802,
+        "consumer_sentiment": -0.0588,
+        "policy_stance": 0.4411
+      }
+    },
+    {
+      "date": "2025-06-30",
+      "updates": [
+        {
+          "stream": "10Y_YIELD",
+          "raw": 4.24,
+          "normalized": -0.6745,
+          "innovation": -0.9329,
+          "innovation_z": -5.0483,
+          "is_anomalous": "True"
+        },
+        {
+          "stream": "SP500",
+          "raw": 0.5151137506128882,
+          "normalized": 0.2571,
+          "innovation": 0.3447,
+          "innovation_z": 1.4893,
+          "is_anomalous": "False"
+        },
+        {
+          "stream": "OIL_PRICE",
+          "raw": -0.6277231686631751,
+          "normalized": -0.1575,
+          "innovation": 0.018,
+          "innovation_z": 0.0745,
+          "is_anomalous": "False"
+        },
+        {
+          "stream": "GOLD_PRICE",
+          "raw": 0.6303198845365553,
+          "normalized": 0.2711,
+          "innovation": 0.43,
+          "innovation_z": 1.8764,
+          "is_anomalous": "False"
+        },
+        {
+          "stream": "BTC_USD",
+          "raw": -1.1602107852204921,
+          "normalized": -0.4927,
+          "innovation": -0.449,
+          "innovation_z": -1.5703,
+          "is_anomalous": "False"
+        }
+      ],
+      "triggers": [],
+      "probabilities": {
+        "soft_landing": 0.4186,
+        "stagflation": 0.5543,
+        "recession": 0.0271
+      },
+      "factors": {
+        "inflation_trend": -0.0105,
+        "growth_trend": -0.1164,
+        "labor_pressure": -0.3348,
+        "housing_momentum": 0.3388,
+        "financial_conditions": 0.074,
+        "commodity_pressure": -0.1605,
+        "consumer_sentiment": -0.0657,
+        "policy_stance": 0.3273
+      }
+    },
+    {
+      "date": "2025-07-01",
+      "updates": [
+        {
+          "stream": "US_CPI_YOY",
+          "raw": 2.742618052167134,
+          "normalized": 0.5182,
+          "innovation": 0.5086,
+          "innovation_z": 2.6507,
+          "is_anomalous": "True"
+        },
+        {
+          "stream": "CORE_CPI",
+          "raw": 3.0544930080893096,
+          "normalized": 1.1756,
+          "innovation": 1.0409,
+          "innovation_z": 5.4968,
+          "is_anomalous": "True"
+        },
+        {
+          "stream": "PPI",
+          "raw": 1.9574772366032889,
+          "normalized": -0.2048,
+          "innovation": -0.2966,
+          "innovation_z": -1.2709,
+          "is_anomalous": "False"
+        },
+        {
+          "stream": "UNEMPLOYMENT_RATE",
+          "raw": 4.3,
+          "normalized": -0.0506,
+          "innovation": -0.3251,
+          "innovation_z": -1.0878,
+          "is_anomalous": "False"
+        },
+        {
+          "stream": "RETAIL_SALES",
+          "raw": 7208.0,
+          "normalized": -0.1885,
+          "innovation": -0.0774,
+          "innovation_z": -0.2636,
+          "is_anomalous": "False"
+        },
+        {
+          "stream": "HOUSING_STARTS",
+          "raw": 1420.0,
+          "normalized": 1.3785,
+          "innovation": 1.1364,
+          "innovation_z": 3.157,
+          "is_anomalous": "True"
+        },
+        {
+          "stream": "HOME_PRICES",
+          "raw": 1.6411667516322614,
+          "normalized": -0.3932,
+          "innovation": -0.7455,
+          "innovation_z": -3.1392,
+          "is_anomalous": "True"
+        },
+        {
+          "stream": "CONSUMER_CONFIDENCE",
+          "raw": 61.7,
+          "normalized": 1.7181,
+          "innovation": 1.8172,
+          "innovation_z": 3.9902,
+          "is_anomalous": "True"
+        },
+        {
+          "stream": "FED_FUNDS_RATE",
+          "raw": 4.33,
+          "normalized": 0.7727,
+          "innovation": 0.4391,
+          "innovation_z": 3.5451,
+          "is_anomalous": "True"
+        },
+        {
+          "stream": "10Y_YIELD",
+          "raw": 4.26,
+          "normalized": -0.4875,
+          "innovation": -0.7851,
+          "innovation_z": -4.326,
+          "is_anomalous": "True"
+        },
+        {
+          "stream": "SP500",
+          "raw": -0.11191571098791434,
+          "normalized": -0.0487,
+          "innovation": 0.0529,
+          "innovation_z": 0.2294,
+          "is_anomalous": "False"
+        },
+        {
+          "stream": "OIL_PRICE",
+          "raw": 0.5208289105661505,
+          "normalized": 0.2914,
+          "innovation": 0.3571,
+          "innovation_z": 1.4995,
+          "is_anomalous": "False"
+        },
+        {
+          "stream": "GOLD_PRICE",
+          "raw": 1.2758252337171074,
+          "normalized": 0.7107,
+          "innovation": 0.8082,
+          "innovation_z": 3.5436,
+          "is_anomalous": "True"
+        },
+        {
+          "stream": "BTC_USD",
+          "raw": -1.350422499373105,
+          "normalized": -0.5603,
+          "innovation": -0.4897,
+          "innovation_z": -1.7145,
+          "is_anomalous": "False"
+        }
+      ],
+      "triggers": [],
+      "probabilities": {
+        "soft_landing": 0.4189,
+        "stagflation": 0.554,
+        "recession": 0.0271
+      },
+      "factors": {
+        "inflation_trend": 0.223,
+        "growth_trend": -0.1362,
+        "labor_pressure": -0.2565,
+        "housing_momentum": 0.3668,
+        "financial_conditions": -0.0019,
+        "commodity_pressure": -0.0369,
+        "consumer_sentiment": 0.0222,
+        "policy_stance": 0.4301
+      }
+    },
+    {
+      "date": "2025-07-02",
+      "updates": [
+        {
+          "stream": "10Y_YIELD",
+          "raw": 4.3,
+          "normalized": -0.1177,
+          "innovation": -0.3288,
+          "innovation_z": -1.8103,
+          "is_anomalous": "False"
+        },
+        {
+          "stream": "SP500",
+          "raw": 0.47338743064907746,
+          "normalized": 0.237,
+          "innovation": 0.3701,
+          "innovation_z": 1.6059,
+          "is_anomalous": "False"
+        },
+        {
+          "stream": "OIL_PRICE",
+          "raw": 3.0100091680430325,
+          "normalized": 1.265,
+          "innovation": 1.2626,
+          "innovation_z": 5.2983,
+          "is_anomalous": "True"
+        },
+        {
+          "stream": "GOLD_PRICE",
+          "raw": 0.3380872641776682,
+          "normalized": 0.0651,
+          "innovation": 0.0809,
+          "innovation_z": 0.3547,
+          "is_anomalous": "False"
+        },
+        {
+          "stream": "BTC_USD",
+          "raw": 2.946777720135706,
+          "normalized": 1.0282,
+          "innovation": 1.0921,
+          "innovation_z": 3.8232,
+          "is_anomalous": "True"
+        }
+      ],
+      "triggers": [],
+      "probabilities": {
+        "soft_landing": 0.4189,
+        "stagflation": 0.554,
+        "recession": 0.0271
+      },
+      "factors": {
+        "inflation_trend": 0.2342,
+        "growth_trend": -0.1021,
+        "labor_pressure": -0.2426,
+        "housing_momentum": 0.3451,
+        "financial_conditions": 0.045,
+        "commodity_pressure": 0.1245,
+        "consumer_sentiment": 0.0531,
+        "policy_stance": 0.3902
+      }
+    },
+    {
+      "date": "2025-07-07",
+      "updates": [
+        {
+          "stream": "10Y_YIELD",
+          "raw": 4.4,
+          "normalized": 0.8053,
+          "innovation": 0.5534,
+          "innovation_z": 3.0026,
+          "is_anomalous": "True"
+        },
+        {
+          "stream": "SP500",
+          "raw": -0.7893368104244017,
+          "normalized": -0.3866,
+          "innovation": -0.4013,
+          "innovation_z": -1.733,
+          "is_anomalous": "False"
+        },
+        {
+          "stream": "OIL_PRICE",
+          "raw": 2.127582003390581,
+          "normalized": 0.9176,
+          "innovation": 0.8479,
+          "innovation_z": 3.5166,
+          "is_anomalous": "True"
+        },
+        {
+          "stream": "GOLD_PRICE",
+          "raw": -0.009004121131513318,
+          "normalized": -0.1697,
+          "innovation": -0.0812,
+          "innovation_z": -0.3548,
+          "is_anomalous": "False"
+        },
+        {
+          "stream": "BTC_USD",
+          "raw": -0.8570920982479693,
+          "normalized": -0.3874,
+          "innovation": -0.3951,
+          "innovation_z": -1.3813,
+          "is_anomalous": "False"
+        }
+      ],
+      "triggers": [],
+      "probabilities": {
+        "soft_landing": 0.4189,
+        "stagflation": 0.554,
+        "recession": 0.0271
+      },
+      "factors": {
+        "inflation_trend": 0.2497,
+        "growth_trend": -0.0433,
+        "labor_pressure": -0.2245,
+        "housing_momentum": 0.2954,
+        "financial_conditions": 0.1795,
+        "commodity_pressure": 0.1218,
+        "consumer_sentiment": -0.0224,
+        "policy_stance": 0.4051
+      }
+    },
+    {
+      "date": "2025-07-08",
+      "updates": [
+        {
+          "stream": "10Y_YIELD",
+          "raw": 4.42,
+          "normalized": 0.9856,
+          "innovation": 0.6729,
+          "innovation_z": 3.6663,
+          "is_anomalous": "True"
+        },
+        {
+          "stream": "SP500",
+          "raw": -0.07161432504695749,
+          "normalized": -0.0312,
+          "innovation": -0.0597,
+          "innovation_z": -0.2583,
+          "is_anomalous": "False"
+        },
+        {
+          "stream": "OIL_PRICE",
+          "raw": 0.5871167894201766,
+          "normalized": 0.3042,
+          "innovation": 0.1117,
+          "innovation_z": 0.4653,
+          "is_anomalous": "False"
+        },
+        {
+          "stream": "GOLD_PRICE",
+          "raw": -0.7591297859755788,
+          "normalized": -0.6896,
+          "innovation": -0.5665,
+          "innovation_z": -2.4775,
+          "is_anomalous": "False"
+        },
+        {
+          "stream": "BTC_USD",
+          "raw": 0.5987787747688724,
+          "normalized": 0.1605,
+          "innovation": 0.1231,
+          "innovation_z": 0.4305,
+          "is_anomalous": "False"
+        }
+      ],
+      "triggers": [],
+      "probabilities": {
+        "soft_landing": 0.4189,
+        "stagflation": 0.554,
+        "recession": 0.0271
+      },
+      "factors": {
+        "inflation_trend": 0.2712,
+        "growth_trend": -0.0053,
+        "labor_pressure": -0.2138,
+        "housing_momentum": 0.3004,
+        "financial_conditions": 0.292,
+        "commodity_pressure": 0.1003,
+        "consumer_sentiment": -0.0327,
+        "policy_stance": 0.4519
+      }
+    }
+  ],
+  "probability_timeline": [
+    {
+      "date": "2025-03-01",
+      "probabilities": {
+        "soft_landing": 0.6259,
+        "stagflation": 0.2901,
+        "recession": 0.084
+      },
+      "factors": {
+        "inflation_trend": -0.6477,
+        "growth_trend": -0.0207,
+        "labor_pressure": 0.3455,
+        "housing_momentum": 1.1428,
+        "financial_conditions": 0.5502,
+        "commodity_pressure": -0.4936,
+        "consumer_sentiment": 0.1645,
+        "policy_stance": 0.7318
+      }
+    },
+    {
+      "date": "2025-03-08",
+      "probabilities": {
+        "soft_landing": 0.4883,
+        "stagflation": 0.4606,
+        "recession": 0.0511
+      },
+      "factors": {
+        "inflation_trend": -0.6171,
+        "growth_trend": -0.2492,
+        "labor_pressure": 0.2349,
+        "housing_momentum": 0.9036,
+        "financial_conditions": 0.1126,
+        "commodity_pressure": 0.0491,
+        "consumer_sentiment": 0.2366,
+        "policy_stance": 0.5956
+      }
+    },
+    {
+      "date": "2025-03-15",
+      "probabilities": {
+        "soft_landing": 0.4275,
+        "stagflation": 0.5209,
+        "recession": 0.0516
+      },
+      "factors": {
+        "inflation_trend": -0.3371,
+        "growth_trend": -0.159,
+        "labor_pressure": 0.0965,
+        "housing_momentum": 0.6219,
+        "financial_conditions": 0.1407,
+        "commodity_pressure": 0.1726,
+        "consumer_sentiment": 0.15,
+        "policy_stance": 0.4577
+      }
+    },
+    {
+      "date": "2025-03-22",
+      "probabilities": {
+        "soft_landing": 0.4987,
+        "stagflation": 0.4533,
+        "recession": 0.048
+      },
+      "factors": {
+        "inflation_trend": -0.2219,
+        "growth_trend": -0.1,
+        "labor_pressure": 0.0396,
+        "housing_momentum": 0.4556,
+        "financial_conditions": 0.0862,
+        "commodity_pressure": 0.1341,
+        "consumer_sentiment": 0.0908,
+        "policy_stance": 0.2935
+      }
+    },
+    {
+      "date": "2025-03-29",
+      "probabilities": {
+        "soft_landing": 0.427,
+        "stagflation": 0.5268,
+        "recession": 0.0461
+      },
+      "factors": {
+        "inflation_trend": 0.0227,
+        "growth_trend": -0.0334,
+        "labor_pressure": 0.0767,
+        "housing_momentum": 0.3578,
+        "financial_conditions": 0.0932,
+        "commodity_pressure": 0.1247,
+        "consumer_sentiment": -0.0009,
+        "policy_stance": 0.3725
+      }
+    },
+    {
+      "date": "2025-04-05",
+      "probabilities": {
+        "soft_landing": 0.4463,
+        "stagflation": 0.5247,
+        "recession": 0.029
+      },
+      "factors": {
+        "inflation_trend": -0.7681,
+        "growth_trend": -0.425,
+        "labor_pressure": 0.0559,
+        "housing_momentum": 0.3813,
+        "financial_conditions": -0.4334,
+        "commodity_pressure": -0.5652,
+        "consumer_sentiment": -0.0188,
+        "policy_stance": 0.2313
+      }
+    },
+    {
+      "date": "2025-04-12",
+      "probabilities": {
+        "soft_landing": 0.4502,
+        "stagflation": 0.5223,
+        "recession": 0.0275
+      },
+      "factors": {
+        "inflation_trend": -0.3622,
+        "growth_trend": 0.0654,
+        "labor_pressure": 0.1573,
+        "housing_momentum": 0.242,
+        "financial_conditions": 0.2324,
+        "commodity_pressure": 0.1879,
+        "consumer_sentiment": 0.1796,
+        "policy_stance": 0.2824
+      }
+    },
+    {
+      "date": "2025-04-19",
+      "probabilities": {
+        "soft_landing": 0.4247,
+        "stagflation": 0.5473,
+        "recession": 0.028
+      },
+      "factors": {
+        "inflation_trend": 0.0038,
+        "growth_trend": 0.0716,
+        "labor_pressure": 0.1326,
+        "housing_momentum": 0.2247,
+        "financial_conditions": 0.2045,
+        "commodity_pressure": 0.2877,
+        "consumer_sentiment": 0.0633,
+        "policy_stance": 0.337
+      }
+    },
+    {
+      "date": "2025-04-26",
+      "probabilities": {
+        "soft_landing": 0.4151,
+        "stagflation": 0.5577,
+        "recession": 0.0272
+      },
+      "factors": {
+        "inflation_trend": 0.0821,
+        "growth_trend": 0.0824,
+        "labor_pressure": -0.0417,
+        "housing_momentum": 0.3109,
+        "financial_conditions": 0.4841,
+        "commodity_pressure": 0.0017,
+        "consumer_sentiment": 0.0567,
+        "policy_stance": 0.4382
+      }
+    },
+    {
+      "date": "2025-05-03",
+      "probabilities": {
+        "soft_landing": 0.4365,
+        "stagflation": 0.5368,
+        "recession": 0.0266
+      },
+      "factors": {
+        "inflation_trend": -0.4119,
+        "growth_trend": -0.0197,
+        "labor_pressure": -0.0496,
+        "housing_momentum": 0.2174,
+        "financial_conditions": 0.2248,
+        "commodity_pressure": -0.1964,
+        "consumer_sentiment": 0.1029,
+        "policy_stance": 0.3934
+      }
+    },
+    {
+      "date": "2025-05-10",
+      "probabilities": {
+        "soft_landing": 0.4313,
+        "stagflation": 0.542,
+        "recession": 0.0267
+      },
+      "factors": {
+        "inflation_trend": -0.1103,
+        "growth_trend": 0.0626,
+        "labor_pressure": -0.0604,
+        "housing_momentum": 0.213,
+        "financial_conditions": 0.35,
+        "commodity_pressure": 0.2227,
+        "consumer_sentiment": 0.0607,
+        "policy_stance": 0.3968
+      }
+    },
+    {
+      "date": "2025-05-17",
+      "probabilities": {
+        "soft_landing": 0.4284,
+        "stagflation": 0.5448,
+        "recession": 0.0268
+      },
+      "factors": {
+        "inflation_trend": 0.2084,
+        "growth_trend": 0.2414,
+        "labor_pressure": 0.0026,
+        "housing_momentum": 0.3854,
+        "financial_conditions": 0.7876,
+        "commodity_pressure": 0.0632,
+        "consumer_sentiment": -0.0412,
+        "policy_stance": 0.7801
+      }
+    },
+    {
+      "date": "2025-05-24",
+      "probabilities": {
+        "soft_landing": 0.4198,
+        "stagflation": 0.5532,
+        "recession": 0.027
+      },
+      "factors": {
+        "inflation_trend": 0.589,
+        "growth_trend": 0.1287,
+        "labor_pressure": -0.1425,
+        "housing_momentum": 0.4786,
+        "financial_conditions": 0.7279,
+        "commodity_pressure": 0.0795,
+        "consumer_sentiment": -0.1809,
+        "policy_stance": 1.0155
+      }
+    },
+    {
+      "date": "2025-05-31",
+      "probabilities": {
+        "soft_landing": 0.4191,
+        "stagflation": 0.554,
+        "recession": 0.027
+      },
+      "factors": {
+        "inflation_trend": 0.5068,
+        "growth_trend": 0.0061,
+        "labor_pressure": -0.324,
+        "housing_momentum": 0.5328,
+        "financial_conditions": 0.6415,
+        "commodity_pressure": -0.0506,
+        "consumer_sentiment": -0.2228,
+        "policy_stance": 0.9992
+      }
+    },
+    {
+      "date": "2025-06-07",
+      "probabilities": {
+        "soft_landing": 0.4197,
+        "stagflation": 0.5533,
+        "recession": 0.027
+      },
+      "factors": {
+        "inflation_trend": 0.4938,
+        "growth_trend": 0.0725,
+        "labor_pressure": -0.2589,
+        "housing_momentum": 0.4746,
+        "financial_conditions": 0.6361,
+        "commodity_pressure": 0.1298,
+        "consumer_sentiment": -0.1342,
+        "policy_stance": 0.8822
+      }
+    },
+    {
+      "date": "2025-06-14",
+      "probabilities": {
+        "soft_landing": 0.4192,
+        "stagflation": 0.5537,
+        "recession": 0.027
+      },
+      "factors": {
+        "inflation_trend": 0.7711,
+        "growth_trend": -0.0175,
+        "labor_pressure": -0.3925,
+        "housing_momentum": 0.4702,
+        "financial_conditions": 0.4069,
+        "commodity_pressure": 0.497,
+        "consumer_sentiment": -0.2174,
+        "policy_stance": 0.7896
+      }
+    },
+    {
+      "date": "2025-06-21",
+      "probabilities": {
+        "soft_landing": 0.4187,
+        "stagflation": 0.5543,
+        "recession": 0.027
+      },
+      "factors": {
+        "inflation_trend": 0.6904,
+        "growth_trend": -0.0637,
+        "labor_pressure": -0.4103,
+        "housing_momentum": 0.4448,
+        "financial_conditions": 0.3725,
+        "commodity_pressure": 0.0827,
+        "consumer_sentiment": -0.2321,
+        "policy_stance": 0.74
+      }
+    },
+    {
+      "date": "2025-06-28",
+      "probabilities": {
+        "soft_landing": 0.4186,
+        "stagflation": 0.5543,
+        "recession": 0.0271
+      },
+      "factors": {
+        "inflation_trend": 0.0582,
+        "growth_trend": -0.1014,
+        "labor_pressure": -0.357,
+        "housing_momentum": 0.3733,
+        "financial_conditions": 0.2089,
+        "commodity_pressure": -0.2374,
+        "consumer_sentiment": -0.0778,
+        "policy_stance": 0.4324
+      }
+    },
+    {
+      "date": "2025-07-05",
+      "probabilities": {
+        "soft_landing": 0.4189,
+        "stagflation": 0.554,
+        "recession": 0.0271
+      },
+      "factors": {
+        "inflation_trend": 0.1972,
+        "growth_trend": -0.0744,
+        "labor_pressure": -0.2342,
+        "housing_momentum": 0.3122,
+        "financial_conditions": 0.1166,
+        "commodity_pressure": 0.0008,
+        "consumer_sentiment": 0.0211,
+        "policy_stance": 0.377
+      }
+    },
+    {
+      "date": "2025-07-12",
+      "probabilities": {
+        "soft_landing": 0.419,
+        "stagflation": 0.5539,
+        "recession": 0.0271
+      },
+      "factors": {
+        "inflation_trend": 0.2906,
+        "growth_trend": 0.046,
+        "labor_pressure": -0.115,
+        "housing_momentum": 0.2896,
+        "financial_conditions": 0.2922,
+        "commodity_pressure": 0.1001,
+        "consumer_sentiment": 0.0222,
+        "policy_stance": 0.408
+      }
+    },
+    {
+      "date": "2025-07-19",
+      "probabilities": {
+        "soft_landing": 0.4192,
+        "stagflation": 0.5538,
+        "recession": 0.027
+      },
+      "factors": {
+        "inflation_trend": 0.392,
+        "growth_trend": 0.1501,
+        "labor_pressure": 0.0216,
+        "housing_momentum": 0.3281,
+        "financial_conditions": 0.4655,
+        "commodity_pressure": 0.014,
+        "consumer_sentiment": -0.0318,
+        "policy_stance": 0.6131
+      }
+    },
+    {
+      "date": "2025-07-26",
+      "probabilities": {
+        "soft_landing": 0.4192,
+        "stagflation": 0.5538,
+        "recession": 0.027
+      },
+      "factors": {
+        "inflation_trend": 0.264,
+        "growth_trend": 0.1242,
+        "labor_pressure": 0.1038,
+        "housing_momentum": 0.3187,
+        "financial_conditions": 0.3831,
+        "commodity_pressure": -0.1247,
+        "consumer_sentiment": -0.0061,
+        "policy_stance": 0.5807
+      }
+    },
+    {
+      "date": "2025-08-02",
+      "probabilities": {
+        "soft_landing": 0.4192,
+        "stagflation": 0.5538,
+        "recession": 0.027
+      },
+      "factors": {
+        "inflation_trend": 0.5738,
+        "growth_trend": -0.0775,
+        "labor_pressure": 0.0673,
+        "housing_momentum": 0.1512,
+        "financial_conditions": -0.0386,
+        "commodity_pressure": 0.012,
+        "consumer_sentiment": -0.0772,
+        "policy_stance": 0.5447
+      }
+    },
+    {
+      "date": "2025-08-09",
+      "probabilities": {
+        "soft_landing": 0.4192,
+        "stagflation": 0.5538,
+        "recession": 0.027
+      },
+      "factors": {
+        "inflation_trend": 0.1978,
+        "growth_trend": -0.1389,
+        "labor_pressure": 0.0527,
+        "housing_momentum": 0.0366,
+        "financial_conditions": -0.2358,
+        "commodity_pressure": -0.0839,
+        "consumer_sentiment": 0.1093,
+        "policy_stance": 0.1476
+      }
+    },
+    {
+      "date": "2025-08-16",
+      "probabilities": {
+        "soft_landing": 0.4191,
+        "stagflation": 0.5538,
+        "recession": 0.027
+      },
+      "factors": {
+        "inflation_trend": -0.0185,
+        "growth_trend": -0.1265,
+        "labor_pressure": -0.0715,
+        "housing_momentum": 0.0153,
+        "financial_conditions": -0.0585,
+        "commodity_pressure": -0.0897,
+        "consumer_sentiment": 0.0452,
+        "policy_stance": 0.0793
+      }
+    },
+    {
+      "date": "2025-08-23",
+      "probabilities": {
+        "soft_landing": 0.4191,
+        "stagflation": 0.5538,
+        "recession": 0.027
+      },
+      "factors": {
+        "inflation_trend": -0.0005,
+        "growth_trend": -0.0832,
+        "labor_pressure": -0.1093,
+        "housing_momentum": -0.0074,
+        "financial_conditions": -0.0562,
+        "commodity_pressure": 0.0732,
+        "consumer_sentiment": 0.0148,
+        "policy_stance": 0.0151
+      }
+    },
+    {
+      "date": "2025-08-30",
+      "probabilities": {
+        "soft_landing": 0.4191,
+        "stagflation": 0.5538,
+        "recession": 0.027
+      },
+      "factors": {
+        "inflation_trend": -0.053,
+        "growth_trend": -0.1811,
+        "labor_pressure": -0.2246,
+        "housing_momentum": -0.0815,
+        "financial_conditions": -0.33,
+        "commodity_pressure": 0.0715,
+        "consumer_sentiment": -0.0505,
+        "policy_stance": -0.1961
+      }
+    },
+    {
+      "date": "2025-09-06",
+      "probabilities": {
+        "soft_landing": 0.4191,
+        "stagflation": 0.5538,
+        "recession": 0.027
+      },
+      "factors": {
+        "inflation_trend": 0.288,
+        "growth_trend": -0.377,
+        "labor_pressure": -0.5693,
+        "housing_momentum": -0.1838,
+        "financial_conditions": -0.4986,
+        "commodity_pressure": -0.0609,
+        "consumer_sentiment": -0.0345,
+        "policy_stance": -0.265
+      }
+    },
+    {
+      "date": "2025-09-13",
+      "probabilities": {
+        "soft_landing": 0.4191,
+        "stagflation": 0.5538,
+        "recession": 0.027
+      },
+      "factors": {
+        "inflation_trend": -0.1827,
+        "growth_trend": -0.3816,
+        "labor_pressure": -0.5204,
+        "housing_momentum": -0.3319,
+        "financial_conditions": -0.7589,
+        "commodity_pressure": -0.0106,
+        "consumer_sentiment": 0.0841,
+        "policy_stance": -0.7952
+      }
+    },
+    {
+      "date": "2025-09-20",
+      "probabilities": {
+        "soft_landing": 0.4191,
+        "stagflation": 0.5538,
+        "recession": 0.027
+      },
+      "factors": {
+        "inflation_trend": -0.4134,
+        "growth_trend": -0.2293,
+        "labor_pressure": -0.3563,
+        "housing_momentum": -0.4368,
+        "financial_conditions": -0.6858,
+        "commodity_pressure": -0.0517,
+        "consumer_sentiment": 0.0913,
+        "policy_stance": -0.982
+      }
+    },
+    {
+      "date": "2025-09-27",
+      "probabilities": {
+        "soft_landing": 0.4191,
+        "stagflation": 0.5538,
+        "recession": 0.027
+      },
+      "factors": {
+        "inflation_trend": -0.2629,
+        "growth_trend": -0.1054,
+        "labor_pressure": -0.2756,
+        "housing_momentum": -0.4722,
+        "financial_conditions": -0.5438,
+        "commodity_pressure": 0.1817,
+        "consumer_sentiment": -0.0081,
+        "policy_stance": -0.9089
+      }
+    },
+    {
+      "date": "2025-10-04",
+      "probabilities": {
+        "soft_landing": 0.4191,
+        "stagflation": 0.5538,
+        "recession": 0.0271
+      },
+      "factors": {
+        "inflation_trend": -0.3686,
+        "growth_trend": -0.1549,
+        "labor_pressure": -0.2821,
+        "housing_momentum": -0.5364,
+        "financial_conditions": -0.4444,
+        "commodity_pressure": -0.0342,
+        "consumer_sentiment": 0.0951,
+        "policy_stance": -0.6896
+      }
+    },
+    {
+      "date": "2025-10-11",
+      "probabilities": {
+        "soft_landing": 0.4191,
+        "stagflation": 0.5538,
+        "recession": 0.0271
+      },
+      "factors": {
+        "inflation_trend": -0.4646,
+        "growth_trend": -0.2468,
+        "labor_pressure": -0.2279,
+        "housing_momentum": -0.5441,
+        "financial_conditions": -0.7439,
+        "commodity_pressure": -0.1823,
+        "consumer_sentiment": -0.1053,
+        "policy_stance": -0.7106
+      }
+    },
+    {
+      "date": "2025-10-18",
+      "probabilities": {
+        "soft_landing": 0.4191,
+        "stagflation": 0.5538,
+        "recession": 0.0271
+      },
+      "factors": {
+        "inflation_trend": -0.5846,
+        "growth_trend": -0.2255,
+        "labor_pressure": -0.2492,
+        "housing_momentum": -0.6087,
+        "financial_conditions": -0.7964,
+        "commodity_pressure": -0.043,
+        "consumer_sentiment": -0.0061,
+        "policy_stance": -0.9635
+      }
+    },
+    {
+      "date": "2025-10-25",
+      "probabilities": {
+        "soft_landing": 0.4191,
+        "stagflation": 0.5538,
+        "recession": 0.0271
+      },
+      "factors": {
+        "inflation_trend": -0.6564,
+        "growth_trend": -0.0904,
+        "labor_pressure": -0.1216,
+        "housing_momentum": -0.6051,
+        "financial_conditions": -0.641,
+        "commodity_pressure": 0.2179,
+        "consumer_sentiment": 0.1097,
+        "policy_stance": -1.1287
+      }
+    },
+    {
+      "date": "2025-11-01",
+      "probabilities": {
+        "soft_landing": 0.4191,
+        "stagflation": 0.5538,
+        "recession": 0.0271
+      },
+      "factors": {
+        "inflation_trend": -0.4765,
+        "growth_trend": -0.1776,
+        "labor_pressure": -0.3435,
+        "housing_momentum": -0.544,
+        "financial_conditions": -0.4617,
+        "commodity_pressure": 0.2221,
+        "consumer_sentiment": -0.1243,
+        "policy_stance": -0.9284
+      }
+    },
+    {
+      "date": "2025-11-08",
+      "probabilities": {
+        "soft_landing": 0.4191,
+        "stagflation": 0.5538,
+        "recession": 0.0271
+      },
+      "factors": {
+        "inflation_trend": -0.4204,
+        "growth_trend": -0.1476,
+        "labor_pressure": -0.3158,
+        "housing_momentum": -0.4885,
+        "financial_conditions": -0.4423,
+        "commodity_pressure": 0.0348,
+        "consumer_sentiment": -0.1633,
+        "policy_stance": -0.7908
+      }
+    },
+    {
+      "date": "2025-11-15",
+      "probabilities": {
+        "soft_landing": 0.4191,
+        "stagflation": 0.5538,
+        "recession": 0.0271
+      },
+      "factors": {
+        "inflation_trend": -0.3454,
+        "growth_trend": -0.0824,
+        "labor_pressure": -0.2193,
+        "housing_momentum": -0.4628,
+        "financial_conditions": -0.4327,
+        "commodity_pressure": 0.0627,
+        "consumer_sentiment": -0.1527,
+        "policy_stance": -0.7197
+      }
+    },
+    {
+      "date": "2025-11-22",
+      "probabilities": {
+        "soft_landing": 0.4191,
+        "stagflation": 0.5538,
+        "recession": 0.0271
+      },
+      "factors": {
+        "inflation_trend": -0.4385,
+        "growth_trend": -0.0978,
+        "labor_pressure": -0.1237,
+        "housing_momentum": -0.4567,
+        "financial_conditions": -0.5066,
+        "commodity_pressure": -0.1142,
+        "consumer_sentiment": -0.1612,
+        "policy_stance": -0.6511
+      }
+    },
+    {
+      "date": "2025-11-29",
+      "probabilities": {
+        "soft_landing": 0.4191,
+        "stagflation": 0.5538,
+        "recession": 0.0271
+      },
+      "factors": {
+        "inflation_trend": -0.4912,
+        "growth_trend": 0.1094,
+        "labor_pressure": 0.292,
+        "housing_momentum": -0.4749,
+        "financial_conditions": -0.5564,
+        "commodity_pressure": 0.0634,
+        "consumer_sentiment": 0.191,
+        "policy_stance": -0.8983
+      }
+    },
+    {
+      "date": "2025-12-06",
+      "probabilities": {
+        "soft_landing": 0.4191,
+        "stagflation": 0.5538,
+        "recession": 0.0271
+      },
+      "factors": {
+        "inflation_trend": -0.2819,
+        "growth_trend": -0.0393,
+        "labor_pressure": -0.0361,
+        "housing_momentum": -0.4052,
+        "financial_conditions": -0.4124,
+        "commodity_pressure": 0.1415,
+        "consumer_sentiment": -0.05,
+        "policy_stance": -0.9211
+      }
+    },
+    {
+      "date": "2025-12-13",
+      "probabilities": {
+        "soft_landing": 0.4191,
+        "stagflation": 0.5538,
+        "recession": 0.0271
+      },
+      "factors": {
+        "inflation_trend": -0.2598,
+        "growth_trend": -0.0263,
+        "labor_pressure": -0.0229,
+        "housing_momentum": -0.3536,
+        "financial_conditions": -0.343,
+        "commodity_pressure": -0.0358,
+        "consumer_sentiment": -0.044,
+        "policy_stance": -0.7451
+      }
+    },
+    {
+      "date": "2025-12-20",
+      "probabilities": {
+        "soft_landing": 0.4191,
+        "stagflation": 0.5538,
+        "recession": 0.0271
+      },
+      "factors": {
+        "inflation_trend": -0.2358,
+        "growth_trend": 0.0568,
+        "labor_pressure": 0.0804,
+        "housing_momentum": -0.3245,
+        "financial_conditions": -0.239,
+        "commodity_pressure": 0.0496,
+        "consumer_sentiment": 0.0252,
+        "policy_stance": -0.6265
+      }
+    },
+    {
+      "date": "2025-12-27",
+      "probabilities": {
+        "soft_landing": 0.4191,
+        "stagflation": 0.5538,
+        "recession": 0.0271
+      },
+      "factors": {
+        "inflation_trend": -0.1448,
+        "growth_trend": 0.1346,
+        "labor_pressure": 0.3196,
+        "housing_momentum": -0.3122,
+        "financial_conditions": -0.3145,
+        "commodity_pressure": -0.0364,
+        "consumer_sentiment": 0.1267,
+        "policy_stance": -0.6005
+      }
+    },
+    {
+      "date": "2026-01-03",
+      "probabilities": {
+        "soft_landing": 0.4191,
+        "stagflation": 0.5538,
+        "recession": 0.0271
+      },
+      "factors": {
+        "inflation_trend": -0.5593,
+        "growth_trend": 0.1882,
+        "labor_pressure": 0.3785,
+        "housing_momentum": -0.3239,
+        "financial_conditions": -0.2154,
+        "commodity_pressure": -0.0985,
+        "consumer_sentiment": 0.1055,
+        "policy_stance": -0.768
+      }
+    },
+    {
+      "date": "2026-01-10",
+      "probabilities": {
+        "soft_landing": 0.4191,
+        "stagflation": 0.5538,
+        "recession": 0.0271
+      },
+      "factors": {
+        "inflation_trend": -0.2995,
+        "growth_trend": 0.2569,
+        "labor_pressure": 0.539,
+        "housing_momentum": -0.2975,
+        "financial_conditions": -0.2346,
+        "commodity_pressure": 0.2202,
+        "consumer_sentiment": 0.1598,
+        "policy_stance": -0.6411
+      }
+    },
+    {
+      "date": "2026-01-17",
+      "probabilities": {
+        "soft_landing": 0.4191,
+        "stagflation": 0.5538,
+        "recession": 0.0271
+      },
+      "factors": {
+        "inflation_trend": -0.1603,
+        "growth_trend": 0.1879,
+        "labor_pressure": 0.5481,
+        "housing_momentum": -0.257,
+        "financial_conditions": -0.1743,
+        "commodity_pressure": -0.0075,
+        "consumer_sentiment": 0.1696,
+        "policy_stance": -0.4981
+      }
+    },
+    {
+      "date": "2026-01-24",
+      "probabilities": {
+        "soft_landing": 0.4191,
+        "stagflation": 0.5538,
+        "recession": 0.0271
+      },
+      "factors": {
+        "inflation_trend": 0.2109,
+        "growth_trend": 0.1875,
+        "labor_pressure": 0.5416,
+        "housing_momentum": -0.2651,
+        "financial_conditions": -0.2154,
+        "commodity_pressure": 0.2289,
+        "consumer_sentiment": 0.13,
+        "policy_stance": -0.3435
+      }
+    },
+    {
+      "date": "2026-01-31",
+      "probabilities": {
+        "soft_landing": 0.4191,
+        "stagflation": 0.5538,
+        "recession": 0.0271
+      },
+      "factors": {
+        "inflation_trend": 0.2599,
+        "growth_trend": 0.1143,
+        "labor_pressure": 0.3245,
+        "housing_momentum": -0.1729,
+        "financial_conditions": 0.1312,
+        "commodity_pressure": -0.0146,
+        "consumer_sentiment": -0.0805,
+        "policy_stance": -0.0022
+      }
+    },
+    {
+      "date": "2026-02-07",
+      "probabilities": {
+        "soft_landing": 0.4191,
+        "stagflation": 0.5538,
+        "recession": 0.0271
+      },
+      "factors": {
+        "inflation_trend": 0.2711,
+        "growth_trend": 0.0869,
+        "labor_pressure": 0.1356,
+        "housing_momentum": -0.1687,
+        "financial_conditions": -0.144,
+        "commodity_pressure": -0.0368,
+        "consumer_sentiment": -0.1538,
+        "policy_stance": -0.3822
+      }
+    },
+    {
+      "date": "2026-02-14",
+      "probabilities": {
+        "soft_landing": 0.4191,
+        "stagflation": 0.5538,
+        "recession": 0.0271
+      },
+      "factors": {
+        "inflation_trend": 0.0436,
+        "growth_trend": -0.0008,
+        "labor_pressure": 0.2303,
+        "housing_momentum": -0.1962,
+        "financial_conditions": -0.3473,
+        "commodity_pressure": -0.1035,
+        "consumer_sentiment": -0.0079,
+        "policy_stance": -0.4514
+      }
+    },
+    {
+      "date": "2026-02-21",
+      "probabilities": {
+        "soft_landing": 0.4191,
+        "stagflation": 0.5538,
+        "recession": 0.0271
+      },
+      "factors": {
+        "inflation_trend": -0.0303,
+        "growth_trend": 0.0236,
+        "labor_pressure": 0.2738,
+        "housing_momentum": -0.2479,
+        "financial_conditions": -0.405,
+        "commodity_pressure": 0.159,
+        "consumer_sentiment": 0.1159,
+        "policy_stance": -0.5896
+      }
+    },
+    {
+      "date": "2026-02-28",
+      "probabilities": {
+        "soft_landing": 0.4191,
+        "stagflation": 0.5538,
+        "recession": 0.0271
+      },
+      "factors": {
+        "inflation_trend": -0.2176,
+        "growth_trend": -0.0627,
+        "labor_pressure": 0.2768,
+        "housing_momentum": -0.3496,
+        "financial_conditions": -0.6318,
+        "commodity_pressure": 0.1175,
+        "consumer_sentiment": 0.162,
+        "policy_stance": -0.8141
+      }
+    }
+  ]
+}

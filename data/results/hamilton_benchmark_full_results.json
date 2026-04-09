@@ -1,0 +1,378 @@
+{
+  "experiment": "hamilton_benchmark_full_history",
+  "date_range": "1975-01-01 \u2192 2026-02-28",
+  "run_timestamp": "2026-03-17T18:01:03.933436",
+  "comparison": [
+    {
+      "event": "Volcker Recession I",
+      "imm_lag_weeks": 61.0,
+      "hamilton_equalized_lag_weeks": 81.7,
+      "hamilton_rolling_lag_weeks": 317.6,
+      "hamilton_fullsample_lag_weeks": 0.0,
+      "winner_vs_equalized": "IMM"
+    },
+    {
+      "event": "Volcker Recession II",
+      "imm_lag_weeks": 53.1,
+      "hamilton_equalized_lag_weeks": 3.6,
+      "hamilton_rolling_lag_weeks": 239.4,
+      "hamilton_fullsample_lag_weeks": 0.0,
+      "winner_vs_equalized": "Ham"
+    },
+    {
+      "event": "Black Monday",
+      "imm_lag_weeks": 85.0,
+      "hamilton_equalized_lag_weeks": 145.4,
+      "hamilton_rolling_lag_weeks": 182.6,
+      "hamilton_fullsample_lag_weeks": 147.9,
+      "winner_vs_equalized": "IMM"
+    },
+    {
+      "event": "Gulf War Recession",
+      "imm_lag_weeks": 19.7,
+      "hamilton_equalized_lag_weeks": 2.0,
+      "hamilton_rolling_lag_weeks": 39.1,
+      "hamilton_fullsample_lag_weeks": 4.4,
+      "winner_vs_equalized": "Ham"
+    },
+    {
+      "event": "Dot-com Bust",
+      "imm_lag_weeks": 0.3,
+      "hamilton_equalized_lag_weeks": 56.4,
+      "hamilton_rolling_lag_weeks": 4.4,
+      "hamilton_fullsample_lag_weeks": 230.6,
+      "winner_vs_equalized": "IMM"
+    },
+    {
+      "event": "Great Recession",
+      "imm_lag_weeks": 0.9,
+      "hamilton_equalized_lag_weeks": 557.7,
+      "hamilton_rolling_lag_weeks": 69.4,
+      "hamilton_fullsample_lag_weeks": 0.0,
+      "winner_vs_equalized": "IMM"
+    },
+    {
+      "event": "COVID Crash",
+      "imm_lag_weeks": 0.7,
+      "hamilton_equalized_lag_weeks": 118.0,
+      "hamilton_rolling_lag_weeks": 8.7,
+      "hamilton_fullsample_lag_weeks": 52.1,
+      "winner_vs_equalized": "IMM"
+    },
+    {
+      "event": "Inflation Surge",
+      "imm_lag_weeks": 0.6,
+      "hamilton_equalized_lag_weeks": 195.9,
+      "hamilton_rolling_lag_weeks": null,
+      "hamilton_fullsample_lag_weeks": 113.0,
+      "winner_vs_equalized": "IMM"
+    },
+    {
+      "event": "Soft Landing",
+      "imm_lag_weeks": 16.7,
+      "hamilton_equalized_lag_weeks": 9.0,
+      "hamilton_rolling_lag_weeks": 95.7,
+      "hamilton_fullsample_lag_weeks": null,
+      "winner_vs_equalized": "Ham"
+    }
+  ],
+  "imm_lags": [
+    {
+      "event": "Volcker Recession I",
+      "model": "IMM",
+      "detection_lag_weeks": 61.0,
+      "detection_date": "1981-03-03",
+      "onset_date": "1980-01-01",
+      "probability_at_detection": 0.7701
+    },
+    {
+      "event": "Volcker Recession II",
+      "model": "IMM",
+      "detection_lag_weeks": 53.1,
+      "detection_date": "1982-07-08",
+      "onset_date": "1981-07-01",
+      "probability_at_detection": 0.5327
+    },
+    {
+      "event": "Black Monday",
+      "model": "IMM",
+      "detection_lag_weeks": 85.0,
+      "detection_date": "1989-05-18",
+      "onset_date": "1987-10-01",
+      "probability_at_detection": 0.6709
+    },
+    {
+      "event": "Gulf War Recession",
+      "model": "IMM",
+      "detection_lag_weeks": 19.7,
+      "detection_date": "1990-11-16",
+      "onset_date": "1990-07-01",
+      "probability_at_detection": 0.9854
+    },
+    {
+      "event": "Dot-com Bust",
+      "model": "IMM",
+      "detection_lag_weeks": 0.3,
+      "detection_date": "2001-03-03",
+      "onset_date": "2001-03-01",
+      "probability_at_detection": 0.99
+    },
+    {
+      "event": "Great Recession",
+      "model": "IMM",
+      "detection_lag_weeks": 0.9,
+      "detection_date": "2008-01-07",
+      "onset_date": "2008-01-01",
+      "probability_at_detection": 0.9856
+    },
+    {
+      "event": "COVID Crash",
+      "model": "IMM",
+      "detection_lag_weeks": 0.7,
+      "detection_date": "2020-03-06",
+      "onset_date": "2020-03-01",
+      "probability_at_detection": 0.9877
+    },
+    {
+      "event": "Inflation Surge",
+      "model": "IMM",
+      "detection_lag_weeks": 0.6,
+      "detection_date": "2021-03-05",
+      "onset_date": "2021-03-01",
+      "probability_at_detection": 0.99
+    },
+    {
+      "event": "Soft Landing",
+      "model": "IMM",
+      "detection_lag_weeks": 16.7,
+      "detection_date": "2023-04-28",
+      "onset_date": "2023-01-01",
+      "probability_at_detection": 0.7284
+    }
+  ],
+  "hamilton_equalized_lags": [
+    {
+      "event": "Volcker Recession I",
+      "model": "Hamilton (equalized)",
+      "detection_lag_weeks": 81.7,
+      "detection_date": "1981-07-26",
+      "onset_date": "1980-01-01",
+      "probability_at_detection": 1.0
+    },
+    {
+      "event": "Volcker Recession II",
+      "model": "Hamilton (equalized)",
+      "detection_lag_weeks": 3.6,
+      "detection_date": "1981-07-26",
+      "onset_date": "1981-07-01",
+      "probability_at_detection": 1.0
+    },
+    {
+      "event": "Black Monday",
+      "model": "Hamilton (equalized)",
+      "detection_lag_weeks": 145.4,
+      "detection_date": "1990-07-15",
+      "onset_date": "1987-10-01",
+      "probability_at_detection": 1.0
+    },
+    {
+      "event": "Gulf War Recession",
+      "model": "Hamilton (equalized)",
+      "detection_lag_weeks": 2.0,
+      "detection_date": "1990-07-15",
+      "onset_date": "1990-07-01",
+      "probability_at_detection": 1.0
+    },
+    {
+      "event": "Dot-com Bust",
+      "model": "Hamilton (equalized)",
+      "detection_lag_weeks": 56.4,
+      "detection_date": "2002-03-31",
+      "onset_date": "2001-03-01",
+      "probability_at_detection": 0.9992
+    },
+    {
+      "event": "Great Recession",
+      "model": "Hamilton (equalized)",
+      "detection_lag_weeks": 557.7,
+      "detection_date": "2018-09-09",
+      "onset_date": "2008-01-01",
+      "probability_at_detection": 0.9992
+    },
+    {
+      "event": "COVID Crash",
+      "model": "Hamilton (equalized)",
+      "detection_lag_weeks": 118.0,
+      "detection_date": "2022-06-05",
+      "onset_date": "2020-03-01",
+      "probability_at_detection": 1.0
+    },
+    {
+      "event": "Inflation Surge",
+      "model": "Hamilton (equalized)",
+      "detection_lag_weeks": 195.9,
+      "detection_date": "2024-12-01",
+      "onset_date": "2021-03-01",
+      "probability_at_detection": 0.9988
+    },
+    {
+      "event": "Soft Landing",
+      "model": "Hamilton (equalized)",
+      "detection_lag_weeks": 9.0,
+      "detection_date": "2023-03-05",
+      "onset_date": "2023-01-01",
+      "probability_at_detection": 0.9991
+    }
+  ],
+  "hamilton_rolling_lags": [
+    {
+      "event": "Volcker Recession I",
+      "model": "Hamilton (rolling)",
+      "detection_lag_weeks": 317.6,
+      "detection_date": "1986-02-01",
+      "onset_date": "1980-01-01",
+      "probability_at_detection": 1.0
+    },
+    {
+      "event": "Volcker Recession II",
+      "model": "Hamilton (rolling)",
+      "detection_lag_weeks": 239.4,
+      "detection_date": "1986-02-01",
+      "onset_date": "1981-07-01",
+      "probability_at_detection": 1.0
+    },
+    {
+      "event": "Black Monday",
+      "model": "Hamilton (rolling)",
+      "detection_lag_weeks": 182.6,
+      "detection_date": "1991-04-01",
+      "onset_date": "1987-10-01",
+      "probability_at_detection": 0.9836
+    },
+    {
+      "event": "Gulf War Recession",
+      "model": "Hamilton (rolling)",
+      "detection_lag_weeks": 39.1,
+      "detection_date": "1991-04-01",
+      "onset_date": "1990-07-01",
+      "probability_at_detection": 0.9836
+    },
+    {
+      "event": "Dot-com Bust",
+      "model": "Hamilton (rolling)",
+      "detection_lag_weeks": 4.4,
+      "detection_date": "2001-04-01",
+      "onset_date": "2001-03-01",
+      "probability_at_detection": 0.992
+    },
+    {
+      "event": "Great Recession",
+      "model": "Hamilton (rolling)",
+      "detection_lag_weeks": 69.4,
+      "detection_date": "2009-05-01",
+      "onset_date": "2008-01-01",
+      "probability_at_detection": 1.0
+    },
+    {
+      "event": "COVID Crash",
+      "model": "Hamilton (rolling)",
+      "detection_lag_weeks": 8.7,
+      "detection_date": "2020-05-01",
+      "onset_date": "2020-03-01",
+      "probability_at_detection": 1.0
+    },
+    {
+      "event": "Inflation Surge",
+      "model": "Hamilton (rolling)",
+      "detection_lag_weeks": null,
+      "max_probability": 1.0,
+      "note": "never sustained 2 periods above 40%"
+    },
+    {
+      "event": "Soft Landing",
+      "model": "Hamilton (rolling)",
+      "detection_lag_weeks": 95.7,
+      "detection_date": "2024-11-01",
+      "onset_date": "2023-01-01",
+      "probability_at_detection": 0.928
+    }
+  ],
+  "hamilton_fullsample_lags": [
+    {
+      "event": "Volcker Recession I",
+      "model": "Hamilton (full)",
+      "detection_lag_weeks": 0.0,
+      "detection_date": "1980-01-01",
+      "onset_date": "1980-01-01",
+      "probability_at_detection": 1.0
+    },
+    {
+      "event": "Volcker Recession II",
+      "model": "Hamilton (full)",
+      "detection_lag_weeks": 0.0,
+      "detection_date": "1981-07-01",
+      "onset_date": "1981-07-01",
+      "probability_at_detection": 1.0
+    },
+    {
+      "event": "Black Monday",
+      "model": "Hamilton (full)",
+      "detection_lag_weeks": 147.9,
+      "detection_date": "1990-08-01",
+      "onset_date": "1987-10-01",
+      "probability_at_detection": 0.85
+    },
+    {
+      "event": "Gulf War Recession",
+      "model": "Hamilton (full)",
+      "detection_lag_weeks": 4.4,
+      "detection_date": "1990-08-01",
+      "onset_date": "1990-07-01",
+      "probability_at_detection": 0.85
+    },
+    {
+      "event": "Dot-com Bust",
+      "model": "Hamilton (full)",
+      "detection_lag_weeks": 230.6,
+      "detection_date": "2005-08-01",
+      "onset_date": "2001-03-01",
+      "probability_at_detection": 0.4906
+    },
+    {
+      "event": "Great Recession",
+      "model": "Hamilton (full)",
+      "detection_lag_weeks": 0.0,
+      "detection_date": "2008-01-01",
+      "onset_date": "2008-01-01",
+      "probability_at_detection": 0.993
+    },
+    {
+      "event": "COVID Crash",
+      "model": "Hamilton (full)",
+      "detection_lag_weeks": 52.1,
+      "detection_date": "2021-03-01",
+      "onset_date": "2020-03-01",
+      "probability_at_detection": 0.5888
+    },
+    {
+      "event": "Inflation Surge",
+      "model": "Hamilton (full)",
+      "detection_lag_weeks": 113.0,
+      "detection_date": "2023-05-01",
+      "onset_date": "2021-03-01",
+      "probability_at_detection": 0.7925
+    },
+    {
+      "event": "Soft Landing",
+      "model": "Hamilton (full)",
+      "detection_lag_weeks": null,
+      "max_probability": 0.0064,
+      "note": "never sustained 2 periods above 40%"
+    }
+  ],
+  "hamilton_equalized_fit": {
+    "fit_count": 194,
+    "fail_count": 0,
+    "convergence_failures": 0
+  }
+}

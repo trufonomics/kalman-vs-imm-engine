@@ -1,0 +1,247 @@
+{
+  "experiment": "hamilton_benchmark",
+  "run_timestamp": "2026-03-17T17:35:43.067560",
+  "imm_detection_lags": [
+    {
+      "event": "Great Recession",
+      "expected": "recession",
+      "model": "IMM",
+      "detection_date": "2008-01-09",
+      "onset_date": "2008-01-01",
+      "detection_lag_weeks": 1.1,
+      "probability_at_detection": 0.9852
+    },
+    {
+      "event": "COVID Crash",
+      "expected": "recession",
+      "model": "IMM",
+      "detection_date": "2020-04-05",
+      "onset_date": "2020-03-01",
+      "detection_lag_weeks": 5.0,
+      "probability_at_detection": 0.9875
+    },
+    {
+      "event": "Inflation Surge",
+      "expected": "stagflation",
+      "model": "IMM",
+      "detection_date": "2021-03-07",
+      "onset_date": "2021-03-01",
+      "detection_lag_weeks": 0.9,
+      "probability_at_detection": 0.9891
+    },
+    {
+      "event": "Soft Landing",
+      "expected": "soft_landing",
+      "model": "IMM",
+      "detection_date": "2023-04-09",
+      "onset_date": "2023-01-01",
+      "detection_lag_weeks": 14.0,
+      "probability_at_detection": 0.9894
+    }
+  ],
+  "hamilton_fullsample_lags": [
+    {
+      "event": "Great Recession",
+      "expected": "recession",
+      "model": "Hamilton (full)",
+      "detection_date": "2008-11-01",
+      "onset_date": "2008-01-01",
+      "detection_lag_weeks": 43.6,
+      "probability_at_detection": 1.0
+    },
+    {
+      "event": "COVID Crash",
+      "expected": "recession",
+      "model": "Hamilton (full)",
+      "detection_date": "2020-03-01",
+      "onset_date": "2020-03-01",
+      "detection_lag_weeks": 0.0,
+      "probability_at_detection": 1.0
+    },
+    {
+      "event": "Inflation Surge",
+      "expected": "stagflation",
+      "model": "Hamilton (full)",
+      "detection_date": "2021-03-01",
+      "onset_date": "2021-03-01",
+      "detection_lag_weeks": 0.0,
+      "probability_at_detection": 0.5872
+    },
+    {
+      "event": "Soft Landing",
+      "expected": "soft_landing",
+      "model": "Hamilton (full)",
+      "detection_lag_weeks": null,
+      "note": "never sustained 2 consecutive periods above 40%",
+      "max_probability": 1.0
+    }
+  ],
+  "hamilton_rolling_lags": [
+    {
+      "event": "Great Recession",
+      "expected": "recession",
+      "model": "Hamilton (rolling)",
+      "detection_date": "2019-02-01",
+      "onset_date": "2008-01-01",
+      "detection_lag_weeks": 578.4,
+      "probability_at_detection": 0.9585
+    },
+    {
+      "event": "COVID Crash",
+      "expected": "recession",
+      "model": "Hamilton (rolling)",
+      "detection_lag_weeks": null,
+      "note": "never sustained 2 consecutive periods above 40%",
+      "max_probability": 1.0
+    },
+    {
+      "event": "Inflation Surge",
+      "expected": "stagflation",
+      "model": "Hamilton (rolling)",
+      "detection_date": "2023-02-01",
+      "onset_date": "2021-03-01",
+      "detection_lag_weeks": 100.3,
+      "probability_at_detection": 1.0
+    },
+    {
+      "event": "Soft Landing",
+      "expected": "soft_landing",
+      "model": "Hamilton (rolling)",
+      "detection_date": "2025-08-01",
+      "onset_date": "2023-01-01",
+      "detection_lag_weeks": 134.7,
+      "probability_at_detection": 0.9992
+    }
+  ],
+  "hamilton_equalized_lags": [
+    {
+      "event": "Great Recession",
+      "expected": "recession",
+      "model": "Hamilton (equalized)",
+      "detection_date": "2008-01-06",
+      "onset_date": "2008-01-01",
+      "detection_lag_weeks": 0.7,
+      "probability_at_detection": 0.9938
+    },
+    {
+      "event": "COVID Crash",
+      "expected": "recession",
+      "model": "Hamilton (equalized)",
+      "detection_date": "2020-03-22",
+      "onset_date": "2020-03-01",
+      "detection_lag_weeks": 3.0,
+      "probability_at_detection": 1.0
+    },
+    {
+      "event": "Inflation Surge",
+      "expected": "stagflation",
+      "model": "Hamilton (equalized)",
+      "detection_date": "2021-06-20",
+      "onset_date": "2021-03-01",
+      "detection_lag_weeks": 15.9,
+      "probability_at_detection": 1.0
+    },
+    {
+      "event": "Soft Landing",
+      "expected": "soft_landing",
+      "model": "Hamilton (equalized)",
+      "detection_lag_weeks": null,
+      "note": "never sustained 2 consecutive periods above 40%",
+      "max_probability": 0.9961
+    }
+  ],
+  "comparison": [
+    {
+      "event": "Great Recession",
+      "imm_lag_weeks": 1.1,
+      "hamilton_fullsample_lag_weeks": 43.6,
+      "hamilton_rolling_lag_weeks": 578.4,
+      "winner_vs_rolling": "IMM",
+      "hamilton_equalized_lag_weeks": 0.7,
+      "winner_vs_equalized": "Hamilton"
+    },
+    {
+      "event": "COVID Crash",
+      "imm_lag_weeks": 5.0,
+      "hamilton_fullsample_lag_weeks": 0.0,
+      "hamilton_rolling_lag_weeks": null,
+      "winner_vs_rolling": "IMM",
+      "hamilton_equalized_lag_weeks": 3.0,
+      "winner_vs_equalized": "Hamilton"
+    },
+    {
+      "event": "Inflation Surge",
+      "imm_lag_weeks": 0.9,
+      "hamilton_fullsample_lag_weeks": 0.0,
+      "hamilton_rolling_lag_weeks": 100.3,
+      "winner_vs_rolling": "IMM",
+      "hamilton_equalized_lag_weeks": 15.9,
+      "winner_vs_equalized": "IMM"
+    },
+    {
+      "event": "Soft Landing",
+      "imm_lag_weeks": 14.0,
+      "hamilton_fullsample_lag_weeks": null,
+      "hamilton_rolling_lag_weeks": 134.7,
+      "winner_vs_rolling": "IMM",
+      "hamilton_equalized_lag_weeks": null,
+      "winner_vs_equalized": "IMM"
+    }
+  ],
+  "hamilton_fit": {
+    "log_likelihood": -2.4918593140462626,
+    "aic": 52.983718628092525,
+    "bic": 137.8797410365374,
+    "regime_labels": {
+      "1": "recession",
+      "2": "stagflation",
+      "0": "soft_landing"
+    }
+  },
+  "hamilton_equalized_fit": {
+    "fit_count": 73,
+    "fail_count": 0,
+    "regime_labels": {
+      "recession": "recession",
+      "soft_landing": "soft_landing",
+      "stagflation": "stagflation"
+    },
+    "frequency": "weekly",
+    "input": "15 streams via PCA (4 components)"
+  },
+  "methodology": {
+    "hamilton_original": {
+      "regimes": 3,
+      "endog": "CPI YoY",
+      "exog": [
+        "unemployment",
+        "10Y yield",
+        "fed funds",
+        "S&P500"
+      ],
+      "frequency": "monthly",
+      "consecutive_periods": 2
+    },
+    "hamilton_equalized": {
+      "regimes": 3,
+      "endog": "PC1 (first principal component of all 15 streams)",
+      "exog": [
+        "PC2",
+        "PC3",
+        "PC4"
+      ],
+      "frequency": "weekly",
+      "consecutive_periods": 3,
+      "pca_input_streams": 15,
+      "note": "Same data, same frequency, same detection threshold as IMM"
+    },
+    "imm": {
+      "factors": 8,
+      "streams": 15,
+      "frequency": "weekly (daily updates, weekly snapshots)",
+      "consecutive_periods": 3
+    },
+    "detection_threshold": 0.4,
+    "rolling_refit_interval": "6 months (26 weeks equalized, 6 months original)"
+  }
+}

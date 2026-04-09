@@ -1,0 +1,194 @@
+{
+  "experiment": "chauvet_piger_benchmark",
+  "date_range": "1975-01-01 \u2192 2026-02-01",
+  "detection_results": [
+    {
+      "event": "Volcker I",
+      "nber_start": "1980-01-01",
+      "nber_end": "1980-07-01",
+      "imm": {
+        "detected": true,
+        "first_date": "1980-04-01",
+        "lead_months": 9.0,
+        "peak": 98.93
+      },
+      "chauvet_piger": {
+        "detected": true,
+        "first_date": "1980-03-01",
+        "lead_months": 8.0,
+        "peak": 98.48
+      },
+      "sahm_rule": {
+        "detected": true,
+        "first_date": "1980-04-01",
+        "lead_months": 9.0,
+        "peak": 2.03
+      },
+      "cfnai": {
+        "detected": true,
+        "first_date": "1980-03-01",
+        "lead_months": 8.0,
+        "peak": -2.38
+      }
+    },
+    {
+      "event": "Volcker II",
+      "nber_start": "1981-07-01",
+      "nber_end": "1982-11-01",
+      "imm": {
+        "detected": true,
+        "first_date": "1981-11-01",
+        "lead_months": 10.0,
+        "peak": 99.0
+      },
+      "chauvet_piger": {
+        "detected": true,
+        "first_date": "1981-09-01",
+        "lead_months": 8.0,
+        "peak": 94.2
+      },
+      "sahm_rule": {
+        "detected": true,
+        "first_date": "1981-01-01",
+        "lead_months": 0.0,
+        "peak": 2.53
+      },
+      "cfnai": {
+        "detected": true,
+        "first_date": "1981-09-01",
+        "lead_months": 8.0,
+        "peak": -1.82
+      }
+    },
+    {
+      "event": "Gulf War",
+      "nber_start": "1990-07-01",
+      "nber_end": "1991-03-01",
+      "imm": {
+        "detected": true,
+        "first_date": "1990-11-01",
+        "lead_months": 10.0,
+        "peak": 96.03
+      },
+      "chauvet_piger": {
+        "detected": true,
+        "first_date": "1990-10-01",
+        "lead_months": 9.0,
+        "peak": 64.02
+      },
+      "sahm_rule": {
+        "detected": true,
+        "first_date": "1990-11-01",
+        "lead_months": 10.0,
+        "peak": 1.5
+      },
+      "cfnai": {
+        "detected": true,
+        "first_date": "1990-04-01",
+        "lead_months": 3.0,
+        "peak": -1.4
+      }
+    },
+    {
+      "event": "Dot-com Bust",
+      "nber_start": "2001-03-01",
+      "nber_end": "2001-11-01",
+      "imm": {
+        "detected": true,
+        "first_date": "2000-11-01",
+        "lead_months": 2.0,
+        "peak": 98.83
+      },
+      "chauvet_piger": {
+        "detected": false,
+        "first_date": null,
+        "lead_months": null,
+        "peak": 31.52
+      },
+      "sahm_rule": {
+        "detected": true,
+        "first_date": "2001-06-01",
+        "lead_months": 9.0,
+        "peak": 1.63
+      },
+      "cfnai": {
+        "detected": true,
+        "first_date": "2001-04-01",
+        "lead_months": 7.0,
+        "peak": -1.12
+      }
+    },
+    {
+      "event": "Great Recession",
+      "nber_start": "2007-12-01",
+      "nber_end": "2009-06-01",
+      "imm": {
+        "detected": true,
+        "first_date": "2007-07-01",
+        "lead_months": 1.0,
+        "peak": 98.89
+      },
+      "chauvet_piger": {
+        "detected": true,
+        "first_date": "2008-03-01",
+        "lead_months": 9.0,
+        "peak": 99.18
+      },
+      "sahm_rule": {
+        "detected": true,
+        "first_date": "2008-04-01",
+        "lead_months": 10.0,
+        "peak": 3.9
+      },
+      "cfnai": {
+        "detected": true,
+        "first_date": "2008-02-01",
+        "lead_months": 8.0,
+        "peak": -3.03
+      }
+    },
+    {
+      "event": "COVID",
+      "nber_start": "2020-02-01",
+      "nber_end": "2020-04-01",
+      "imm": {
+        "detected": true,
+        "first_date": "2019-08-01",
+        "lead_months": 0.0,
+        "peak": 99.0
+      },
+      "chauvet_piger": {
+        "detected": true,
+        "first_date": "2020-03-01",
+        "lead_months": 7.0,
+        "peak": 100.0
+      },
+      "sahm_rule": {
+        "detected": true,
+        "first_date": "2020-04-01",
+        "lead_months": 8.0,
+        "peak": 9.5
+      },
+      "cfnai": {
+        "detected": true,
+        "first_date": "2019-10-01",
+        "lead_months": 2.0,
+        "peak": -18.26
+      }
+    }
+  ],
+  "false_positive_rates": {
+    "imm_50": 0.2061,
+    "imm_40": 0.226,
+    "imm_30": 0.255,
+    "cp_50": 0.0,
+    "sahm_50": 0.1504
+  },
+  "win_counts": {
+    "C-P": 1,
+    "Sahm": 1,
+    "CFNAI": 1,
+    "IMM": 3
+  },
+  "run_timestamp": "2026-03-17T19:18:33.084139"
+}

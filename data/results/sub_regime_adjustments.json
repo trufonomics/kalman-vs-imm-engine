@@ -1,0 +1,244 @@
+{
+  "raw_means": {
+    "expansion_goldilocks": {
+      "inflation_trend": 0.174,
+      "growth_trend": 0.103,
+      "labor_pressure": 0.175,
+      "housing_momentum": 0.107,
+      "financial_conditions": 0.113,
+      "commodity_pressure": 0.01,
+      "consumer_sentiment": 0.059,
+      "policy_stance": 0.043
+    },
+    "expansion_boom": {
+      "inflation_trend": 0.416,
+      "growth_trend": 0.1,
+      "labor_pressure": 0.153,
+      "housing_momentum": 0.181,
+      "financial_conditions": 0.144,
+      "commodity_pressure": 0.025,
+      "consumer_sentiment": 0.066,
+      "policy_stance": 0.119
+    },
+    "expansion_disinflation": {
+      "inflation_trend": 0.13,
+      "growth_trend": -0.072,
+      "labor_pressure": -0.069,
+      "housing_momentum": 0.06,
+      "financial_conditions": 0.105,
+      "commodity_pressure": 0.024,
+      "consumer_sentiment": -0.015,
+      "policy_stance": 0.388
+    },
+    "stagflation_cost_push": {
+      "inflation_trend": 0.55,
+      "growth_trend": 0.112,
+      "labor_pressure": 0.092,
+      "housing_momentum": 0.097,
+      "financial_conditions": 0.102,
+      "commodity_pressure": 0.025,
+      "consumer_sentiment": 0.002,
+      "policy_stance": -0.078
+    },
+    "stagflation_demand_pull": {
+      "inflation_trend": 0.979,
+      "growth_trend": 0.191,
+      "labor_pressure": 0.282,
+      "housing_momentum": 0.218,
+      "financial_conditions": 0.151,
+      "commodity_pressure": 0.044,
+      "consumer_sentiment": 0.082,
+      "policy_stance": -0.078
+    },
+    "contraction_credit_crunch": {
+      "inflation_trend": -0.659,
+      "growth_trend": -0.052,
+      "labor_pressure": -0.321,
+      "housing_momentum": -0.295,
+      "financial_conditions": -0.314,
+      "commodity_pressure": -0.087,
+      "consumer_sentiment": -0.164,
+      "policy_stance": -0.758
+    },
+    "contraction_demand_shock": {
+      "inflation_trend": -1.12,
+      "growth_trend": -0.371,
+      "labor_pressure": -0.607,
+      "housing_momentum": -0.459,
+      "financial_conditions": -0.66,
+      "commodity_pressure": -0.11,
+      "consumer_sentiment": -0.21,
+      "policy_stance": -0.76
+    }
+  },
+  "level_b_deltas": {
+    "expansion_goldilocks": {
+      "inflation_trend": 0.374,
+      "growth_trend": -0.097,
+      "labor_pressure": 0.325,
+      "housing_momentum": 0.107,
+      "financial_conditions": 0.113,
+      "consumer_sentiment": -0.091,
+      "policy_stance": 0.143
+    },
+    "expansion_boom": {
+      "inflation_trend": 0.616,
+      "growth_trend": -0.1,
+      "labor_pressure": 0.303,
+      "housing_momentum": 0.181,
+      "financial_conditions": 0.144,
+      "consumer_sentiment": -0.084,
+      "policy_stance": 0.219
+    },
+    "expansion_disinflation": {
+      "inflation_trend": 0.33,
+      "growth_trend": -0.272,
+      "labor_pressure": 0.081,
+      "housing_momentum": 0.06,
+      "financial_conditions": 0.105,
+      "consumer_sentiment": -0.165,
+      "policy_stance": 0.488
+    },
+    "stagflation_cost_push": {
+      "inflation_trend": -0.513,
+      "growth_trend": -0.083,
+      "labor_pressure": -0.228,
+      "housing_momentum": -0.263,
+      "financial_conditions": -0.145,
+      "consumer_sentiment": -0.098,
+      "policy_stance": -0.249
+    },
+    "stagflation_demand_pull": {
+      "inflation_trend": -0.084,
+      "labor_pressure": -0.038,
+      "housing_momentum": -0.142,
+      "financial_conditions": -0.096,
+      "commodity_pressure": 0.044,
+      "policy_stance": -0.249
+    },
+    "contraction_credit_crunch": {
+      "inflation_trend": 0.053,
+      "growth_trend": 0.163,
+      "labor_pressure": 0.1,
+      "housing_momentum": 0.034,
+      "financial_conditions": 0.051,
+      "policy_stance": -0.305
+    },
+    "contraction_demand_shock": {
+      "inflation_trend": -0.408,
+      "growth_trend": -0.156,
+      "labor_pressure": -0.186,
+      "housing_momentum": -0.13,
+      "financial_conditions": -0.295,
+      "commodity_pressure": -0.05,
+      "consumer_sentiment": -0.056,
+      "policy_stance": -0.307
+    }
+  },
+  "parent_adjustments": {
+    "expansion": {
+      "inflation_trend": -0.2,
+      "growth_trend": 0.2,
+      "labor_pressure": -0.15,
+      "consumer_sentiment": 0.15,
+      "policy_stance": -0.1
+    },
+    "stagflation": {
+      "inflation_trend": 1.063,
+      "growth_trend": 0.195,
+      "labor_pressure": 0.32,
+      "housing_momentum": 0.36,
+      "financial_conditions": 0.247,
+      "consumer_sentiment": 0.1,
+      "policy_stance": 0.171
+    },
+    "contraction": {
+      "inflation_trend": -0.712,
+      "growth_trend": -0.215,
+      "labor_pressure": -0.421,
+      "housing_momentum": -0.329,
+      "financial_conditions": -0.365,
+      "consumer_sentiment": -0.154,
+      "policy_stance": -0.453,
+      "commodity_pressure": -0.06
+    }
+  },
+  "sub_regime_windows": {
+    "expansion_goldilocks": [
+      [
+        "2013-01-01",
+        "2015-12-31"
+      ],
+      [
+        "2017-01-01",
+        "2018-09-30"
+      ],
+      [
+        "2024-06-01",
+        "2025-06-30"
+      ]
+    ],
+    "expansion_boom": [
+      [
+        "1997-01-01",
+        "2000-03-31"
+      ],
+      [
+        "2005-01-01",
+        "2006-12-31"
+      ],
+      [
+        "2021-03-01",
+        "2021-09-30"
+      ]
+    ],
+    "expansion_disinflation": [
+      [
+        "2019-07-01",
+        "2019-12-31"
+      ],
+      [
+        "2023-01-01",
+        "2024-05-31"
+      ]
+    ],
+    "stagflation_cost_push": [
+      [
+        "2008-01-01",
+        "2008-06-30"
+      ],
+      [
+        "2022-01-01",
+        "2022-06-30"
+      ]
+    ],
+    "stagflation_demand_pull": [
+      [
+        "2021-10-01",
+        "2022-01-31"
+      ]
+    ],
+    "contraction_credit_crunch": [
+      [
+        "2008-07-01",
+        "2009-06-30"
+      ]
+    ],
+    "contraction_demand_shock": [
+      [
+        "2020-02-01",
+        "2020-04-30"
+      ]
+    ]
+  },
+  "factors": [
+    "inflation_trend",
+    "growth_trend",
+    "labor_pressure",
+    "housing_momentum",
+    "financial_conditions",
+    "commodity_pressure",
+    "consumer_sentiment",
+    "policy_stance"
+  ]
+}

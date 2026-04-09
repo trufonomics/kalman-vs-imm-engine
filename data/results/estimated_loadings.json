@@ -1,0 +1,133 @@
+{
+  "n_components": 6,
+  "explained_variance": [
+    0.267,
+    0.2051,
+    0.1601,
+    0.146,
+    0.127,
+    0.0948
+  ],
+  "total_variance_explained": 1.0,
+  "factor_pc_matches": {
+    "inflation_trend": {
+      "best_pc": 1,
+      "correlation": 0.6919
+    },
+    "growth_trend": {
+      "best_pc": 5,
+      "correlation": -0.7006
+    },
+    "labor_pressure": {
+      "best_pc": 5,
+      "correlation": -1.0
+    },
+    "financial_conditions": {
+      "best_pc": 2,
+      "correlation": -0.8061
+    },
+    "commodity_pressure": {
+      "best_pc": 3,
+      "correlation": 0.9439
+    },
+    "consumer_sentiment": {
+      "best_pc": 4,
+      "correlation": 0.6637
+    },
+    "policy_stance": {
+      "best_pc": 1,
+      "correlation": 0.9152
+    }
+  },
+  "avg_correlation": 0.8174,
+  "r_comparisons": {
+    "INITIAL_CLAIMS": {
+      "hand_r": 0.7,
+      "pca_residual_var": 0.0,
+      "ratio": 0.0
+    },
+    "10Y_YIELD": {
+      "hand_r": 0.03,
+      "pca_residual_var": 0.0,
+      "ratio": 0.0
+    },
+    "SP500": {
+      "hand_r": 0.8,
+      "pca_residual_var": 0.0,
+      "ratio": 0.0
+    },
+    "OIL_PRICE": {
+      "hand_r": 0.8,
+      "pca_residual_var": 0.0,
+      "ratio": 0.0
+    },
+    "GOLD_PRICE": {
+      "hand_r": 0.05,
+      "pca_residual_var": 0.0,
+      "ratio": 0.0
+    },
+    "BTC_USD": {
+      "hand_r": 1.28,
+      "pca_residual_var": 0.0,
+      "ratio": 0.0
+    }
+  },
+  "rotated_loadings": [
+    [
+      1.3215971005516025e-06,
+      -3.5138625932573664e-06,
+      2.4987001926435326e-06,
+      3.3073184796394983e-07,
+      9.248934605410762e-07,
+      0.9999999999893492
+    ],
+    [
+      2.1700782427136467e-06,
+      0.9999999999898216,
+      -1.5298329900242935e-06,
+      -9.764126942535256e-07,
+      -9.123329622351254e-08,
+      3.5138639559546923e-06
+    ],
+    [
+      -6.023843346636415e-07,
+      9.123732538918183e-08,
+      -1.7691773013250867e-07,
+      -2.637757949841557e-07,
+      0.9999999999993365,
+      -9.248918143552697e-07
+    ],
+    [
+      2.793671557255184e-06,
+      9.764076325247117e-07,
+      -1.2130167600932218e-07,
+      0.9999999999955248,
+      2.6377706175316066e-07,
+      -3.3073204949461284e-07
+    ],
+    [
+      -8.420670469688751e-06,
+      1.5298601778457321e-06,
+      0.9999999999602318,
+      1.2132283369603591e-07,
+      1.7691023949481614e-07,
+      -2.4986838922128415e-06
+    ],
+    [
+      -0.9999999999572348,
+      2.1700633892063337e-06,
+      -8.420670719599954e-06,
+      2.793669013456679e-06,
+      -6.023840630049731e-07,
+      1.3216254001809167e-06
+    ]
+  ],
+  "streams": [
+    "FRED_INITIAL_CLAIMS",
+    "FRED_10Y_YIELD",
+    "YAHOO_SP500",
+    "YAHOO_OIL_PRICE",
+    "YAHOO_GOLD_PRICE",
+    "YAHOO_BTC_USD"
+  ]
+}

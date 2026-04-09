@@ -1,0 +1,24 @@
+[project]
+name = "kalman-vs-imm-engine"
+version = "0.1.0"
+description = "8-factor Kalman filter + IMM regime detection engine (standalone extraction from Heimdall)"
+requires-python = ">=3.11"
+dependencies = [
+    "numpy>=1.24",
+]
+
+[project.optional-dependencies]
+backtests = [
+    "pandas>=2.0",
+    "fredapi>=0.5",
+    "yfinance>=0.2",
+    "matplotlib>=3.7",
+]
+dev = [
+    "pytest>=7.0",
+    "pytest-asyncio>=0.21",
+]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+asyncio_mode = "auto"

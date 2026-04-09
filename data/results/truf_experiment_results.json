@@ -1,0 +1,1235 @@
+{
+  "experiment": "truf_state_estimator",
+  "date_range": "2025-01-01 \u2192 2026-03-11",
+  "total_days": 369,
+  "total_observations": 3186,
+  "total_updates": 3186,
+  "anomaly_rate": 0.0399,
+  "anomaly_count": 108,
+  "streams_used": 30,
+  "streams_list": [
+    "US_INFLATION",
+    "BLS_CPI",
+    "BLS_CPI_CORE",
+    "PCE_INDEX",
+    "PCE_CORE",
+    "TRUFLATION_PCE",
+    "PPI",
+    "PPI_CORE",
+    "UNEMPLOYMENT",
+    "INITIAL_CLAIMS",
+    "CONTINUED_CLAIMS",
+    "JOB_OPENINGS",
+    "JOB_HIRES",
+    "JOB_SEPARATIONS",
+    "WAGE_INFLATION",
+    "EXISTING_HOME_PRICE",
+    "MORTGAGE_30YR",
+    "FOR_SALE_INVENTORY",
+    "MORTGAGE_DEBT",
+    "RENTAL_VACANCY",
+    "TOTAL_RETAIL_SALES",
+    "FOOD_SERVICE_SALES",
+    "BIG_MAC_US",
+    "CRUDE_OIL_BRENT",
+    "NICKEL_FUTURES",
+    "EV_COMMODITY",
+    "SILICON_USD",
+    "BITCOIN",
+    "TOTAL_MARKET_CAP",
+    "SP500"
+  ],
+  "kalman_key_counts": {
+    "HOUSING_STARTS": 68,
+    "CONSUMER_CONFIDENCE": 2,
+    "UNEMPLOYMENT_RATE": 11,
+    "NONFARM_PAYROLLS": 39,
+    "US_CPI_YOY": 375,
+    "CORE_CPI": 392,
+    "OIL_PRICE": 291,
+    "COPPER_PRICE": 564,
+    "COMMODITY_PRESSURE_RAW": 363,
+    "BTC_USD": 678,
+    "SP500": 249,
+    "INITIAL_CLAIMS": 101,
+    "PPI": 20,
+    "HOME_PRICES": 14,
+    "RETAIL_SALES": 19
+  },
+  "final_factors": {
+    "inflation_trend": {
+      "value": -0.524961,
+      "uncertainty": 0.07487
+    },
+    "growth_trend": {
+      "value": -0.029125,
+      "uncertainty": 0.098595
+    },
+    "labor_pressure": {
+      "value": 0.021028,
+      "uncertainty": 0.113334
+    },
+    "housing_momentum": {
+      "value": -0.040008,
+      "uncertainty": 0.109462
+    },
+    "financial_conditions": {
+      "value": -0.015596,
+      "uncertainty": 0.106231
+    },
+    "commodity_pressure": {
+      "value": -0.038027,
+      "uncertainty": 0.095935
+    },
+    "consumer_sentiment": {
+      "value": 0.010303,
+      "uncertainty": 0.103513
+    },
+    "policy_stance": {
+      "value": -0.051172,
+      "uncertainty": 0.099447
+    }
+  },
+  "final_probabilities": {
+    "soft_landing": 0.5318,
+    "stagflation": 0.3906,
+    "recession": 0.0776
+  },
+  "daily_log": [
+    {
+      "date": "2025-01-01",
+      "day": 0,
+      "observations": 2,
+      "factors": {
+        "inflation_trend": 0.0,
+        "growth_trend": -0.032379,
+        "labor_pressure": -0.018653,
+        "housing_momentum": 0.002331,
+        "financial_conditions": 0.000762,
+        "commodity_pressure": 0.0,
+        "consumer_sentiment": -0.103852,
+        "policy_stance": -0.00067
+      },
+      "probabilities": {
+        "soft_landing": 0.4863,
+        "stagflation": 0.4421,
+        "recession": 0.0716
+      },
+      "updates_today": 2
+    },
+    {
+      "date": "2025-03-15",
+      "day": 7,
+      "observations": 6,
+      "factors": {
+        "inflation_trend": -0.484446,
+        "growth_trend": -0.030376,
+        "labor_pressure": -0.015345,
+        "housing_momentum": 0.057904,
+        "financial_conditions": 0.011506,
+        "commodity_pressure": -0.060618,
+        "consumer_sentiment": -0.028584,
+        "policy_stance": -0.088431
+      },
+      "probabilities": {
+        "soft_landing": 0.045,
+        "stagflation": 0.8745,
+        "recession": 0.0805
+      },
+      "updates_today": 6
+    },
+    {
+      "date": "2025-03-22",
+      "day": 14,
+      "observations": 6,
+      "factors": {
+        "inflation_trend": -0.295246,
+        "growth_trend": -0.047974,
+        "labor_pressure": -0.041111,
+        "housing_momentum": 0.084992,
+        "financial_conditions": 0.004609,
+        "commodity_pressure": -0.021919,
+        "consumer_sentiment": -0.019805,
+        "policy_stance": -0.056249
+      },
+      "probabilities": {
+        "soft_landing": 0.0201,
+        "stagflation": 0.9054,
+        "recession": 0.0745
+      },
+      "updates_today": 6
+    },
+    {
+      "date": "2025-03-29",
+      "day": 21,
+      "observations": 6,
+      "factors": {
+        "inflation_trend": -0.191683,
+        "growth_trend": -0.004562,
+        "labor_pressure": 0.034321,
+        "housing_momentum": 0.082825,
+        "financial_conditions": -0.012546,
+        "commodity_pressure": 0.012978,
+        "consumer_sentiment": 0.000974,
+        "policy_stance": -0.034776
+      },
+      "probabilities": {
+        "soft_landing": 0.0608,
+        "stagflation": 0.9174,
+        "recession": 0.0218
+      },
+      "updates_today": 6
+    },
+    {
+      "date": "2025-04-05",
+      "day": 28,
+      "observations": 6,
+      "factors": {
+        "inflation_trend": -0.416217,
+        "growth_trend": 0.028728,
+        "labor_pressure": 0.1844,
+        "housing_momentum": 0.978908,
+        "financial_conditions": 0.240961,
+        "commodity_pressure": -0.179511,
+        "consumer_sentiment": 0.130408,
+        "policy_stance": 0.221559
+      },
+      "probabilities": {
+        "soft_landing": 0.0688,
+        "stagflation": 0.8678,
+        "recession": 0.0633
+      },
+      "updates_today": 6
+    },
+    {
+      "date": "2025-04-12",
+      "day": 35,
+      "observations": 6,
+      "factors": {
+        "inflation_trend": -0.540799,
+        "growth_trend": 0.032935,
+        "labor_pressure": 0.200217,
+        "housing_momentum": 0.720661,
+        "financial_conditions": 0.157658,
+        "commodity_pressure": -0.111663,
+        "consumer_sentiment": 0.120932,
+        "policy_stance": 0.165781
+      },
+      "probabilities": {
+        "soft_landing": 0.178,
+        "stagflation": 0.7634,
+        "recession": 0.0585
+      },
+      "updates_today": 6
+    },
+    {
+      "date": "2025-04-19",
+      "day": 42,
+      "observations": 7,
+      "factors": {
+        "inflation_trend": -0.538025,
+        "growth_trend": -0.01445,
+        "labor_pressure": 0.106393,
+        "housing_momentum": 0.550309,
+        "financial_conditions": 0.105568,
+        "commodity_pressure": -0.084682,
+        "consumer_sentiment": 0.065851,
+        "policy_stance": 0.145048
+      },
+      "probabilities": {
+        "soft_landing": 0.0949,
+        "stagflation": 0.8493,
+        "recession": 0.0558
+      },
+      "updates_today": 7
+    },
+    {
+      "date": "2025-04-26",
+      "day": 49,
+      "observations": 7,
+      "factors": {
+        "inflation_trend": -0.498322,
+        "growth_trend": -0.021782,
+        "labor_pressure": 0.054045,
+        "housing_momentum": 0.436809,
+        "financial_conditions": 0.110272,
+        "commodity_pressure": -0.060396,
+        "consumer_sentiment": 0.053095,
+        "policy_stance": 0.131603
+      },
+      "probabilities": {
+        "soft_landing": 0.1268,
+        "stagflation": 0.8171,
+        "recession": 0.0562
+      },
+      "updates_today": 7
+    },
+    {
+      "date": "2025-05-03",
+      "day": 56,
+      "observations": 7,
+      "factors": {
+        "inflation_trend": -0.312973,
+        "growth_trend": -0.02026,
+        "labor_pressure": 0.010011,
+        "housing_momentum": 0.794632,
+        "financial_conditions": 0.258223,
+        "commodity_pressure": -0.024614,
+        "consumer_sentiment": 0.021658,
+        "policy_stance": 0.229043
+      },
+      "probabilities": {
+        "soft_landing": 0.2268,
+        "stagflation": 0.7038,
+        "recession": 0.0694
+      },
+      "updates_today": 7
+    },
+    {
+      "date": "2025-05-10",
+      "day": 63,
+      "observations": 7,
+      "factors": {
+        "inflation_trend": -0.322369,
+        "growth_trend": -0.01649,
+        "labor_pressure": 0.003994,
+        "housing_momentum": 0.607395,
+        "financial_conditions": 0.17522,
+        "commodity_pressure": -0.022287,
+        "consumer_sentiment": 0.022027,
+        "policy_stance": 0.193419
+      },
+      "probabilities": {
+        "soft_landing": 0.3201,
+        "stagflation": 0.6049,
+        "recession": 0.075
+      },
+      "updates_today": 7
+    },
+    {
+      "date": "2025-05-17",
+      "day": 70,
+      "observations": 7,
+      "factors": {
+        "inflation_trend": -0.207472,
+        "growth_trend": -0.003469,
+        "labor_pressure": 0.007783,
+        "housing_momentum": 0.476825,
+        "financial_conditions": 0.128073,
+        "commodity_pressure": 0.018688,
+        "consumer_sentiment": 0.01659,
+        "policy_stance": 0.173089
+      },
+      "probabilities": {
+        "soft_landing": 0.4275,
+        "stagflation": 0.4947,
+        "recession": 0.0778
+      },
+      "updates_today": 7
+    },
+    {
+      "date": "2025-05-24",
+      "day": 77,
+      "observations": 7,
+      "factors": {
+        "inflation_trend": -0.026217,
+        "growth_trend": -0.011536,
+        "labor_pressure": -0.028487,
+        "housing_momentum": 0.388695,
+        "financial_conditions": 0.098124,
+        "commodity_pressure": 0.050017,
+        "consumer_sentiment": -0.00656,
+        "policy_stance": 0.167382
+      },
+      "probabilities": {
+        "soft_landing": 0.3687,
+        "stagflation": 0.5548,
+        "recession": 0.0766
+      },
+      "updates_today": 7
+    },
+    {
+      "date": "2025-05-31",
+      "day": 84,
+      "observations": 8,
+      "factors": {
+        "inflation_trend": 0.09482,
+        "growth_trend": 0.004389,
+        "labor_pressure": -0.053047,
+        "housing_momentum": 0.443855,
+        "financial_conditions": 0.148359,
+        "commodity_pressure": 0.04383,
+        "consumer_sentiment": 0.001249,
+        "policy_stance": 0.171071
+      },
+      "probabilities": {
+        "soft_landing": 0.3116,
+        "stagflation": 0.6137,
+        "recession": 0.0746
+      },
+      "updates_today": 8
+    },
+    {
+      "date": "2025-06-07",
+      "day": 91,
+      "observations": 7,
+      "factors": {
+        "inflation_trend": 0.134144,
+        "growth_trend": 0.075036,
+        "labor_pressure": 0.008633,
+        "housing_momentum": 0.523019,
+        "financial_conditions": 0.159825,
+        "commodity_pressure": 0.038282,
+        "consumer_sentiment": 0.08115,
+        "policy_stance": 0.175218
+      },
+      "probabilities": {
+        "soft_landing": 0.4106,
+        "stagflation": 0.5112,
+        "recession": 0.0782
+      },
+      "updates_today": 7
+    },
+    {
+      "date": "2025-06-14",
+      "day": 98,
+      "observations": 7,
+      "factors": {
+        "inflation_trend": 0.151656,
+        "growth_trend": 0.043404,
+        "labor_pressure": 0.0081,
+        "housing_momentum": 0.391516,
+        "financial_conditions": 0.10096,
+        "commodity_pressure": 0.078623,
+        "consumer_sentiment": 0.032574,
+        "policy_stance": 0.150816
+      },
+      "probabilities": {
+        "soft_landing": 0.4875,
+        "stagflation": 0.4342,
+        "recession": 0.0783
+      },
+      "updates_today": 7
+    },
+    {
+      "date": "2025-06-21",
+      "day": 105,
+      "observations": 7,
+      "factors": {
+        "inflation_trend": 0.237966,
+        "growth_trend": 0.041657,
+        "labor_pressure": 0.031927,
+        "housing_momentum": 0.299405,
+        "financial_conditions": 0.068964,
+        "commodity_pressure": 0.079354,
+        "consumer_sentiment": 0.017582,
+        "policy_stance": 0.137734
+      },
+      "probabilities": {
+        "soft_landing": 0.551,
+        "stagflation": 0.3721,
+        "recession": 0.0769
+      },
+      "updates_today": 7
+    },
+    {
+      "date": "2025-06-28",
+      "day": 112,
+      "observations": 7,
+      "factors": {
+        "inflation_trend": 0.294822,
+        "growth_trend": 0.060401,
+        "labor_pressure": 0.049978,
+        "housing_momentum": 0.243695,
+        "financial_conditions": 0.075777,
+        "commodity_pressure": 0.087752,
+        "consumer_sentiment": 0.027922,
+        "policy_stance": 0.125937
+      },
+      "probabilities": {
+        "soft_landing": 0.5465,
+        "stagflation": 0.3763,
+        "recession": 0.0771
+      },
+      "updates_today": 7
+    },
+    {
+      "date": "2025-07-05",
+      "day": 119,
+      "observations": 7,
+      "factors": {
+        "inflation_trend": 0.394741,
+        "growth_trend": 0.064603,
+        "labor_pressure": 0.015518,
+        "housing_momentum": 0.171038,
+        "financial_conditions": 0.053884,
+        "commodity_pressure": 0.093882,
+        "consumer_sentiment": 0.044622,
+        "policy_stance": 0.093543
+      },
+      "probabilities": {
+        "soft_landing": 0.5667,
+        "stagflation": 0.3569,
+        "recession": 0.0764
+      },
+      "updates_today": 7
+    },
+    {
+      "date": "2025-07-12",
+      "day": 126,
+      "observations": 7,
+      "factors": {
+        "inflation_trend": 0.083118,
+        "growth_trend": 0.031249,
+        "labor_pressure": 0.030631,
+        "housing_momentum": 0.095768,
+        "financial_conditions": 0.040712,
+        "commodity_pressure": -0.040495,
+        "consumer_sentiment": 0.038886,
+        "policy_stance": 0.05472
+      },
+      "probabilities": {
+        "soft_landing": 0.5848,
+        "stagflation": 0.3395,
+        "recession": 0.0757
+      },
+      "updates_today": 7
+    },
+    {
+      "date": "2025-07-19",
+      "day": 133,
+      "observations": 7,
+      "factors": {
+        "inflation_trend": 0.068315,
+        "growth_trend": 0.040931,
+        "labor_pressure": 0.04617,
+        "housing_momentum": 0.089588,
+        "financial_conditions": 0.034772,
+        "commodity_pressure": 0.031944,
+        "consumer_sentiment": 0.03064,
+        "policy_stance": 0.048356
+      },
+      "probabilities": {
+        "soft_landing": 0.564,
+        "stagflation": 0.3594,
+        "recession": 0.0766
+      },
+      "updates_today": 7
+    },
+    {
+      "date": "2025-07-26",
+      "day": 140,
+      "observations": 7,
+      "factors": {
+        "inflation_trend": 0.156681,
+        "growth_trend": 0.042088,
+        "labor_pressure": 0.030755,
+        "housing_momentum": 0.089595,
+        "financial_conditions": 0.03209,
+        "commodity_pressure": 0.075748,
+        "consumer_sentiment": 0.016529,
+        "policy_stance": 0.048376
+      },
+      "probabilities": {
+        "soft_landing": 0.5559,
+        "stagflation": 0.3672,
+        "recession": 0.0769
+      },
+      "updates_today": 7
+    },
+    {
+      "date": "2025-08-02",
+      "day": 147,
+      "observations": 7,
+      "factors": {
+        "inflation_trend": 0.217302,
+        "growth_trend": 0.015073,
+        "labor_pressure": 0.000382,
+        "housing_momentum": 0.029977,
+        "financial_conditions": -0.007842,
+        "commodity_pressure": -0.019952,
+        "consumer_sentiment": 0.038531,
+        "policy_stance": 0.051973
+      },
+      "probabilities": {
+        "soft_landing": 0.5422,
+        "stagflation": 0.3805,
+        "recession": 0.0773
+      },
+      "updates_today": 7
+    },
+    {
+      "date": "2025-08-09",
+      "day": 154,
+      "observations": 7,
+      "factors": {
+        "inflation_trend": 0.00228,
+        "growth_trend": 0.015685,
+        "labor_pressure": 0.007199,
+        "housing_momentum": 0.0176,
+        "financial_conditions": 0.015547,
+        "commodity_pressure": -0.053538,
+        "consumer_sentiment": 0.030211,
+        "policy_stance": 0.03081
+      },
+      "probabilities": {
+        "soft_landing": 0.5286,
+        "stagflation": 0.3937,
+        "recession": 0.0777
+      },
+      "updates_today": 7
+    },
+    {
+      "date": "2025-08-16",
+      "day": 161,
+      "observations": 7,
+      "factors": {
+        "inflation_trend": 0.042199,
+        "growth_trend": 0.01953,
+        "labor_pressure": -0.00442,
+        "housing_momentum": 0.034675,
+        "financial_conditions": 0.01607,
+        "commodity_pressure": 0.02723,
+        "consumer_sentiment": 0.008088,
+        "policy_stance": 0.032487
+      },
+      "probabilities": {
+        "soft_landing": 0.5151,
+        "stagflation": 0.4069,
+        "recession": 0.078
+      },
+      "updates_today": 7
+    },
+    {
+      "date": "2025-08-23",
+      "day": 168,
+      "observations": 7,
+      "factors": {
+        "inflation_trend": 0.17895,
+        "growth_trend": 0.024568,
+        "labor_pressure": 0.012904,
+        "housing_momentum": 0.035773,
+        "financial_conditions": 0.0212,
+        "commodity_pressure": 0.07018,
+        "consumer_sentiment": 0.007518,
+        "policy_stance": 0.038712
+      },
+      "probabilities": {
+        "soft_landing": 0.5271,
+        "stagflation": 0.3952,
+        "recession": 0.0777
+      },
+      "updates_today": 7
+    },
+    {
+      "date": "2025-08-30",
+      "day": 175,
+      "observations": 7,
+      "factors": {
+        "inflation_trend": 0.279543,
+        "growth_trend": 0.018975,
+        "labor_pressure": -0.006361,
+        "housing_momentum": 0.034565,
+        "financial_conditions": 0.009372,
+        "commodity_pressure": 0.079839,
+        "consumer_sentiment": -0.010889,
+        "policy_stance": 0.043551
+      },
+      "probabilities": {
+        "soft_landing": 0.5222,
+        "stagflation": 0.3999,
+        "recession": 0.0779
+      },
+      "updates_today": 7
+    },
+    {
+      "date": "2025-09-06",
+      "day": 182,
+      "observations": 7,
+      "factors": {
+        "inflation_trend": 0.33636,
+        "growth_trend": 0.030031,
+        "labor_pressure": 0.08398,
+        "housing_momentum": -0.176936,
+        "financial_conditions": -0.03505,
+        "commodity_pressure": 0.035049,
+        "consumer_sentiment": 0.010305,
+        "policy_stance": 0.031739
+      },
+      "probabilities": {
+        "soft_landing": 0.5235,
+        "stagflation": 0.3986,
+        "recession": 0.0778
+      },
+      "updates_today": 7
+    },
+    {
+      "date": "2025-09-13",
+      "day": 189,
+      "observations": 7,
+      "factors": {
+        "inflation_trend": 0.263302,
+        "growth_trend": 0.063409,
+        "labor_pressure": 0.138621,
+        "housing_momentum": -0.138312,
+        "financial_conditions": 0.001557,
+        "commodity_pressure": 0.030325,
+        "consumer_sentiment": 0.049169,
+        "policy_stance": 0.024676
+      },
+      "probabilities": {
+        "soft_landing": 0.5211,
+        "stagflation": 0.401,
+        "recession": 0.0779
+      },
+      "updates_today": 7
+    },
+    {
+      "date": "2025-09-20",
+      "day": 196,
+      "observations": 7,
+      "factors": {
+        "inflation_trend": 0.369711,
+        "growth_trend": 0.062427,
+        "labor_pressure": 0.135459,
+        "housing_momentum": -0.10411,
+        "financial_conditions": 0.003707,
+        "commodity_pressure": 0.086359,
+        "consumer_sentiment": 0.047366,
+        "policy_stance": 0.030335
+      },
+      "probabilities": {
+        "soft_landing": 0.5304,
+        "stagflation": 0.3919,
+        "recession": 0.0777
+      },
+      "updates_today": 7
+    },
+    {
+      "date": "2025-09-27",
+      "day": 203,
+      "observations": 7,
+      "factors": {
+        "inflation_trend": 0.285593,
+        "growth_trend": 0.023035,
+        "labor_pressure": 0.080177,
+        "housing_momentum": -0.104449,
+        "financial_conditions": -0.0125,
+        "commodity_pressure": 0.037951,
+        "consumer_sentiment": 0.021495,
+        "policy_stance": 0.021161
+      },
+      "probabilities": {
+        "soft_landing": 0.5341,
+        "stagflation": 0.3884,
+        "recession": 0.0776
+      },
+      "updates_today": 7
+    },
+    {
+      "date": "2025-10-04",
+      "day": 210,
+      "observations": 7,
+      "factors": {
+        "inflation_trend": 0.335847,
+        "growth_trend": 0.011862,
+        "labor_pressure": -0.038675,
+        "housing_momentum": 0.066038,
+        "financial_conditions": 0.051021,
+        "commodity_pressure": 0.091542,
+        "consumer_sentiment": 0.001434,
+        "policy_stance": 0.016572
+      },
+      "probabilities": {
+        "soft_landing": 0.5175,
+        "stagflation": 0.4045,
+        "recession": 0.078
+      },
+      "updates_today": 7
+    },
+    {
+      "date": "2025-10-11",
+      "day": 217,
+      "observations": 6,
+      "factors": {
+        "inflation_trend": 0.372925,
+        "growth_trend": 0.006739,
+        "labor_pressure": -0.01996,
+        "housing_momentum": 0.033742,
+        "financial_conditions": -0.009054,
+        "commodity_pressure": 0.057693,
+        "consumer_sentiment": -0.018946,
+        "policy_stance": 0.020582
+      },
+      "probabilities": {
+        "soft_landing": 0.5212,
+        "stagflation": 0.4009,
+        "recession": 0.0779
+      },
+      "updates_today": 6
+    },
+    {
+      "date": "2025-10-18",
+      "day": 224,
+      "observations": 7,
+      "factors": {
+        "inflation_trend": 0.383741,
+        "growth_trend": 0.000419,
+        "labor_pressure": -0.051558,
+        "housing_momentum": 0.00923,
+        "financial_conditions": -0.014855,
+        "commodity_pressure": 0.062293,
+        "consumer_sentiment": -0.034807,
+        "policy_stance": 0.022912
+      },
+      "probabilities": {
+        "soft_landing": 0.5202,
+        "stagflation": 0.4019,
+        "recession": 0.0779
+      },
+      "updates_today": 7
+    },
+    {
+      "date": "2025-10-25",
+      "day": 231,
+      "observations": 7,
+      "factors": {
+        "inflation_trend": 0.444105,
+        "growth_trend": 0.042745,
+        "labor_pressure": -0.011608,
+        "housing_momentum": 0.001228,
+        "financial_conditions": 0.012557,
+        "commodity_pressure": 0.114845,
+        "consumer_sentiment": -0.009942,
+        "policy_stance": 0.027101
+      },
+      "probabilities": {
+        "soft_landing": 0.5205,
+        "stagflation": 0.4016,
+        "recession": 0.0779
+      },
+      "updates_today": 7
+    },
+    {
+      "date": "2025-11-01",
+      "day": 238,
+      "observations": 21,
+      "factors": {
+        "inflation_trend": 0.522757,
+        "growth_trend": 0.001992,
+        "labor_pressure": -0.150803,
+        "housing_momentum": -0.142324,
+        "financial_conditions": -0.05433,
+        "commodity_pressure": 0.113259,
+        "consumer_sentiment": -0.019274,
+        "policy_stance": 0.023958
+      },
+      "probabilities": {
+        "soft_landing": 0.5242,
+        "stagflation": 0.3979,
+        "recession": 0.0778
+      },
+      "updates_today": 21
+    },
+    {
+      "date": "2025-11-08",
+      "day": 245,
+      "observations": 6,
+      "factors": {
+        "inflation_trend": 0.664156,
+        "growth_trend": 0.010768,
+        "labor_pressure": -0.129855,
+        "housing_momentum": -0.12288,
+        "financial_conditions": -0.033748,
+        "commodity_pressure": 0.136833,
+        "consumer_sentiment": -0.048338,
+        "policy_stance": 0.03844
+      },
+      "probabilities": {
+        "soft_landing": 0.5271,
+        "stagflation": 0.3952,
+        "recession": 0.0777
+      },
+      "updates_today": 6
+    },
+    {
+      "date": "2025-11-15",
+      "day": 252,
+      "observations": 7,
+      "factors": {
+        "inflation_trend": 0.661599,
+        "growth_trend": 0.01762,
+        "labor_pressure": -0.093447,
+        "housing_momentum": -0.11267,
+        "financial_conditions": -0.025822,
+        "commodity_pressure": 0.099021,
+        "consumer_sentiment": -0.050696,
+        "policy_stance": 0.039028
+      },
+      "probabilities": {
+        "soft_landing": 0.5281,
+        "stagflation": 0.3942,
+        "recession": 0.0777
+      },
+      "updates_today": 7
+    },
+    {
+      "date": "2025-11-22",
+      "day": 259,
+      "observations": 7,
+      "factors": {
+        "inflation_trend": 0.598675,
+        "growth_trend": 0.012659,
+        "labor_pressure": -0.07307,
+        "housing_momentum": -0.112506,
+        "financial_conditions": -0.036409,
+        "commodity_pressure": 0.057112,
+        "consumer_sentiment": -0.055857,
+        "policy_stance": 0.035439
+      },
+      "probabilities": {
+        "soft_landing": 0.5287,
+        "stagflation": 0.3936,
+        "recession": 0.0777
+      },
+      "updates_today": 7
+    },
+    {
+      "date": "2025-11-29",
+      "day": 266,
+      "observations": 7,
+      "factors": {
+        "inflation_trend": 0.548901,
+        "growth_trend": 0.080349,
+        "labor_pressure": 0.058652,
+        "housing_momentum": -0.082867,
+        "financial_conditions": 0.013007,
+        "commodity_pressure": 0.070123,
+        "consumer_sentiment": 0.014279,
+        "policy_stance": 0.032504
+      },
+      "probabilities": {
+        "soft_landing": 0.5278,
+        "stagflation": 0.3944,
+        "recession": 0.0777
+      },
+      "updates_today": 7
+    },
+    {
+      "date": "2025-12-06",
+      "day": 273,
+      "observations": 7,
+      "factors": {
+        "inflation_trend": 0.486809,
+        "growth_trend": -0.014373,
+        "labor_pressure": -0.081244,
+        "housing_momentum": -0.206806,
+        "financial_conditions": -0.031835,
+        "commodity_pressure": 0.059746,
+        "consumer_sentiment": -0.056174,
+        "policy_stance": 0.015788
+      },
+      "probabilities": {
+        "soft_landing": 0.5295,
+        "stagflation": 0.3928,
+        "recession": 0.0777
+      },
+      "updates_today": 7
+    },
+    {
+      "date": "2025-12-13",
+      "day": 280,
+      "observations": 7,
+      "factors": {
+        "inflation_trend": 0.541876,
+        "growth_trend": 0.00866,
+        "labor_pressure": -0.060844,
+        "housing_momentum": -0.154475,
+        "financial_conditions": -0.013703,
+        "commodity_pressure": 0.100146,
+        "consumer_sentiment": -0.040081,
+        "policy_stance": 0.024878
+      },
+      "probabilities": {
+        "soft_landing": 0.5293,
+        "stagflation": 0.393,
+        "recession": 0.0777
+      },
+      "updates_today": 7
+    },
+    {
+      "date": "2025-12-20",
+      "day": 287,
+      "observations": 7,
+      "factors": {
+        "inflation_trend": 0.546827,
+        "growth_trend": 0.051597,
+        "labor_pressure": -0.009633,
+        "housing_momentum": -0.114186,
+        "financial_conditions": 0.000932,
+        "commodity_pressure": 0.104765,
+        "consumer_sentiment": -0.017657,
+        "policy_stance": 0.02887
+      },
+      "probabilities": {
+        "soft_landing": 0.5294,
+        "stagflation": 0.3929,
+        "recession": 0.0777
+      },
+      "updates_today": 7
+    },
+    {
+      "date": "2025-12-27",
+      "day": 294,
+      "observations": 7,
+      "factors": {
+        "inflation_trend": 0.423477,
+        "growth_trend": 0.063721,
+        "labor_pressure": 0.022899,
+        "housing_momentum": -0.079036,
+        "financial_conditions": 0.006083,
+        "commodity_pressure": 0.050811,
+        "consumer_sentiment": -0.003777,
+        "policy_stance": 0.021998
+      },
+      "probabilities": {
+        "soft_landing": 0.5298,
+        "stagflation": 0.3925,
+        "recession": 0.0777
+      },
+      "updates_today": 7
+    },
+    {
+      "date": "2026-01-03",
+      "day": 301,
+      "observations": 7,
+      "factors": {
+        "inflation_trend": 0.302059,
+        "growth_trend": 0.016127,
+        "labor_pressure": 0.050312,
+        "housing_momentum": -0.351959,
+        "financial_conditions": -0.094807,
+        "commodity_pressure": 0.001145,
+        "consumer_sentiment": -0.032694,
+        "policy_stance": -0.011191
+      },
+      "probabilities": {
+        "soft_landing": 0.5316,
+        "stagflation": 0.3907,
+        "recession": 0.0776
+      },
+      "updates_today": 7
+    },
+    {
+      "date": "2026-01-10",
+      "day": 308,
+      "observations": 7,
+      "factors": {
+        "inflation_trend": -0.087227,
+        "growth_trend": 0.021319,
+        "labor_pressure": 0.055588,
+        "housing_momentum": -0.30628,
+        "financial_conditions": -0.057237,
+        "commodity_pressure": -0.083388,
+        "consumer_sentiment": -1.6e-05,
+        "policy_stance": -0.040091
+      },
+      "probabilities": {
+        "soft_landing": 0.5321,
+        "stagflation": 0.3903,
+        "recession": 0.0776
+      },
+      "updates_today": 7
+    },
+    {
+      "date": "2026-01-17",
+      "day": 315,
+      "observations": 7,
+      "factors": {
+        "inflation_trend": -0.335932,
+        "growth_trend": -0.032039,
+        "labor_pressure": 0.038327,
+        "housing_momentum": -0.27034,
+        "financial_conditions": -0.047518,
+        "commodity_pressure": -0.168749,
+        "consumer_sentiment": 0.009675,
+        "policy_stance": -0.058028
+      },
+      "probabilities": {
+        "soft_landing": 0.5327,
+        "stagflation": 0.3897,
+        "recession": 0.0776
+      },
+      "updates_today": 7
+    },
+    {
+      "date": "2026-01-24",
+      "day": 322,
+      "observations": 7,
+      "factors": {
+        "inflation_trend": -0.625518,
+        "growth_trend": -0.032404,
+        "labor_pressure": 0.02589,
+        "housing_momentum": -0.219707,
+        "financial_conditions": -0.054731,
+        "commodity_pressure": -0.16626,
+        "consumer_sentiment": 0.001878,
+        "policy_stance": -0.073424
+      },
+      "probabilities": {
+        "soft_landing": 0.532,
+        "stagflation": 0.3904,
+        "recession": 0.0776
+      },
+      "updates_today": 7
+    },
+    {
+      "date": "2026-01-31",
+      "day": 329,
+      "observations": 8,
+      "factors": {
+        "inflation_trend": -0.791141,
+        "growth_trend": -0.113393,
+        "labor_pressure": -0.047059,
+        "housing_momentum": -0.276751,
+        "financial_conditions": -0.111492,
+        "commodity_pressure": -0.176087,
+        "consumer_sentiment": -0.043873,
+        "policy_stance": -0.087048
+      },
+      "probabilities": {
+        "soft_landing": 0.5321,
+        "stagflation": 0.3903,
+        "recession": 0.0776
+      },
+      "updates_today": 8
+    },
+    {
+      "date": "2026-02-07",
+      "day": 336,
+      "observations": 7,
+      "factors": {
+        "inflation_trend": -0.956273,
+        "growth_trend": -0.10778,
+        "labor_pressure": -0.026497,
+        "housing_momentum": -0.178999,
+        "financial_conditions": -0.076496,
+        "commodity_pressure": -0.21906,
+        "consumer_sentiment": -0.022832,
+        "policy_stance": -0.089903
+      },
+      "probabilities": {
+        "soft_landing": 0.5318,
+        "stagflation": 0.3906,
+        "recession": 0.0776
+      },
+      "updates_today": 7
+    },
+    {
+      "date": "2026-02-14",
+      "day": 343,
+      "observations": 7,
+      "factors": {
+        "inflation_trend": -0.981536,
+        "growth_trend": -0.069653,
+        "labor_pressure": 0.031814,
+        "housing_momentum": -0.137459,
+        "financial_conditions": -0.056193,
+        "commodity_pressure": -0.168008,
+        "consumer_sentiment": 0.007167,
+        "policy_stance": -0.087321
+      },
+      "probabilities": {
+        "soft_landing": 0.5313,
+        "stagflation": 0.391,
+        "recession": 0.0776
+      },
+      "updates_today": 7
+    },
+    {
+      "date": "2026-02-21",
+      "day": 350,
+      "observations": 7,
+      "factors": {
+        "inflation_trend": -0.843945,
+        "growth_trend": -0.058089,
+        "labor_pressure": 0.005973,
+        "housing_momentum": -0.096662,
+        "financial_conditions": -0.034871,
+        "commodity_pressure": -0.079935,
+        "consumer_sentiment": 0.003342,
+        "policy_stance": -0.07454
+      },
+      "probabilities": {
+        "soft_landing": 0.5313,
+        "stagflation": 0.391,
+        "recession": 0.0776
+      },
+      "updates_today": 7
+    },
+    {
+      "date": "2026-02-28",
+      "day": 357,
+      "observations": 5,
+      "factors": {
+        "inflation_trend": -0.63706,
+        "growth_trend": -0.027528,
+        "labor_pressure": 0.015317,
+        "housing_momentum": -0.054135,
+        "financial_conditions": -0.030584,
+        "commodity_pressure": -0.014632,
+        "consumer_sentiment": -2.4e-05,
+        "policy_stance": -0.054375
+      },
+      "probabilities": {
+        "soft_landing": 0.5316,
+        "stagflation": 0.3908,
+        "recession": 0.0776
+      },
+      "updates_today": 5
+    },
+    {
+      "date": "2026-03-07",
+      "day": 364,
+      "observations": 5,
+      "factors": {
+        "inflation_trend": -0.529378,
+        "growth_trend": -0.040324,
+        "labor_pressure": 0.0169,
+        "housing_momentum": -0.053843,
+        "financial_conditions": -0.027652,
+        "commodity_pressure": 0.016331,
+        "consumer_sentiment": -0.001516,
+        "policy_stance": -0.050416
+      },
+      "probabilities": {
+        "soft_landing": 0.5318,
+        "stagflation": 0.3905,
+        "recession": 0.0776
+      },
+      "updates_today": 5
+    },
+    {
+      "date": "2026-03-11",
+      "day": 368,
+      "observations": 4,
+      "factors": {
+        "inflation_trend": -0.524961,
+        "growth_trend": -0.029125,
+        "labor_pressure": 0.021028,
+        "housing_momentum": -0.040008,
+        "financial_conditions": -0.015596,
+        "commodity_pressure": -0.038027,
+        "consumer_sentiment": 0.010303,
+        "policy_stance": -0.051172
+      },
+      "probabilities": {
+        "soft_landing": 0.5318,
+        "stagflation": 0.3906,
+        "recession": 0.0776
+      },
+      "updates_today": 4
+    }
+  ],
+  "run_timestamp": "2026-03-11T09:19:09.431679+00:00"
+}

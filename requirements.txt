@@ -1,0 +1,12 @@
+# Core (required)
+numpy>=1.24
+
+# Backtests & benchmarks (optional — install with: pip install -r requirements.txt)
+pandas>=2.0
+fredapi>=0.5
+yfinance>=0.2
+matplotlib>=3.7
+
+# Dev / testing
+pytest>=7.0
+pytest-asyncio>=0.21

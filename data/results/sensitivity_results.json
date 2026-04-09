@@ -1,0 +1,350 @@
+{
+  "Adj \u00d70.5 (halved)": {
+    "checkpoints_passed": 3,
+    "checkpoint_details": {
+      "Great Recession": {
+        "passed": true,
+        "avg_prob": 0.544,
+        "max_prob": 0.99,
+        "dominant_pct": 0.573
+      },
+      "COVID crash": {
+        "passed": true,
+        "avg_prob": 0.987,
+        "max_prob": 0.99,
+        "dominant_pct": 1.0
+      },
+      "Inflation surge": {
+        "passed": true,
+        "avg_prob": 0.631,
+        "max_prob": 0.99,
+        "dominant_pct": 0.661
+      },
+      "Disinflation": {
+        "passed": false,
+        "avg_prob": 0.283,
+        "max_prob": 0.984,
+        "dominant_pct": 0.298
+      }
+    }
+  },
+  "Adj \u00d70.7": {
+    "checkpoints_passed": 3,
+    "checkpoint_details": {
+      "Great Recession": {
+        "passed": true,
+        "avg_prob": 0.497,
+        "max_prob": 0.99,
+        "dominant_pct": 0.524
+      },
+      "COVID crash": {
+        "passed": true,
+        "avg_prob": 0.93,
+        "max_prob": 0.99,
+        "dominant_pct": 1.0
+      },
+      "Inflation surge": {
+        "passed": true,
+        "avg_prob": 0.59,
+        "max_prob": 0.99,
+        "dominant_pct": 0.637
+      },
+      "Disinflation": {
+        "passed": false,
+        "avg_prob": 0.325,
+        "max_prob": 0.988,
+        "dominant_pct": 0.351
+      }
+    }
+  },
+  "Adj \u00d71.0 (BASELINE)": {
+    "checkpoints_passed": 4,
+    "checkpoint_details": {
+      "Great Recession": {
+        "passed": true,
+        "avg_prob": 0.455,
+        "max_prob": 0.99,
+        "dominant_pct": 0.492
+      },
+      "COVID crash": {
+        "passed": true,
+        "avg_prob": 0.783,
+        "max_prob": 0.99,
+        "dominant_pct": 0.968
+      },
+      "Inflation surge": {
+        "passed": true,
+        "avg_prob": 0.547,
+        "max_prob": 0.99,
+        "dominant_pct": 0.571
+      },
+      "Disinflation": {
+        "passed": true,
+        "avg_prob": 0.375,
+        "max_prob": 0.989,
+        "dominant_pct": 0.407
+      }
+    }
+  },
+  "Adj \u00d71.5": {
+    "checkpoints_passed": 4,
+    "checkpoint_details": {
+      "Great Recession": {
+        "passed": true,
+        "avg_prob": 0.381,
+        "max_prob": 0.99,
+        "dominant_pct": 0.401
+      },
+      "COVID crash": {
+        "passed": true,
+        "avg_prob": 0.669,
+        "max_prob": 0.99,
+        "dominant_pct": 0.785
+      },
+      "Inflation surge": {
+        "passed": true,
+        "avg_prob": 0.469,
+        "max_prob": 0.99,
+        "dominant_pct": 0.527
+      },
+      "Disinflation": {
+        "passed": true,
+        "avg_prob": 0.487,
+        "max_prob": 0.99,
+        "dominant_pct": 0.529
+      }
+    }
+  },
+  "Adj \u00d72.0 (doubled)": {
+    "checkpoints_passed": 3,
+    "checkpoint_details": {
+      "Great Recession": {
+        "passed": false,
+        "avg_prob": 0.328,
+        "max_prob": 0.99,
+        "dominant_pct": 0.343
+      },
+      "COVID crash": {
+        "passed": true,
+        "avg_prob": 0.611,
+        "max_prob": 0.99,
+        "dominant_pct": 0.688
+      },
+      "Inflation surge": {
+        "passed": true,
+        "avg_prob": 0.398,
+        "max_prob": 0.99,
+        "dominant_pct": 0.434
+      },
+      "Disinflation": {
+        "passed": true,
+        "avg_prob": 0.579,
+        "max_prob": 0.99,
+        "dominant_pct": 0.646
+      }
+    }
+  },
+  "F persistence \u22120.03": {
+    "checkpoints_passed": 4,
+    "checkpoint_details": {
+      "Great Recession": {
+        "passed": true,
+        "avg_prob": 0.455,
+        "max_prob": 0.99,
+        "dominant_pct": 0.492
+      },
+      "COVID crash": {
+        "passed": true,
+        "avg_prob": 0.783,
+        "max_prob": 0.99,
+        "dominant_pct": 0.968
+      },
+      "Inflation surge": {
+        "passed": true,
+        "avg_prob": 0.547,
+        "max_prob": 0.99,
+        "dominant_pct": 0.571
+      },
+      "Disinflation": {
+        "passed": true,
+        "avg_prob": 0.375,
+        "max_prob": 0.989,
+        "dominant_pct": 0.407
+      }
+    }
+  },
+  "F persistence +0.03": {
+    "checkpoints_passed": 4,
+    "checkpoint_details": {
+      "Great Recession": {
+        "passed": true,
+        "avg_prob": 0.455,
+        "max_prob": 0.99,
+        "dominant_pct": 0.492
+      },
+      "COVID crash": {
+        "passed": true,
+        "avg_prob": 0.783,
+        "max_prob": 0.99,
+        "dominant_pct": 0.968
+      },
+      "Inflation surge": {
+        "passed": true,
+        "avg_prob": 0.547,
+        "max_prob": 0.99,
+        "dominant_pct": 0.571
+      },
+      "Disinflation": {
+        "passed": true,
+        "avg_prob": 0.375,
+        "max_prob": 0.989,
+        "dominant_pct": 0.407
+      }
+    }
+  },
+  "R noise \u00d70.5 (halved)": {
+    "checkpoints_passed": 4,
+    "checkpoint_details": {
+      "Great Recession": {
+        "passed": true,
+        "avg_prob": 0.455,
+        "max_prob": 0.99,
+        "dominant_pct": 0.492
+      },
+      "COVID crash": {
+        "passed": true,
+        "avg_prob": 0.783,
+        "max_prob": 0.99,
+        "dominant_pct": 0.968
+      },
+      "Inflation surge": {
+        "passed": true,
+        "avg_prob": 0.547,
+        "max_prob": 0.99,
+        "dominant_pct": 0.571
+      },
+      "Disinflation": {
+        "passed": true,
+        "avg_prob": 0.375,
+        "max_prob": 0.989,
+        "dominant_pct": 0.407
+      }
+    }
+  },
+  "R noise \u00d71.5": {
+    "checkpoints_passed": 4,
+    "checkpoint_details": {
+      "Great Recession": {
+        "passed": true,
+        "avg_prob": 0.455,
+        "max_prob": 0.99,
+        "dominant_pct": 0.492
+      },
+      "COVID crash": {
+        "passed": true,
+        "avg_prob": 0.783,
+        "max_prob": 0.99,
+        "dominant_pct": 0.968
+      },
+      "Inflation surge": {
+        "passed": true,
+        "avg_prob": 0.547,
+        "max_prob": 0.99,
+        "dominant_pct": 0.571
+      },
+      "Disinflation": {
+        "passed": true,
+        "avg_prob": 0.375,
+        "max_prob": 0.989,
+        "dominant_pct": 0.407
+      }
+    }
+  },
+  "R noise \u00d72.0 (doubled)": {
+    "checkpoints_passed": 4,
+    "checkpoint_details": {
+      "Great Recession": {
+        "passed": true,
+        "avg_prob": 0.455,
+        "max_prob": 0.99,
+        "dominant_pct": 0.492
+      },
+      "COVID crash": {
+        "passed": true,
+        "avg_prob": 0.783,
+        "max_prob": 0.99,
+        "dominant_pct": 0.968
+      },
+      "Inflation surge": {
+        "passed": true,
+        "avg_prob": 0.547,
+        "max_prob": 0.99,
+        "dominant_pct": 0.571
+      },
+      "Disinflation": {
+        "passed": true,
+        "avg_prob": 0.375,
+        "max_prob": 0.989,
+        "dominant_pct": 0.407
+      }
+    }
+  },
+  "TPM \u22120.02 (less sticky)": {
+    "checkpoints_passed": 4,
+    "checkpoint_details": {
+      "Great Recession": {
+        "passed": true,
+        "avg_prob": 0.456,
+        "max_prob": 0.99,
+        "dominant_pct": 0.492
+      },
+      "COVID crash": {
+        "passed": true,
+        "avg_prob": 0.79,
+        "max_prob": 0.99,
+        "dominant_pct": 0.968
+      },
+      "Inflation surge": {
+        "passed": true,
+        "avg_prob": 0.547,
+        "max_prob": 0.99,
+        "dominant_pct": 0.574
+      },
+      "Disinflation": {
+        "passed": true,
+        "avg_prob": 0.379,
+        "max_prob": 0.988,
+        "dominant_pct": 0.414
+      }
+    }
+  },
+  "TPM +0.02 (more sticky)": {
+    "checkpoints_passed": 4,
+    "checkpoint_details": {
+      "Great Recession": {
+        "passed": true,
+        "avg_prob": 0.45,
+        "max_prob": 0.99,
+        "dominant_pct": 0.492
+      },
+      "COVID crash": {
+        "passed": true,
+        "avg_prob": 0.771,
+        "max_prob": 0.99,
+        "dominant_pct": 0.882
+      },
+      "Inflation surge": {
+        "passed": true,
+        "avg_prob": 0.543,
+        "max_prob": 0.99,
+        "dominant_pct": 0.566
+      },
+      "Disinflation": {
+        "passed": true,
+        "avg_prob": 0.368,
+        "max_prob": 0.99,
+        "dominant_pct": 0.4
+      }
+    }
+  }
+}

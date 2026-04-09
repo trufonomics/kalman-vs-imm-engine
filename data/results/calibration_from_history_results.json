@@ -1,0 +1,534 @@
+{
+  "persistence": {
+    "inflation_trend": {
+      "monthly_ar1": 0.9859,
+      "daily_equivalent": 0.9994,
+      "current_daily": 0.97,
+      "proxies_used": [
+        "FRED_US_CPI_YOY",
+        "FRED_CORE_CPI",
+        "FRED_PPI"
+      ],
+      "n_observations": 3
+    },
+    "growth_trend": {
+      "monthly_ar1": 0.4236,
+      "daily_equivalent": 0.9617,
+      "current_daily": 0.93,
+      "proxies_used": [
+        "FRED_RETAIL_SALES",
+        "YAHOO_SP500"
+      ],
+      "n_observations": 2
+    },
+    "labor_pressure": {
+      "monthly_ar1": 0.7688,
+      "daily_equivalent": 0.9881,
+      "current_daily": 0.96,
+      "proxies_used": [
+        "FRED_UNEMPLOYMENT_RATE",
+        "FRED_INITIAL_CLAIMS"
+      ],
+      "n_observations": 2
+    },
+    "housing_momentum": {
+      "monthly_ar1": 0.9753,
+      "daily_equivalent": 0.9989,
+      "current_daily": 0.95,
+      "proxies_used": [
+        "FRED_HOUSING_STARTS",
+        "FRED_HOME_PRICES"
+      ],
+      "n_observations": 2
+    },
+    "financial_conditions": {
+      "monthly_ar1": 0.5089,
+      "daily_equivalent": 0.9698,
+      "current_daily": 0.88,
+      "proxies_used": [
+        "FRED_10Y_YIELD",
+        "YAHOO_SP500"
+      ],
+      "n_observations": 2
+    },
+    "commodity_pressure": {
+      "monthly_ar1": -0.0171,
+      "daily_equivalent": 0.5,
+      "current_daily": 0.85,
+      "proxies_used": [
+        "YAHOO_OIL_PRICE",
+        "YAHOO_GOLD_PRICE"
+      ],
+      "n_observations": 2
+    },
+    "consumer_sentiment": {
+      "monthly_ar1": 0.955,
+      "daily_equivalent": 0.9979,
+      "current_daily": 0.9,
+      "proxies_used": [
+        "FRED_CONSUMER_CONFIDENCE"
+      ],
+      "n_observations": 1
+    },
+    "policy_stance": {
+      "monthly_ar1": 0.9913,
+      "daily_equivalent": 0.9996,
+      "current_daily": 0.98,
+      "proxies_used": [
+        "FRED_FED_FUNDS_RATE"
+      ],
+      "n_observations": 1
+    }
+  },
+  "cross_dynamics": [
+    {
+      "from": "growth_trend",
+      "to": "inflation_trend",
+      "correlation": 0.5515,
+      "suggested_coeff": 0.0552
+    },
+    {
+      "from": "labor_pressure",
+      "to": "inflation_trend",
+      "correlation": -0.4083,
+      "suggested_coeff": -0.0408
+    },
+    {
+      "from": "housing_momentum",
+      "to": "inflation_trend",
+      "correlation": 0.371,
+      "suggested_coeff": 0.0371
+    },
+    {
+      "from": "financial_conditions",
+      "to": "inflation_trend",
+      "correlation": 0.1838,
+      "suggested_coeff": 0.0184
+    },
+    {
+      "from": "commodity_pressure",
+      "to": "inflation_trend",
+      "correlation": -0.1587,
+      "suggested_coeff": -0.0159
+    },
+    {
+      "from": "consumer_sentiment",
+      "to": "inflation_trend",
+      "correlation": -0.3089,
+      "suggested_coeff": -0.0309
+    },
+    {
+      "from": "policy_stance",
+      "to": "inflation_trend",
+      "correlation": 0.2956,
+      "suggested_coeff": 0.0296
+    },
+    {
+      "from": "inflation_trend",
+      "to": "growth_trend",
+      "correlation": 0.3947,
+      "suggested_coeff": 0.0395
+    },
+    {
+      "from": "housing_momentum",
+      "to": "growth_trend",
+      "correlation": 0.2954,
+      "suggested_coeff": 0.0295
+    },
+    {
+      "from": "commodity_pressure",
+      "to": "growth_trend",
+      "correlation": -0.1875,
+      "suggested_coeff": -0.0188
+    },
+    {
+      "from": "inflation_trend",
+      "to": "labor_pressure",
+      "correlation": -0.4333,
+      "suggested_coeff": -0.0433
+    },
+    {
+      "from": "growth_trend",
+      "to": "labor_pressure",
+      "correlation": -0.2607,
+      "suggested_coeff": -0.0261
+    },
+    {
+      "from": "housing_momentum",
+      "to": "labor_pressure",
+      "correlation": -0.5944,
+      "suggested_coeff": -0.0594
+    },
+    {
+      "from": "financial_conditions",
+      "to": "labor_pressure",
+      "correlation": -0.2924,
+      "suggested_coeff": -0.0292
+    },
+    {
+      "from": "commodity_pressure",
+      "to": "labor_pressure",
+      "correlation": 0.2128,
+      "suggested_coeff": 0.0213
+    },
+    {
+      "from": "consumer_sentiment",
+      "to": "labor_pressure",
+      "correlation": -0.2767,
+      "suggested_coeff": -0.0277
+    },
+    {
+      "from": "policy_stance",
+      "to": "labor_pressure",
+      "correlation": -0.5822,
+      "suggested_coeff": -0.0582
+    },
+    {
+      "from": "inflation_trend",
+      "to": "housing_momentum",
+      "correlation": 0.34,
+      "suggested_coeff": 0.034
+    },
+    {
+      "from": "growth_trend",
+      "to": "housing_momentum",
+      "correlation": 0.3188,
+      "suggested_coeff": 0.0319
+    },
+    {
+      "from": "labor_pressure",
+      "to": "housing_momentum",
+      "correlation": -0.5609,
+      "suggested_coeff": -0.0561
+    },
+    {
+      "from": "financial_conditions",
+      "to": "housing_momentum",
+      "correlation": 0.3985,
+      "suggested_coeff": 0.0398
+    },
+    {
+      "from": "consumer_sentiment",
+      "to": "housing_momentum",
+      "correlation": 0.3725,
+      "suggested_coeff": 0.0372
+    },
+    {
+      "from": "policy_stance",
+      "to": "housing_momentum",
+      "correlation": 0.4237,
+      "suggested_coeff": 0.0424
+    },
+    {
+      "from": "inflation_trend",
+      "to": "financial_conditions",
+      "correlation": 0.2139,
+      "suggested_coeff": 0.0214
+    },
+    {
+      "from": "labor_pressure",
+      "to": "financial_conditions",
+      "correlation": -0.3041,
+      "suggested_coeff": -0.0304
+    },
+    {
+      "from": "housing_momentum",
+      "to": "financial_conditions",
+      "correlation": 0.431,
+      "suggested_coeff": 0.0431
+    },
+    {
+      "from": "policy_stance",
+      "to": "financial_conditions",
+      "correlation": 0.7252,
+      "suggested_coeff": 0.0725
+    },
+    {
+      "from": "growth_trend",
+      "to": "commodity_pressure",
+      "correlation": -0.1968,
+      "suggested_coeff": -0.0197
+    },
+    {
+      "from": "inflation_trend",
+      "to": "consumer_sentiment",
+      "correlation": -0.3612,
+      "suggested_coeff": -0.0361
+    },
+    {
+      "from": "labor_pressure",
+      "to": "consumer_sentiment",
+      "correlation": -0.255,
+      "suggested_coeff": -0.0255
+    },
+    {
+      "from": "housing_momentum",
+      "to": "consumer_sentiment",
+      "correlation": 0.3534,
+      "suggested_coeff": 0.0353
+    },
+    {
+      "from": "inflation_trend",
+      "to": "policy_stance",
+      "correlation": 0.3452,
+      "suggested_coeff": 0.0345
+    },
+    {
+      "from": "labor_pressure",
+      "to": "policy_stance",
+      "correlation": -0.6044,
+      "suggested_coeff": -0.0604
+    },
+    {
+      "from": "housing_momentum",
+      "to": "policy_stance",
+      "correlation": 0.4585,
+      "suggested_coeff": 0.0459
+    },
+    {
+      "from": "financial_conditions",
+      "to": "policy_stance",
+      "correlation": 0.7289,
+      "suggested_coeff": 0.0729
+    }
+  ],
+  "noise": {
+    "US_CPI_YOY": {
+      "estimated_noise": 0.0644,
+      "current_noise": 0.03,
+      "n_months": 613
+    },
+    "CORE_CPI": {
+      "estimated_noise": 0.0535,
+      "current_noise": 0.03,
+      "n_months": 613
+    },
+    "PPI": {
+      "estimated_noise": 0.1008,
+      "current_noise": 0.05,
+      "n_months": 614
+    },
+    "UNEMPLOYMENT_RATE": {
+      "estimated_noise": 0.0693,
+      "current_noise": 0.08,
+      "n_months": 613
+    },
+    "INITIAL_CLAIMS": {
+      "estimated_noise": 0.0443,
+      "current_noise": 0.1,
+      "n_months": 614
+    },
+    "HOUSING_STARTS": {
+      "estimated_noise": 0.08,
+      "current_noise": 0.12,
+      "n_months": 613
+    },
+    "HOME_PRICES": {
+      "estimated_noise": 0.0738,
+      "current_noise": 0.05,
+      "n_months": 456
+    },
+    "RETAIL_SALES": {
+      "estimated_noise": 0.0528,
+      "current_noise": 0.08,
+      "n_months": 397
+    },
+    "CONSUMER_CONFIDENCE": {
+      "estimated_noise": 0.0979,
+      "current_noise": 0.2,
+      "n_months": 589
+    },
+    "FED_FUNDS_RATE": {
+      "estimated_noise": 0.0566,
+      "current_noise": 0.01,
+      "n_months": 614
+    },
+    "10Y_YIELD": {
+      "estimated_noise": 0.0429,
+      "current_noise": 0.03,
+      "n_months": 614
+    },
+    "SP500": {
+      "estimated_noise": 0.0766,
+      "current_noise": 0.05,
+      "n_months": 614
+    },
+    "OIL_PRICE": {
+      "estimated_noise": 0.0801,
+      "current_noise": 0.05,
+      "n_months": 307
+    },
+    "GOLD_PRICE": {
+      "estimated_noise": 0.0725,
+      "current_noise": 0.05,
+      "n_months": 307
+    }
+  },
+  "pca": {
+    "explained_variance": [
+      0.3018,
+      0.1727,
+      0.1269,
+      0.1014,
+      0.0821,
+      0.0657,
+      0.062,
+      0.0304
+    ],
+    "cumulative_variance": 0.943,
+    "n_months": 305,
+    "n_streams": 12,
+    "top_loadings_per_component": {
+      "PC1": {
+        "US_CPI_YOY": -0.452,
+        "CORE_CPI": -0.392,
+        "UNEMPLOYMENT_RATE": 0.387,
+        "HOUSING_STARTS": -0.349,
+        "PPI": -0.328,
+        "FED_FUNDS_RATE": -0.327,
+        "RETAIL_SALES": -0.275,
+        "10Y_YIELD": -0.242
+      },
+      "PC2": {
+        "FED_FUNDS_RATE": -0.422,
+        "10Y_YIELD": -0.417,
+        "PPI": 0.398,
+        "CONSUMER_CONFIDENCE": -0.338,
+        "RETAIL_SALES": 0.332,
+        "US_CPI_YOY": 0.275,
+        "HOUSING_STARTS": -0.264,
+        "UNEMPLOYMENT_RATE": 0.258
+      },
+      "PC3": {
+        "CONSUMER_CONFIDENCE": 0.632,
+        "RETAIL_SALES": 0.393,
+        "CORE_CPI": -0.306,
+        "HOUSING_STARTS": 0.289,
+        "OIL_PRICE": -0.284,
+        "FED_FUNDS_RATE": -0.223,
+        "SP500": -0.216
+      },
+      "PC4": {
+        "GOLD_PRICE": 0.639,
+        "OIL_PRICE": 0.52,
+        "SP500": 0.38,
+        "PPI": 0.226
+      },
+      "PC5": {
+        "SP500": -0.737,
+        "GOLD_PRICE": 0.51,
+        "10Y_YIELD": 0.307
+      },
+      "PC6": {
+        "10Y_YIELD": -0.495,
+        "CORE_CPI": 0.459,
+        "OIL_PRICE": 0.369,
+        "UNEMPLOYMENT_RATE": -0.347,
+        "SP500": -0.344,
+        "PPI": -0.286
+      },
+      "PC7": {
+        "OIL_PRICE": 0.621,
+        "GOLD_PRICE": -0.542,
+        "SP500": -0.35,
+        "PPI": 0.244,
+        "UNEMPLOYMENT_RATE": 0.206
+      },
+      "PC8": {
+        "HOUSING_STARTS": -0.721,
+        "CONSUMER_CONFIDENCE": 0.372,
+        "PPI": 0.336,
+        "UNEMPLOYMENT_RATE": -0.33,
+        "FED_FUNDS_RATE": 0.213
+      }
+    }
+  },
+  "era_comparison": {
+    "1975-1985 (Volcker)": {
+      "inflation": {
+        "monthly_ar1": 0.992,
+        "daily_equiv": 0.9996
+      },
+      "labor": {
+        "monthly_ar1": 0.9855,
+        "daily_equiv": 0.9993
+      },
+      "rates": {
+        "monthly_ar1": 0.9616,
+        "daily_equiv": 0.9982
+      }
+    },
+    "1986-2000 (Great Moderation)": {
+      "inflation": {
+        "monthly_ar1": 0.9721,
+        "daily_equiv": 0.9987
+      },
+      "growth": {
+        "monthly_ar1": 0.7454,
+        "daily_equiv": 0.9867
+      },
+      "labor": {
+        "monthly_ar1": 0.9909,
+        "daily_equiv": 0.9996
+      },
+      "rates": {
+        "monthly_ar1": 0.9913,
+        "daily_equiv": 0.9996
+      }
+    },
+    "2001-2008 (Dot-com to GFC)": {
+      "inflation": {
+        "monthly_ar1": 0.8588,
+        "daily_equiv": 0.9931
+      },
+      "growth": {
+        "monthly_ar1": 0.8116,
+        "daily_equiv": 0.9906
+      },
+      "labor": {
+        "monthly_ar1": 0.9724,
+        "daily_equiv": 0.9987
+      },
+      "rates": {
+        "monthly_ar1": 0.9893,
+        "daily_equiv": 0.9995
+      }
+    },
+    "2009-2019 (ZIRP)": {
+      "inflation": {
+        "monthly_ar1": 0.9425,
+        "daily_equiv": 0.9973
+      },
+      "growth": {
+        "monthly_ar1": 0.9524,
+        "daily_equiv": 0.9978
+      },
+      "labor": {
+        "monthly_ar1": 0.9973,
+        "daily_equiv": 0.9999
+      },
+      "rates": {
+        "monthly_ar1": 0.9964,
+        "daily_equiv": 0.9998
+      }
+    },
+    "2020-2026 (Post-COVID)": {
+      "inflation": {
+        "monthly_ar1": 0.9806,
+        "daily_equiv": 0.9991
+      },
+      "growth": {
+        "monthly_ar1": 0.7472,
+        "daily_equiv": 0.9868
+      },
+      "labor": {
+        "monthly_ar1": 0.8137,
+        "daily_equiv": 0.9907
+      },
+      "rates": {
+        "monthly_ar1": 0.9948,
+        "daily_equiv": 0.9998
+      }
+    }
+  }
+}
