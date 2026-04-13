@@ -1,0 +1,780 @@
+{
+  "experiment": "p6_comparison",
+  "p0_p2b": {
+    "diagnostics": {
+      "per_stream": {
+        "10Y_YIELD": {
+          "n": 12636,
+          "mean": 0.0009,
+          "mean_bias_ok": true,
+          "kurtosis": 0.78,
+          "std": 1.3887,
+          "ljung_box_p": 0.0,
+          "ljung_box_pass": false,
+          "acf_lag1": 0.8745,
+          "mean_log_lik": -0.2021
+        },
+        "BTC_USD": {
+          "n": 4182,
+          "mean": -0.031,
+          "mean_bias_ok": true,
+          "kurtosis": 5.47,
+          "std": 0.7601,
+          "ljung_box_p": 0.0,
+          "ljung_box_pass": false,
+          "acf_lag1": 0.0957,
+          "mean_log_lik": -1.333
+        },
+        "CONSUMER_CONFIDENCE": {
+          "n": 586,
+          "mean": 0.4409,
+          "mean_bias_ok": false,
+          "kurtosis": -0.27,
+          "std": 2.1278,
+          "ljung_box_p": 0.0,
+          "ljung_box_pass": false,
+          "acf_lag1": 0.9455,
+          "mean_log_lik": -2.5093
+        },
+        "CORE_CPI": {
+          "n": 605,
+          "mean": -1.445,
+          "mean_bias_ok": false,
+          "kurtosis": -0.34,
+          "std": 2.2362,
+          "ljung_box_p": 0.0,
+          "ljung_box_pass": false,
+          "acf_lag1": 0.9026,
+          "mean_log_lik": -3.3956
+        },
+        "FED_FUNDS_RATE": {
+          "n": 606,
+          "mean": -1.0546,
+          "mean_bias_ok": false,
+          "kurtosis": 3.09,
+          "std": 6.7336,
+          "ljung_box_p": 0.0,
+          "ljung_box_pass": false,
+          "acf_lag1": 0.9336,
+          "mean_log_lik": -22.0311
+        },
+        "GOLD_PRICE": {
+          "n": 6396,
+          "mean": -0.1231,
+          "mean_bias_ok": true,
+          "kurtosis": 4.56,
+          "std": 3.6187,
+          "ljung_box_p": 0.0,
+          "ljung_box_pass": false,
+          "acf_lag1": 0.0147,
+          "mean_log_lik": -6.0208
+        },
+        "HOME_PRICES": {
+          "n": 456,
+          "mean": 0.3855,
+          "mean_bias_ok": false,
+          "kurtosis": 0.12,
+          "std": 2.5985,
+          "ljung_box_p": 0.0,
+          "ljung_box_pass": false,
+          "acf_lag1": 0.9125,
+          "mean_log_lik": -3.5928
+        },
+        "HOUSING_STARTS": {
+          "n": 605,
+          "mean": 0.2814,
+          "mean_bias_ok": false,
+          "kurtosis": 0.4,
+          "std": 1.8362,
+          "ljung_box_p": 0.0,
+          "ljung_box_pass": false,
+          "acf_lag1": 0.9131,
+          "mean_log_lik": -2.5987
+        },
+        "INITIAL_CLAIMS": {
+          "n": 2640,
+          "mean": -0.3747,
+          "mean_bias_ok": false,
+          "kurtosis": 375.04,
+          "std": 1.5303,
+          "ljung_box_p": 0.0,
+          "ljung_box_pass": false,
+          "acf_lag1": 0.7428,
+          "mean_log_lik": -1.6523
+        },
+        "OIL_PRICE": {
+          "n": 6403,
+          "mean": 0.0307,
+          "mean_bias_ok": true,
+          "kurtosis": 5.56,
+          "std": 0.9315,
+          "ljung_box_p": 0.0,
+          "ljung_box_pass": false,
+          "acf_lag1": 0.0648,
+          "mean_log_lik": -1.2499
+        },
+        "PPI": {
+          "n": 605,
+          "mean": -0.4221,
+          "mean_bias_ok": false,
+          "kurtosis": 1.83,
+          "std": 1.3859,
+          "ljung_box_p": 0.0,
+          "ljung_box_pass": false,
+          "acf_lag1": 0.9441,
+          "mean_log_lik": -1.3541
+        },
+        "RETAIL_SALES": {
+          "n": 397,
+          "mean": -0.6226,
+          "mean_bias_ok": false,
+          "kurtosis": 19.14,
+          "std": 2.2858,
+          "ljung_box_p": 0.0,
+          "ljung_box_pass": false,
+          "acf_lag1": 0.7582,
+          "mean_log_lik": -3.1076
+        },
+        "SP500": {
+          "n": 12749,
+          "mean": -0.0071,
+          "mean_bias_ok": true,
+          "kurtosis": 8.44,
+          "std": 1.0398,
+          "ljung_box_p": 0.0,
+          "ljung_box_pass": false,
+          "acf_lag1": 0.3084,
+          "mean_log_lik": -1.352
+        },
+        "UNEMPLOYMENT_RATE": {
+          "n": 605,
+          "mean": -1.3422,
+          "mean_bias_ok": false,
+          "kurtosis": 0.82,
+          "std": 1.9103,
+          "ljung_box_p": 0.0,
+          "ljung_box_pass": false,
+          "acf_lag1": 0.969,
+          "mean_log_lik": -3.0343
+        },
+        "US_CPI_YOY": {
+          "n": 605,
+          "mean": -1.4763,
+          "mean_bias_ok": false,
+          "kurtosis": 0.38,
+          "std": 2.5894,
+          "ljung_box_p": 0.0,
+          "ljung_box_pass": false,
+          "acf_lag1": 0.9241,
+          "mean_log_lik": -4.3019
+        }
+      },
+      "ljung_box_pass": 0,
+      "ljung_box_total": 15,
+      "ljung_box_rate": 0.0,
+      "mean_bias_pass": 5,
+      "mean_bias_total": 15,
+      "mean_bias_rate": 0.3333,
+      "total_log_likelihood": -102817.28,
+      "anomaly_count": 2996,
+      "anomaly_rate": 0.06
+    },
+    "checkpoints": [
+      {
+        "regime": "recession",
+        "description": "Volcker Recession I \u2014 Fed raises to 20%, 6-month recession",
+        "result": "PASS",
+        "avg_probability": 0.685,
+        "first_detection_weeks": 0.5714285714285714
+      },
+      {
+        "regime": "recession",
+        "description": "Volcker Recession II \u2014 double-dip, unemployment hits 10.8%",
+        "result": "PASS",
+        "avg_probability": 0.7607,
+        "first_detection_weeks": 0.8571428571428571
+      },
+      {
+        "regime": "soft_landing",
+        "description": "Reagan expansion \u2014 disinflation + strong growth",
+        "result": "PASS",
+        "avg_probability": 0.7423,
+        "first_detection_weeks": 0.2857142857142857
+      },
+      {
+        "regime": "recession",
+        "description": "Black Monday \u2014 S&P drops 22% in one day, brief panic",
+        "result": "FAIL",
+        "avg_probability": 0.2301,
+        "first_detection_weeks": 3.142857142857143
+      },
+      {
+        "regime": "recession",
+        "description": "Gulf War Recession \u2014 oil shock + S&L crisis",
+        "result": "PASS",
+        "avg_probability": 0.3452,
+        "first_detection_weeks": 9.285714285714286
+      },
+      {
+        "regime": "soft_landing",
+        "description": "90s expansion \u2014 Goldilocks era, tech boom, low inflation",
+        "result": "PASS",
+        "avg_probability": 0.58,
+        "first_detection_weeks": 6.857142857142857
+      },
+      {
+        "regime": "recession",
+        "description": "Dot-com Bust \u2014 NASDAQ crashes, 9/11, mild recession",
+        "result": "PASS",
+        "avg_probability": 0.4644,
+        "first_detection_weeks": 0.2857142857142857
+      },
+      {
+        "regime": "recession",
+        "description": "Great Recession \u2014 housing collapse, bank failures, unemployment surge",
+        "result": "PASS",
+        "avg_probability": 0.5,
+        "first_detection_weeks": 4.142857142857143
+      },
+      {
+        "regime": "recession",
+        "description": "COVID crash \u2014 fastest recession in history",
+        "result": "PASS",
+        "avg_probability": 0.7681,
+        "first_detection_weeks": 0.7142857142857143
+      },
+      {
+        "regime": "stagflation",
+        "description": "Inflation surge \u2014 CPI hit 9.1%, supply chain + demand overshoot",
+        "result": "PASS",
+        "avg_probability": 0.4563,
+        "first_detection_weeks": 17.428571428571427
+      },
+      {
+        "regime": "soft_landing",
+        "description": "Disinflation \u2014 CPI cooling, labor holding, no recession",
+        "result": "PASS",
+        "avg_probability": 0.5796,
+        "first_detection_weeks": 0.14285714285714285
+      }
+    ]
+  },
+  "full_stack": {
+    "diagnostics": {
+      "per_stream": {
+        "10Y_YIELD": {
+          "n": 12636,
+          "mean": 0.0629,
+          "mean_bias_ok": true,
+          "kurtosis": -0.48,
+          "std": 1.0415,
+          "ljung_box_p": 0.0,
+          "ljung_box_pass": false,
+          "acf_lag1": 0.842,
+          "mean_log_lik": 0.2012
+        },
+        "BTC_USD": {
+          "n": 4182,
+          "mean": -0.0099,
+          "mean_bias_ok": true,
+          "kurtosis": 5.3,
+          "std": 0.919,
+          "ljung_box_p": 0.0,
+          "ljung_box_pass": false,
+          "acf_lag1": 0.2189,
+          "mean_log_lik": -1.4664
+        },
+        "CONSUMER_CONFIDENCE": {
+          "n": 586,
+          "mean": 0.2219,
+          "mean_bias_ok": false,
+          "kurtosis": -0.93,
+          "std": 1.1547,
+          "ljung_box_p": 0.0,
+          "ljung_box_pass": false,
+          "acf_lag1": 0.8895,
+          "mean_log_lik": -0.842
+        },
+        "CORE_CPI": {
+          "n": 605,
+          "mean": -0.7538,
+          "mean_bias_ok": false,
+          "kurtosis": -0.05,
+          "std": 0.944,
+          "ljung_box_p": 0.0,
+          "ljung_box_pass": false,
+          "acf_lag1": 0.8978,
+          "mean_log_lik": -0.5984
+        },
+        "FED_FUNDS_RATE": {
+          "n": 606,
+          "mean": -0.4995,
+          "mean_bias_ok": false,
+          "kurtosis": -0.93,
+          "std": 1.4724,
+          "ljung_box_p": 0.0,
+          "ljung_box_pass": false,
+          "acf_lag1": 0.9299,
+          "mean_log_lik": -0.119
+        },
+        "GOLD_PRICE": {
+          "n": 6396,
+          "mean": -0.0755,
+          "mean_bias_ok": true,
+          "kurtosis": 2.86,
+          "std": 1.4379,
+          "ljung_box_p": 0.0,
+          "ljung_box_pass": false,
+          "acf_lag1": 0.1288,
+          "mean_log_lik": -0.5256
+        },
+        "HOME_PRICES": {
+          "n": 456,
+          "mean": 0.4152,
+          "mean_bias_ok": false,
+          "kurtosis": -1.02,
+          "std": 1.2741,
+          "ljung_box_p": 0.0,
+          "ljung_box_pass": false,
+          "acf_lag1": 0.9091,
+          "mean_log_lik": -1.0867
+        },
+        "HOUSING_STARTS": {
+          "n": 605,
+          "mean": 0.2589,
+          "mean_bias_ok": false,
+          "kurtosis": -0.98,
+          "std": 1.1612,
+          "ljung_box_p": 0.0,
+          "ljung_box_pass": false,
+          "acf_lag1": 0.9117,
+          "mean_log_lik": -1.5968
+        },
+        "INITIAL_CLAIMS": {
+          "n": 2640,
+          "mean": -0.3823,
+          "mean_bias_ok": false,
+          "kurtosis": 864.0,
+          "std": 1.2963,
+          "ljung_box_p": 0.0,
+          "ljung_box_pass": false,
+          "acf_lag1": 0.4139,
+          "mean_log_lik": -1.3251
+        },
+        "OIL_PRICE": {
+          "n": 6403,
+          "mean": 0.0197,
+          "mean_bias_ok": true,
+          "kurtosis": 2.32,
+          "std": 0.938,
+          "ljung_box_p": 0.0,
+          "ljung_box_pass": false,
+          "acf_lag1": 0.0303,
+          "mean_log_lik": -1.2561
+        },
+        "PPI": {
+          "n": 605,
+          "mean": -0.4798,
+          "mean_bias_ok": false,
+          "kurtosis": 0.19,
+          "std": 0.96,
+          "ljung_box_p": 0.0,
+          "ljung_box_pass": false,
+          "acf_lag1": 0.9169,
+          "mean_log_lik": -0.8866
+        },
+        "RETAIL_SALES": {
+          "n": 397,
+          "mean": -0.3871,
+          "mean_bias_ok": false,
+          "kurtosis": 3.46,
+          "std": 1.0667,
+          "ljung_box_p": 0.0,
+          "ljung_box_pass": false,
+          "acf_lag1": 0.6493,
+          "mean_log_lik": -0.946
+        },
+        "SP500": {
+          "n": 12749,
+          "mean": 0.059,
+          "mean_bias_ok": true,
+          "kurtosis": 1.1,
+          "std": 1.0075,
+          "ljung_box_p": 0.0,
+          "ljung_box_pass": false,
+          "acf_lag1": 0.3417,
+          "mean_log_lik": -1.3217
+        },
+        "UNEMPLOYMENT_RATE": {
+          "n": 605,
+          "mean": -0.7261,
+          "mean_bias_ok": false,
+          "kurtosis": 1.78,
+          "std": 0.9209,
+          "ljung_box_p": 0.0,
+          "ljung_box_pass": false,
+          "acf_lag1": 0.9453,
+          "mean_log_lik": -0.9974
+        },
+        "US_CPI_YOY": {
+          "n": 605,
+          "mean": -0.7554,
+          "mean_bias_ok": false,
+          "kurtosis": 0.53,
+          "std": 0.9599,
+          "ljung_box_p": 0.0,
+          "ljung_box_pass": false,
+          "acf_lag1": 0.9168,
+          "mean_log_lik": -0.6208
+        }
+      },
+      "ljung_box_pass": 0,
+      "ljung_box_total": 15,
+      "ljung_box_rate": 0.0,
+      "mean_bias_pass": 5,
+      "mean_bias_total": 15,
+      "mean_bias_rate": 0.3333,
+      "total_log_likelihood": -39623.55,
+      "anomaly_count": 252,
+      "anomaly_rate": 0.005
+    },
+    "checkpoints": [
+      {
+        "regime": "recession",
+        "description": "Volcker Recession I \u2014 Fed raises to 20%, 6-month recession",
+        "result": "PASS",
+        "avg_probability": 0.6857,
+        "first_detection_weeks": 0.5714285714285714
+      },
+      {
+        "regime": "recession",
+        "description": "Volcker Recession II \u2014 double-dip, unemployment hits 10.8%",
+        "result": "PASS",
+        "avg_probability": 0.7498,
+        "first_detection_weeks": 0.8571428571428571
+      },
+      {
+        "regime": "soft_landing",
+        "description": "Reagan expansion \u2014 disinflation + strong growth",
+        "result": "PASS",
+        "avg_probability": 0.7331,
+        "first_detection_weeks": 0.2857142857142857
+      },
+      {
+        "regime": "recession",
+        "description": "Black Monday \u2014 S&P drops 22% in one day, brief panic",
+        "result": "FAIL",
+        "avg_probability": 0.2305,
+        "first_detection_weeks": 3.142857142857143
+      },
+      {
+        "regime": "recession",
+        "description": "Gulf War Recession \u2014 oil shock + S&L crisis",
+        "result": "PASS",
+        "avg_probability": 0.3432,
+        "first_detection_weeks": 9.285714285714286
+      },
+      {
+        "regime": "soft_landing",
+        "description": "90s expansion \u2014 Goldilocks era, tech boom, low inflation",
+        "result": "PASS",
+        "avg_probability": 0.5771,
+        "first_detection_weeks": 8.285714285714286
+      },
+      {
+        "regime": "recession",
+        "description": "Dot-com Bust \u2014 NASDAQ crashes, 9/11, mild recession",
+        "result": "PASS",
+        "avg_probability": 0.4727,
+        "first_detection_weeks": 0.2857142857142857
+      },
+      {
+        "regime": "recession",
+        "description": "Great Recession \u2014 housing collapse, bank failures, unemployment surge",
+        "result": "PASS",
+        "avg_probability": 0.499,
+        "first_detection_weeks": 4.142857142857143
+      },
+      {
+        "regime": "recession",
+        "description": "COVID crash \u2014 fastest recession in history",
+        "result": "PASS",
+        "avg_probability": 0.7597,
+        "first_detection_weeks": 0.7142857142857143
+      },
+      {
+        "regime": "stagflation",
+        "description": "Inflation surge \u2014 CPI hit 9.1%, supply chain + demand overshoot",
+        "result": "PASS",
+        "avg_probability": 0.4505,
+        "first_detection_weeks": 17.428571428571427
+      },
+      {
+        "regime": "soft_landing",
+        "description": "Disinflation \u2014 CPI cooling, labor holding, no recession",
+        "result": "PASS",
+        "avg_probability": 0.5872,
+        "first_detection_weeks": 0.14285714285714285
+      }
+    ]
+  },
+  "full_p6": {
+    "diagnostics": {
+      "per_stream": {
+        "10Y_YIELD": {
+          "n": 12636,
+          "mean": 0.064,
+          "mean_bias_ok": true,
+          "kurtosis": -0.39,
+          "std": 1.0258,
+          "ljung_box_p": 0.0,
+          "ljung_box_pass": false,
+          "acf_lag1": 0.8304,
+          "mean_log_lik": 0.2149
+        },
+        "BTC_USD": {
+          "n": 4182,
+          "mean": -0.0082,
+          "mean_bias_ok": true,
+          "kurtosis": 5.36,
+          "std": 0.9182,
+          "ljung_box_p": 0.0,
+          "ljung_box_pass": false,
+          "acf_lag1": 0.218,
+          "mean_log_lik": -1.4656
+        },
+        "CONSUMER_CONFIDENCE": {
+          "n": 586,
+          "mean": 0.2202,
+          "mean_bias_ok": false,
+          "kurtosis": -0.91,
+          "std": 1.1518,
+          "ljung_box_p": 0.0,
+          "ljung_box_pass": false,
+          "acf_lag1": 0.888,
+          "mean_log_lik": -0.8401
+        },
+        "CORE_CPI": {
+          "n": 605,
+          "mean": -0.7472,
+          "mean_bias_ok": false,
+          "kurtosis": -0.07,
+          "std": 0.9483,
+          "ljung_box_p": 0.0,
+          "ljung_box_pass": false,
+          "acf_lag1": 0.8948,
+          "mean_log_lik": -0.6043
+        },
+        "FED_FUNDS_RATE": {
+          "n": 606,
+          "mean": -0.5026,
+          "mean_bias_ok": false,
+          "kurtosis": -0.91,
+          "std": 1.4746,
+          "ljung_box_p": 0.0,
+          "ljung_box_pass": false,
+          "acf_lag1": 0.926,
+          "mean_log_lik": -0.121
+        },
+        "GOLD_PRICE": {
+          "n": 6396,
+          "mean": -0.0743,
+          "mean_bias_ok": true,
+          "kurtosis": 2.82,
+          "std": 1.435,
+          "ljung_box_p": 0.0,
+          "ljung_box_pass": false,
+          "acf_lag1": 0.1275,
+          "mean_log_lik": -0.527
+        },
+        "HOME_PRICES": {
+          "n": 456,
+          "mean": 0.4245,
+          "mean_bias_ok": false,
+          "kurtosis": -1.01,
+          "std": 1.2697,
+          "ljung_box_p": 0.0,
+          "ljung_box_pass": false,
+          "acf_lag1": 0.9081,
+          "mean_log_lik": -1.0907
+        },
+        "HOUSING_STARTS": {
+          "n": 605,
+          "mean": 0.2685,
+          "mean_bias_ok": false,
+          "kurtosis": -0.96,
+          "std": 1.1571,
+          "ljung_box_p": 0.0,
+          "ljung_box_pass": false,
+          "acf_lag1": 0.9096,
+          "mean_log_lik": -1.5973
+        },
+        "INITIAL_CLAIMS": {
+          "n": 2640,
+          "mean": -0.3765,
+          "mean_bias_ok": false,
+          "kurtosis": 873.4,
+          "std": 1.2915,
+          "ljung_box_p": 0.0,
+          "ljung_box_pass": false,
+          "acf_lag1": 0.4083,
+          "mean_log_lik": -1.3191
+        },
+        "OIL_PRICE": {
+          "n": 6403,
+          "mean": 0.0198,
+          "mean_bias_ok": true,
+          "kurtosis": 2.35,
+          "std": 0.9369,
+          "ljung_box_p": 0.0,
+          "ljung_box_pass": false,
+          "acf_lag1": 0.0331,
+          "mean_log_lik": -1.2558
+        },
+        "PPI": {
+          "n": 605,
+          "mean": -0.4798,
+          "mean_bias_ok": false,
+          "kurtosis": 0.21,
+          "std": 0.9573,
+          "ljung_box_p": 0.0,
+          "ljung_box_pass": false,
+          "acf_lag1": 0.9177,
+          "mean_log_lik": -0.8879
+        },
+        "RETAIL_SALES": {
+          "n": 397,
+          "mean": -0.395,
+          "mean_bias_ok": false,
+          "kurtosis": 3.67,
+          "std": 1.0641,
+          "ljung_box_p": 0.0,
+          "ljung_box_pass": false,
+          "acf_lag1": 0.6448,
+          "mean_log_lik": -0.9479
+        },
+        "SP500": {
+          "n": 12749,
+          "mean": 0.0581,
+          "mean_bias_ok": true,
+          "kurtosis": 1.11,
+          "std": 1.0063,
+          "ljung_box_p": 0.0,
+          "ljung_box_pass": false,
+          "acf_lag1": 0.3404,
+          "mean_log_lik": -1.3204
+        },
+        "UNEMPLOYMENT_RATE": {
+          "n": 605,
+          "mean": -0.7228,
+          "mean_bias_ok": false,
+          "kurtosis": 1.72,
+          "std": 0.9183,
+          "ljung_box_p": 0.0,
+          "ljung_box_pass": false,
+          "acf_lag1": 0.9458,
+          "mean_log_lik": -0.9965
+        },
+        "US_CPI_YOY": {
+          "n": 605,
+          "mean": -0.7492,
+          "mean_bias_ok": false,
+          "kurtosis": 0.48,
+          "std": 0.9622,
+          "ljung_box_p": 0.0,
+          "ljung_box_pass": false,
+          "acf_lag1": 0.9155,
+          "mean_log_lik": -0.6286
+        }
+      },
+      "ljung_box_pass": 0,
+      "ljung_box_total": 15,
+      "ljung_box_rate": 0.0,
+      "mean_bias_pass": 5,
+      "mean_bias_total": 15,
+      "mean_bias_rate": 0.3333,
+      "total_log_likelihood": -39432.85,
+      "anomaly_count": 252,
+      "anomaly_rate": 0.005
+    },
+    "checkpoints": [
+      {
+        "regime": "recession",
+        "description": "Volcker Recession I \u2014 Fed raises to 20%, 6-month recession",
+        "result": "PASS",
+        "avg_probability": 0.6631,
+        "first_detection_weeks": 0.5714285714285714
+      },
+      {
+        "regime": "recession",
+        "description": "Volcker Recession II \u2014 double-dip, unemployment hits 10.8%",
+        "result": "PASS",
+        "avg_probability": 0.7447,
+        "first_detection_weeks": 0.8571428571428571
+      },
+      {
+        "regime": "soft_landing",
+        "description": "Reagan expansion \u2014 disinflation + strong growth",
+        "result": "PASS",
+        "avg_probability": 0.7506,
+        "first_detection_weeks": 0.2857142857142857
+      },
+      {
+        "regime": "recession",
+        "description": "Black Monday \u2014 S&P drops 22% in one day, brief panic",
+        "result": "FAIL",
+        "avg_probability": 0.2282,
+        "first_detection_weeks": 3.142857142857143
+      },
+      {
+        "regime": "recession",
+        "description": "Gulf War Recession \u2014 oil shock + S&L crisis",
+        "result": "PASS",
+        "avg_probability": 0.3471,
+        "first_detection_weeks": 9.285714285714286
+      },
+      {
+        "regime": "soft_landing",
+        "description": "90s expansion \u2014 Goldilocks era, tech boom, low inflation",
+        "result": "PASS",
+        "avg_probability": 0.5829,
+        "first_detection_weeks": 8.285714285714286
+      },
+      {
+        "regime": "recession",
+        "description": "Dot-com Bust \u2014 NASDAQ crashes, 9/11, mild recession",
+        "result": "PASS",
+        "avg_probability": 0.4886,
+        "first_detection_weeks": 0.2857142857142857
+      },
+      {
+        "regime": "recession",
+        "description": "Great Recession \u2014 housing collapse, bank failures, unemployment surge",
+        "result": "PASS",
+        "avg_probability": 0.5205,
+        "first_detection_weeks": 4.142857142857143
+      },
+      {
+        "regime": "recession",
+        "description": "COVID crash \u2014 fastest recession in history",
+        "result": "PASS",
+        "avg_probability": 0.7669,
+        "first_detection_weeks": 0.7142857142857143
+      },
+      {
+        "regime": "stagflation",
+        "description": "Inflation surge \u2014 CPI hit 9.1%, supply chain + demand overshoot",
+        "result": "PASS",
+        "avg_probability": 0.4474,
+        "first_detection_weeks": 17.428571428571427
+      },
+      {
+        "regime": "soft_landing",
+        "description": "Disinflation \u2014 CPI cooling, labor holding, no recession",
+        "result": "PASS",
+        "avg_probability": 0.5756,
+        "first_detection_weeks": 0.14285714285714285
+      }
+    ]
+  }
+}

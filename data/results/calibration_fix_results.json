@@ -1,0 +1,175 @@
+{
+  "temper_scan": {
+    "0.7": {
+      "mean_reliability": 0.15263400000000002,
+      "mean_bss": -1.8498936666666665,
+      "contraction_auc": 0.7695,
+      "sharpness": 0.8562,
+      "detected": 11,
+      "ll": -39883.63783618937
+    },
+    "0.75": {
+      "mean_reliability": 0.159695,
+      "mean_bss": -1.937903666666667,
+      "contraction_auc": 0.7674,
+      "sharpness": 0.8572,
+      "detected": 11,
+      "ll": -39831.473459919485
+    },
+    "0.8": {
+      "mean_reliability": 0.16770933333333335,
+      "mean_bss": -2.0341953333333334,
+      "contraction_auc": 0.7588,
+      "sharpness": 0.8587,
+      "detected": 11,
+      "ll": -39774.63548902718
+    },
+    "0.85": {
+      "mean_reliability": 0.175307,
+      "mean_bss": -2.130872,
+      "contraction_auc": 0.7544,
+      "sharpness": 0.8607,
+      "detected": 11,
+      "ll": -39707.76408669537
+    },
+    "0.9": {
+      "mean_reliability": 0.18080300000000002,
+      "mean_bss": -2.196104333333333,
+      "contraction_auc": 0.7488,
+      "sharpness": 0.8628,
+      "detected": 11,
+      "ll": -39672.65274581748
+    },
+    "0.95": {
+      "mean_reliability": 0.18596300000000002,
+      "mean_bss": -2.259927333333333,
+      "contraction_auc": 0.7455,
+      "sharpness": 0.8641,
+      "detected": 11,
+      "ll": -39648.19177780805
+    },
+    "1.0": {
+      "mean_reliability": 0.19009766666666664,
+      "mean_bss": -2.3108573333333333,
+      "contraction_auc": 0.7407,
+      "sharpness": 0.8658,
+      "detected": 11,
+      "ll": -39623.54702293782
+    }
+  },
+  "best_tempering_ceiling": 0.7,
+  "train_period": "1975-01-01 \u2192 2012-04-27",
+  "test_period": "2012-05-05 \u2192 2026-02-28",
+  "A: Full Stack": {
+    "brier": {
+      "contraction": {
+        "score": 0.11099,
+        "reliability": 0.095043,
+        "resolution": 0.001165,
+        "bss": -5.615111
+      },
+      "stagflation": {
+        "score": 0.281208,
+        "reliability": 0.209102,
+        "resolution": 0.001006,
+        "bss": -2.835712
+      },
+      "expansion": {
+        "score": 0.4058,
+        "reliability": 0.320174,
+        "resolution": 0.00208,
+        "bss": -3.644507
+      }
+    },
+    "roc_auc": {
+      "contraction": 0.8671,
+      "stagflation": 0.6118,
+      "expansion": 0.574
+    },
+    "sharpness": 0.8582
+  },
+  "B: +Temper 0.70": {
+    "brier": {
+      "contraction": {
+        "score": 0.08069,
+        "reliability": 0.065546,
+        "resolution": 0.001894,
+        "bss": -3.809205
+      },
+      "stagflation": {
+        "score": 0.256573,
+        "reliability": 0.18509,
+        "resolution": 0.001394,
+        "bss": -2.499681
+      },
+      "expansion": {
+        "score": 0.352554,
+        "reliability": 0.267818,
+        "resolution": 0.003068,
+        "bss": -3.035096
+      }
+    },
+    "roc_auc": {
+      "contraction": 0.9041,
+      "stagflation": 0.6211,
+      "expansion": 0.5818
+    },
+    "sharpness": 0.8489
+  },
+  "D: +Isotonic": {
+    "brier": {
+      "contraction": {
+        "score": 0.02662,
+        "reliability": 0.010966,
+        "resolution": 0.001022,
+        "bss": -0.586581
+      },
+      "stagflation": {
+        "score": 0.073241,
+        "reliability": 0.000862,
+        "resolution": 1.1e-05,
+        "bss": 0.00098
+      },
+      "expansion": {
+        "score": 0.093697,
+        "reliability": 0.006616,
+        "resolution": 0.000485,
+        "bss": -0.07239
+      }
+    },
+    "roc_auc": {
+      "contraction": 0.8565,
+      "stagflation": 0.5837,
+      "expansion": 0.5748
+    },
+    "sharpness": 0.8326
+  },
+  "E: Temper+Iso": {
+    "brier": {
+      "contraction": {
+        "score": 0.025288,
+        "reliability": 0.010563,
+        "resolution": 0.002078,
+        "bss": -0.507194
+      },
+      "stagflation": {
+        "score": 0.072875,
+        "reliability": 0.000556,
+        "resolution": 0.000742,
+        "bss": 0.005982
+      },
+      "expansion": {
+        "score": 0.093889,
+        "reliability": 0.00671,
+        "resolution": 0.000901,
+        "bss": -0.074593
+      }
+    },
+    "roc_auc": {
+      "contraction": 0.9041,
+      "stagflation": 0.6107,
+      "expansion": 0.5575
+    },
+    "sharpness": 0.8339
+  }
+}

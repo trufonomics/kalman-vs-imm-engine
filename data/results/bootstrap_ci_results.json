@@ -1,0 +1,72 @@
+{
+  "contraction_auc": {
+    "point_estimate": 0.7695,
+    "ci_lower": 0.696,
+    "ci_upper": 0.8358,
+    "std_error": 0.0338,
+    "n_bootstrap": 500
+  },
+  "contraction_brier": {
+    "point_estimate": 0.152,
+    "ci_lower": 0.1232,
+    "ci_upper": 0.1837,
+    "std_error": 0.0156,
+    "n_bootstrap": 500
+  },
+  "contraction_reliability": {
+    "point_estimate": 0.069,
+    "ci_lower": 0.0454,
+    "ci_upper": 0.0974,
+    "std_error": 0.014,
+    "n_bootstrap": 500
+  },
+  "contraction_resolution": {
+    "point_estimate": 0.0114,
+    "ci_lower": 0.0038,
+    "ci_upper": 0.0251,
+    "std_error": 0.0056,
+    "n_bootstrap": 500
+  },
+  "stagflation_auc": {
+    "point_estimate": 0.6158,
+    "ci_lower": 0.5027,
+    "ci_upper": 0.7287,
+    "std_error": 0.0564,
+    "n_bootstrap": 500
+  },
+  "stagflation_brier": {
+    "point_estimate": 0.2256,
+    "ci_lower": 0.1841,
+    "ci_upper": 0.2688,
+    "std_error": 0.021,
+    "n_bootstrap": 500
+  },
+  "stagflation_reliability": {
+    "point_estimate": 0.1751,
+    "ci_lower": 0.1318,
+    "ci_upper": 0.2177,
+    "std_error": 0.0228,
+    "n_bootstrap": 500
+  },
+  "stagflation_resolution": {
+    "point_estimate": 0.0006,
+    "ci_lower": 0.0001,
+    "ci_upper": 0.0036,
+    "std_error": 0.0009,
+    "n_bootstrap": 500
+  },
+  "detection_count": {
+    "point_estimate": 11.0,
+    "ci_lower": 8.0,
+    "ci_upper": 11.0,
+    "std_error": 0.8315,
+    "n_bootstrap": 500
+  },
+  "mean_detection_lag": {
+    "point_estimate": 4.8545,
+    "ci_lower": 17.7998,
+    "ci_upper": 61.1692,
+    "std_error": 10.702,
+    "n_bootstrap": 500
+  }
+}

@@ -1,0 +1,370 @@
+{
+  "Baseline": {
+    "log_likelihood": -154433.03,
+    "anomaly_count": 4468,
+    "brier": {
+      "contraction": {
+        "score": 0.17002,
+        "reliability": 0.082336,
+        "resolution": 0.007241,
+        "uncertainty": 0.095316
+      },
+      "stagflation": {
+        "score": 0.240659,
+        "reliability": 0.217247,
+        "resolution": 0.000205,
+        "uncertainty": 0.02333
+      },
+      "expansion": {
+        "score": 0.392789,
+        "reliability": 0.28192,
+        "resolution": 0.002655,
+        "uncertainty": 0.113545
+      }
+    },
+    "roc_auc": {
+      "contraction": {
+        "auc": 0.7094,
+        "optimal_threshold": 0.0503,
+        "tpr_at_optimal": 0.656,
+        "fpr_at_optimal": 0.3258
+      },
+      "stagflation": {
+        "auc": 0.6132,
+        "optimal_threshold": 0.2915,
+        "tpr_at_optimal": 0.5179,
+        "fpr_at_optimal": 0.3253
+      },
+      "expansion": {
+        "auc": 0.6258,
+        "optimal_threshold": 0.5126,
+        "tpr_at_optimal": 0.5115,
+        "fpr_at_optimal": 0.3105
+      }
+    },
+    "sharpness": {
+      "mean_max_prob": 0.8771,
+      "frac_above_80": 0.7708,
+      "frac_above_50": 0.9791
+    },
+    "detection_lag": [
+      {
+        "event": "Volcker Recession I \u2014 Fed raises to 20%, 6-month recession",
+        "lag_weeks": 10.1,
+        "peak_prob": 0.99,
+        "mean_prob": 0.466
+      },
+      {
+        "event": "Volcker Recession II \u2014 double-dip, unemployment hits 10.8%",
+        "lag_weeks": 0.9,
+        "peak_prob": 0.99,
+        "mean_prob": 0.728
+      },
+      {
+        "event": "Reagan expansion \u2014 disinflation + strong growth",
+        "lag_weeks": 0.3,
+        "peak_prob": 0.99,
+        "mean_prob": 0.7458
+      },
+      {
+        "event": "Black Monday \u2014 S&P drops 22% in one day, brief panic",
+        "lag_weeks": 3.1,
+        "peak_prob": 0.99,
+        "mean_prob": 0.2231
+      },
+      {
+        "event": "Gulf War Recession \u2014 oil shock + S&L crisis",
+        "lag_weeks": 9.3,
+        "peak_prob": 0.9862,
+        "mean_prob": 0.312
+      },
+      {
+        "event": "90s expansion \u2014 Goldilocks era, tech boom, low inflation",
+        "lag_weeks": 6.9,
+        "peak_prob": 0.99,
+        "mean_prob": 0.5898
+      },
+      {
+        "event": "Dot-com Bust \u2014 NASDAQ crashes, 9/11, mild recession",
+        "lag_weeks": 0.3,
+        "peak_prob": 0.9763,
+        "mean_prob": 0.3828
+      },
+      {
+        "event": "Great Recession \u2014 housing collapse, bank failures, unemployment surge",
+        "lag_weeks": 4.1,
+        "peak_prob": 0.99,
+        "mean_prob": 0.4265
+      },
+      {
+        "event": "COVID crash \u2014 fastest recession in history",
+        "lag_weeks": 0.7,
+        "peak_prob": 0.9877,
+        "mean_prob": 0.6886
+      },
+      {
+        "event": "Inflation surge \u2014 CPI hit 9.1%, supply chain + demand overshoot",
+        "lag_weeks": 18.4,
+        "peak_prob": 0.9899,
+        "mean_prob": 0.4085
+      },
+      {
+        "event": "Disinflation \u2014 CPI cooling, labor holding, no recession",
+        "lag_weeks": 0.1,
+        "peak_prob": 0.9896,
+        "mean_prob": 0.6661
+      }
+    ]
+  },
+  "P0+P2b": {
+    "log_likelihood": -102817.28,
+    "anomaly_count": 2996,
+    "brier": {
+      "contraction": {
+        "score": 0.179301,
+        "reliability": 0.093553,
+        "resolution": 0.008775,
+        "uncertainty": 0.095316
+      },
+      "stagflation": {
+        "score": 0.257531,
+        "reliability": 0.234246,
+        "resolution": 0.000163,
+        "uncertainty": 0.02333
+      },
+      "expansion": {
+        "score": 0.416198,
+        "reliability": 0.306995,
+        "resolution": 0.003949,
+        "uncertainty": 0.113545
+      }
+    },
+    "roc_auc": {
+      "contraction": {
+        "auc": 0.7422,
+        "optimal_threshold": 0.1256,
+        "tpr_at_optimal": 0.676,
+        "fpr_at_optimal": 0.3043
+      },
+      "stagflation": {
+        "auc": 0.643,
+        "optimal_threshold": 0.0503,
+        "tpr_at_optimal": 0.7321,
+        "fpr_at_optimal": 0.5142
+      },
+      "expansion": {
+        "auc": 0.6689,
+        "optimal_threshold": 0.2513,
+        "tpr_at_optimal": 0.5488,
+        "fpr_at_optimal": 0.281
+      }
+    },
+    "sharpness": {
+      "mean_max_prob": 0.8657,
+      "frac_above_80": 0.7499,
+      "frac_above_50": 0.9778
+    },
+    "detection_lag": [
+      {
+        "event": "Volcker Recession I \u2014 Fed raises to 20%, 6-month recession",
+        "lag_weeks": 0.6,
+        "peak_prob": 0.99,
+        "mean_prob": 0.685
+      },
+      {
+        "event": "Volcker Recession II \u2014 double-dip, unemployment hits 10.8%",
+        "lag_weeks": 0.9,
+        "peak_prob": 0.99,
+        "mean_prob": 0.7607
+      },
+      {
+        "event": "Reagan expansion \u2014 disinflation + strong growth",
+        "lag_weeks": 0.3,
+        "peak_prob": 0.9886,
+        "mean_prob": 0.7423
+      },
+      {
+        "event": "Black Monday \u2014 S&P drops 22% in one day, brief panic",
+        "lag_weeks": 3.1,
+        "peak_prob": 0.99,
+        "mean_prob": 0.2301
+      },
+      {
+        "event": "Gulf War Recession \u2014 oil shock + S&L crisis",
+        "lag_weeks": 9.3,
+        "peak_prob": 0.9888,
+        "mean_prob": 0.3452
+      },
+      {
+        "event": "90s expansion \u2014 Goldilocks era, tech boom, low inflation",
+        "lag_weeks": 6.9,
+        "peak_prob": 0.99,
+        "mean_prob": 0.58
+      },
+      {
+        "event": "Dot-com Bust \u2014 NASDAQ crashes, 9/11, mild recession",
+        "lag_weeks": 0.3,
+        "peak_prob": 0.9876,
+        "mean_prob": 0.4644
+      },
+      {
+        "event": "Great Recession \u2014 housing collapse, bank failures, unemployment surge",
+        "lag_weeks": 4.1,
+        "peak_prob": 0.99,
+        "mean_prob": 0.5
+      },
+      {
+        "event": "COVID crash \u2014 fastest recession in history",
+        "lag_weeks": 0.7,
+        "peak_prob": 0.99,
+        "mean_prob": 0.7681
+      },
+      {
+        "event": "Inflation surge \u2014 CPI hit 9.1%, supply chain + demand overshoot",
+        "lag_weeks": 17.4,
+        "peak_prob": 0.9899,
+        "mean_prob": 0.4563
+      },
+      {
+        "event": "Disinflation \u2014 CPI cooling, labor holding, no recession",
+        "lag_weeks": 0.1,
+        "peak_prob": 0.9882,
+        "mean_prob": 0.5796
+      }
+    ]
+  },
+  "Full Stack": {
+    "log_likelihood": -39623.55,
+    "anomaly_count": 252,
+    "brier": {
+      "contraction": {
+        "score": 0.179851,
+        "reliability": 0.093888,
+        "resolution": 0.008801,
+        "uncertainty": 0.095316
+      },
+      "stagflation": {
+        "score": 0.256177,
+        "reliability": 0.232695,
+        "resolution": 0.00014,
+        "uncertainty": 0.02333
+      },
+      "expansion": {
+        "score": 0.414589,
+        "reliability": 0.305467,
+        "resolution": 0.004192,
+        "uncertainty": 0.113545
+      }
+    },
+    "roc_auc": {
+      "contraction": {
+        "auc": 0.7407,
+        "optimal_threshold": 0.6432,
+        "tpr_at_optimal": 0.54,
+        "fpr_at_optimal": 0.1663
+      },
+      "stagflation": {
+        "auc": 0.6373,
+        "optimal_threshold": 0.0201,
+        "tpr_at_optimal": 0.8214,
+        "fpr_at_optimal": 0.613
+      },
+      "expansion": {
+        "auc": 0.6692,
+        "optimal_threshold": 0.2613,
+        "tpr_at_optimal": 0.5493,
+        "fpr_at_optimal": 0.2712
+      }
+    },
+    "sharpness": {
+      "mean_max_prob": 0.8658,
+      "frac_above_80": 0.7461,
+      "frac_above_50": 0.9804
+    },
+    "detection_lag": [
+      {
+        "event": "Volcker Recession I \u2014 Fed raises to 20%, 6-month recession",
+        "lag_weeks": 0.6,
+        "peak_prob": 0.99,
+        "mean_prob": 0.6857
+      },
+      {
+        "event": "Volcker Recession II \u2014 double-dip, unemployment hits 10.8%",
+        "lag_weeks": 0.9,
+        "peak_prob": 0.99,
+        "mean_prob": 0.7498
+      },
+      {
+        "event": "Reagan expansion \u2014 disinflation + strong growth",
+        "lag_weeks": 0.3,
+        "peak_prob": 0.9885,
+        "mean_prob": 0.7331
+      },
+      {
+        "event": "Black Monday \u2014 S&P drops 22% in one day, brief panic",
+        "lag_weeks": 3.1,
+        "peak_prob": 0.9896,
+        "mean_prob": 0.2305
+      },
+      {
+        "event": "Gulf War Recession \u2014 oil shock + S&L crisis",
+        "lag_weeks": 9.3,
+        "peak_prob": 0.9876,
+        "mean_prob": 0.3432
+      },
+      {
+        "event": "90s expansion \u2014 Goldilocks era, tech boom, low inflation",
+        "lag_weeks": 8.3,
+        "peak_prob": 0.99,
+        "mean_prob": 0.5771
+      },
+      {
+        "event": "Dot-com Bust \u2014 NASDAQ crashes, 9/11, mild recession",
+        "lag_weeks": 0.3,
+        "peak_prob": 0.9887,
+        "mean_prob": 0.4727
+      },
+      {
+        "event": "Great Recession \u2014 housing collapse, bank failures, unemployment surge",
+        "lag_weeks": 4.1,
+        "peak_prob": 0.99,
+        "mean_prob": 0.499
+      },
+      {
+        "event": "COVID crash \u2014 fastest recession in history",
+        "lag_weeks": 0.7,
+        "peak_prob": 0.99,
+        "mean_prob": 0.7597
+      },
+      {
+        "event": "Inflation surge \u2014 CPI hit 9.1%, supply chain + demand overshoot",
+        "lag_weeks": 17.4,
+        "peak_prob": 0.9899,
+        "mean_prob": 0.4505
+      },
+      {
+        "event": "Disinflation \u2014 CPI cooling, labor holding, no recession",
+        "lag_weeks": 0.1,
+        "peak_prob": 0.9882,
+        "mean_prob": 0.5872
+      }
+    ]
+  },
+  "diebold_mariano": {
+    "full_vs_baseline": {
+      "dm_stat": -35.5231,
+      "p_value": 0.0,
+      "verdict": "Full Stack better"
+    },
+    "p0p2b_vs_baseline": {
+      "dm_stat": -29.6798,
+      "p_value": 0.0,
+      "verdict": "P0+P2b better"
+    },
+    "full_vs_p0p2b": {
+      "dm_stat": -32.8027,
+      "p_value": 0.0,
+      "verdict": "Full Stack better"
+    }
+  }
+}

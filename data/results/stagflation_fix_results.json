@@ -1,0 +1,26 @@
+{
+  "Current (growth=+0.195)": {
+    "ll": -39623.55,
+    "stagflation_auc": 0.5989,
+    "contraction_auc": 0.7407,
+    "stagflation_brier": 0.260808,
+    "events_detected_50": 11,
+    "events_detected_80": 11
+  },
+  "Theory (growth=-0.10)": {
+    "ll": -39522.69,
+    "stagflation_auc": 0.6021,
+    "contraction_auc": 0.7354,
+    "stagflation_brier": 0.317074,
+    "events_detected_50": 11,
+    "events_detected_80": 11
+  },
+  "Blended (growth=+0.05)": {
+    "ll": -39547.7,
+    "stagflation_auc": 0.599,
+    "contraction_auc": 0.7362,
+    "stagflation_brier": 0.292892,
+    "events_detected_50": 11,
+    "events_detected_80": 11
+  }
+}
